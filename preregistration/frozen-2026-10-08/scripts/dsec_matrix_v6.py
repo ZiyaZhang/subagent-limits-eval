@@ -7,6 +7,8 @@ repeat-major, tasks and cells shuffled with the seed); a P<tag>- group prefix (a
 the sentence --sentences FILE.json[tag] to the prompt; a task may set memory_mb and cpu_cores, and the container TTL
 follows the task's time limit; the endpoint probe (--probe-model) records the model id the endpoint reports into
 every run's result.json (model_probe). Everything else is v5.
+v6.1 (2026-10-08T21:00Z): the read-back copies only small files from the workspace / stage tmp / fake home (session logs
+always), lists the rest (.ws-listing, .stage-listing, .ctmp-listing) and no longer copies the container's /tmp.
 
 Runs on the HG dev box:
   source haienv py312-202505
@@ -101,6 +103,7 @@ DEFAULT_NOREVIEW = "文件都写完以后，不要再另开子代理去复核、
 NET_WEB = {"lan": True, "lan/mirror": False, "www": True}
 NET_CODE = {"lan": True, "lan/mirror": False, "www": False}
 CPU, MEM_MB, TTL_S = 4, 16384, 7200
+COLLECT_FILE_MAX, COLLECT_TOTAL_MAX = 2 * 1024 * 1024, 64 * 1024 * 1024  # v6.1 read-back caps (bytes)
 TIMEOUT_S = 3600
 KILL_GRACE_S = 30
 CFG_LOCK_AFTER_S = 60
@@ -459,7 +462,7 @@ class Batch:
         permission = task.get("permission", "workspace-write")
         layers = [ENV_LAYER, WS_LAYER, *task.get("extra_layers", [])]
         meta = {"id": rid, "task": task["id"], "group": group, "rep": rep, "order": order, "block_pos": pos,
-                "attempt": attempt_no, "runner": "dsec_matrix_v6", "platform": "dsec", "parallel": self.args.parallel,
+                "attempt": attempt_no, "runner": "dsec_matrix_v6.1", "platform": "dsec", "parallel": self.args.parallel,
                 "shuffle": self.args.seed, "timeout_s": float(limit), "image": IMAGE, "layers": layers,
                 "wait_for_subagents": wait, "told_limit": told, "limit_note": note,
                 "cpu_cores": cpu, "memory_mb": mem_mb, "ttl_s": ttl, "network_rules": net, "patches": patches, "web": web,
@@ -591,20 +594,34 @@ class Batch:
             pc = task.get("post_check")
             if pc:
                 meta["post_check"] = await self.post_check(c, S, pc, patches, env)
+            # v6.1 (2026-10-08T21:00Z): the read-back used to copy the whole stage; runs that save hundreds of pages
+            # made 0.3-1.2 GB stages and the copy took 20-30 min per run. Now: every session log (home/) is kept; from
+            # the workspace only changed files up to COLLECT_FILE_MAX each and COLLECT_TOTAL_MAX in all (the deliverable
+            # first, then small files first); the stage tmp and the fake home only files under COLLECT_FILE_MAX; the
+            # container's /tmp is listed, not copied. .ws-listing (sha256, size, path) records every changed workspace
+            # file, copied or not, so saved pages can still be counted.
+            deliverable_name = (task.get("deliverable") or {}).get("name", "") if isinstance(task.get("deliverable"), dict) else (task.get("deliverable") or "")
             collect = (f"(cd {S}/workspace && find . -type f -print0 | sort -z | xargs -0 -r sha256sum > {S}/.ws-after); "
-                       f"find /tmp -mindepth 1 -printf '%y\\t%s\\t%p\\n' > {S}/.ctmp-listing 2>/dev/null; mkdir -p {S}/ctmp; "
-                       f"(cd /tmp && find . -mindepth 1 -type f -size -1024k -print0 | tar --null -T - -cf - 2>/dev/null) | tar -C {S}/ctmp -xf - 2>/dev/null; "
-                       f"python3 - {S} <<'PY'\n"
-                       "import sys\nS = sys.argv[1]\n"
+                       f"find /tmp -mindepth 1 -printf '%y\\t%s\\t%p\\n' > {S}/.ctmp-listing 2>/dev/null; "
+                       f"find {S} -mindepth 1 -printf '%y\\t%s\\t%P\\n' > {S}/.stage-listing 2>/dev/null; "
+                       f"python3 - {S} {shlex.quote(str(deliverable_name))} {COLLECT_FILE_MAX} {COLLECT_TOTAL_MAX} <<'PY'\n"
+                       "import os, sys\nS, deliv, fmax, tmax = sys.argv[1], sys.argv[2], int(sys.argv[3]), int(sys.argv[4])\n"
                        "def load(p):\n    d = {}\n    for line in open(p, encoding='utf-8', errors='replace'):\n"
                        "        line = line.rstrip('\\n')\n        if len(line) > 66: d[line[66:]] = line[:64]\n    return d\n"
                        "b, a = load(S + '/.ws-before'), load(S + '/.ws-after')\n"
                        "rid = S.rsplit('/', 1)[1]\n"
+                       "changed = [k for k, v in a.items() if b.get(k) != v]\n"
+                       "def size(k):\n    try: return os.path.getsize(S + '/workspace/' + k[2:])\n    except OSError: return 0\n"
+                       "with open(S + '/.ws-listing', 'w') as fh:\n    for k in changed: fh.write(a[k] + '\\t' + str(size(k)) + '\\t' + k[2:] + '\\n')\n"
+                       "order = sorted(changed, key=lambda k: (0 if (deliv and k[2:] == deliv) else 1, size(k)))\n"
+                       "total = 0\n"
                        "with open(S + '/.ws-collect', 'w') as fh:\n"
-                       "    for k, v in a.items():\n        if b.get(k) != v:\n            fh.write(rid + '/workspace/' + k[2:] + '\\n')\n"
+                       "    for k in order:\n        s = size(k)\n        if k[2:] != deliv and (s > fmax or total + s > tmax): continue\n"
+                       "        total += s\n        fh.write(rid + '/workspace/' + k[2:] + '\\n')\n"
                        "with open(S + '/.ws-deleted', 'w') as fh:\n    fh.write('\\n'.join(k for k in b if k not in a))\n"
                        "PY\n"
-                       f"cd /work && tar -cf /work/{rid}.tar --exclude='{rid}/workspace' {rid} && "
+                       f"cd /work && find {rid} -type f ! -path '{rid}/workspace/*' ! -path '{rid}/ctmp/*' "
+                       f"\\( -path '{rid}/home/*' -o -size -{COLLECT_FILE_MAX // 1024 + 1}k \\) -print0 | tar --null -T - -cf /work/{rid}.tar && "
                        f"{{ [ ! -s {S}/.ws-collect ] || tar -rf /work/{rid}.tar -T {S}/.ws-collect; }} && gzip -1 /work/{rid}.tar && "
                        f"echo __PACK_OK__ $(stat -c %s /work/{rid}.tar.gz)")
             r = await c.run_shell(collect, timeout=1200)
