@@ -10,8 +10,9 @@
    (the dose figure uses the achieved counts). A group whose reports are mostly missing (less than half delivered)
    stops the chain.
 2. Load check: median time to first token and median output tokens/s over every model request of p2-calib, against
-   the phase-1 profile (results/profile-official.json: base_ttft_s, out_tps). Both within 15% -> parallel 32,
-   otherwise 26 (the phase-1 setting).
+   the phase-1 profile (results/profile-official.json: base_ttft_s, out_tps), and the batch's infrastructure retry
+   rate (progress.json). Both timings within 15% and retries <= 15% of runs -> parallel 32, otherwise 26 (the
+   phase-1 setting); retries above 50% -> 20.
 3. Structural check: phase2_check.py must already have passed (the chain runs it before this script).
 
 Writes --out (JSON with every number and the decision) and prints "PAR=<n>" as the last line. Exit 2 stops the chain.
@@ -129,10 +130,19 @@ def main() -> int:
             "profile_base_ttft_s": prof.get("base_ttft_s"), "profile_out_tps": prof.get("out_tps")}
     ok_ttft = load["ttft_median_s"] is not None and load["ttft_median_s"] <= 1.15 * prof["base_ttft_s"] * 3  # ×3: all requests, not only small ones
     ok_tps = load["out_tps_median"] is not None and load["out_tps_median"] >= 0.85 * prof["out_tps"]
-    par = a.par_high if (ok_ttft and ok_tps) else a.par_low
-    load.update(ok_ttft=ok_ttft, ok_tps=ok_tps, parallel=par)
+    # infrastructure retries of the calibration batch (progress.json): transport failures under load
+    try:
+        prog = json.loads((a.runs / "progress.json").read_text(encoding="utf-8"))
+        retry_rate = prog.get("infra_retries", 0) / max(1, prog.get("total", 1))
+    except (OSError, ValueError):
+        retry_rate = None
+    ok_retries = retry_rate is not None and retry_rate <= 0.15
+    par = a.par_high if (ok_ttft and ok_tps and ok_retries) else a.par_low
+    if retry_rate is not None and retry_rate > 0.5:
+        par = min(par, 20)
+    load.update(ok_ttft=ok_ttft, ok_tps=ok_tps, infra_retry_rate=retry_rate, ok_retries=ok_retries, parallel=par)
     report["load"] = load
-    report["decisions"].append(f"main batch parallel = {par} (ttft ok {ok_ttft}, tps ok {ok_tps})")
+    report["decisions"].append(f"main batch parallel = {par} (ttft ok {ok_ttft}, tps ok {ok_tps}, infra retry rate {retry_rate} ok {ok_retries})")
     a.out.write_text(json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")
     for tag, rec in sent.items():
         print(f"{tag}: runs {rec['runs']} delivered {rec['delivered']} spawn median {rec['spawn_started_median']} search ratio {rec['search_ratio_median'] and round(rec['search_ratio_median'], 2)} inside {rec.get('inside')} {rec.get('adjusted_once', '')}")

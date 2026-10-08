@@ -1,17 +1,7 @@
-# Second model (module D): deepseek-v4-pro through the same internal endpoint; everything else as base.patch.yml.
+# Second model (module D): deepseek-v4-pro through the same internal endpoint; everything else as base.patch.yml
+# (the retry policy now lives in base.patch.yml).
 - id: agent-default-model
   config:
     provider: deepseek-official
     model: deepseek-v4-pro
     reasoningEffort: max
-# 2026-10-08T10:20Z (v4-pro smoke): some requests to the v4-pro endpoint fail at the transport level at once and the
-# default policy (5 retries, 0.5-10 s backoff, about 16 s in all) gives up; wait longer before the run is lost.
-- id: llm-deepseek
-  config:
-    retryPolicy:
-      mode: normal
-      maxRetries: 12
-      backoff:
-        initialDelayMs: 2000
-        maxDelayMs: 60000
-        jitterRatio: 0.2
