@@ -133,7 +133,9 @@ def main() -> int:
     # infrastructure retries of the calibration batch (progress.json): transport failures under load
     try:
         prog = json.loads((a.runs / "progress.json").read_text(encoding="utf-8"))
-        retry_rate = prog.get("infra_retries", 0) / max(1, prog.get("total", 1))
+        log_lines = (a.runs / "run.log").read_text(encoding="utf-8", errors="replace").split("\n")
+        retries = sum(1 for line in log_lines if "infra signal" in line)  # progress.json is reset by the second runner invocation
+        retry_rate = retries / max(1, prog.get("total", 1))
     except (OSError, ValueError):
         retry_rate = None
     ok_retries = retry_rate is not None and retry_rate <= 0.15
