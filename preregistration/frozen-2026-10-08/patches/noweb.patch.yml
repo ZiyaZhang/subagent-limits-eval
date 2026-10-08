@@ -1,0 +1,5 @@
+# No web tools: disables the tool-web row, which registers both web_search and web_fetch
+# (results/composed-D2-K4.yml, row id tool-web). The web service and its backends stay mounted,
+# but the model sees neither tool nor their prompt guidance.
+- id: tool-web
+  disabled: true

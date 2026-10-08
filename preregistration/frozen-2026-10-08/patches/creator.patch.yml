@@ -1,0 +1,25 @@
+# Creation-mode rows for the headless profile: what the Web `cordis` preset adds over `standard`, minus the parts
+# that need a browser page. The plugin-manager tool is switched on, the plugin-development skills are added to
+# the skill catalog, the read-only runtime inspection tools are mounted, and profile reload is switched back on so
+# that an installed bundle is applied in the running session (the headless bundle switches it off).
+# pnpm lives in the extra layer /artifacts/zhangziya/dsh-pnpm-v1.img; the agent's shell keeps the blocked shim.
+- id: tool-plugin-manager
+  disabled: false
+- id: plugin-manager
+  config:
+    pnpmCommand: /opt/pnpm/bin/pnpm
+- id: hmr
+  disabled: false
+  config:
+    root: []
+- id: skill-filesystem
+  config:
+    customSkillDirs:
+      - !!js process.getBuiltinModule('node:path').join(process.getBuiltinModule('node:path').dirname(process.getBuiltinModule('node:module').createRequire(baseUrl).resolve('@deepseek-ai/dsh-agent-preset/package.json')), 'skills')
+- insert:
+    - id: cordis-host-runner
+      name: '@deepseek-ai/dsh-cordis-host-runner'
+    - id: cordis-inspect-providers
+      name: '@deepseek-ai/dsh-tool-cordis/host'
+    - id: tool-cordis
+      name: '@deepseek-ai/dsh-tool-cordis'

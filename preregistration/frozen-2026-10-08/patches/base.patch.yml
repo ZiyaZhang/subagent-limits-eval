@@ -1,0 +1,18 @@
+# Applied to every group. Fixed: model, reasoning effort, fork mode as in the Web standard preset,
+# workflow tool off (its agents bypass the capacity limit), web search through the company proxy.
+- id: agent-default-model
+  config:
+    provider: deepseek-official
+    model: deepseek-flash
+    reasoningEffort: max
+- id: tool-subagent-fork
+  config:
+    provider: fork
+    toolName: subagent_fork
+    backgroundMode: continuable
+- id: tool-workflow
+  disabled: true
+- id: web-search-deepseek
+  config:
+    apiKeyEnv: HIGH_FIVE_API_KEY
+    baseURL: https://proxy.high-five-ai.xyz:8443/v1

@@ -1,0 +1,6 @@
+# Second model (module D): deepseek-v4-pro through the same internal endpoint; everything else as base.patch.yml.
+- id: agent-default-model
+  config:
+    provider: deepseek-official
+    model: deepseek-v4-pro
+    reasoningEffort: max
