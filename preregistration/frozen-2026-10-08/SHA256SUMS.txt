@@ -40,7 +40,9 @@ b0233485752290cc813c238f6629bc24c075fe4a932edecc0b6cbae3eaffd83c  ./patches/v4pr
 bb62cc59247473e7426c02cdb19273e2facac5adb639e437df4ed660eb4fbfb4  ./scripts/phase2-chain-from-main.sh
 f34fbf0c62d19539814ca0e36d7f9e0cd2c69ca3d50ee73b040d71fd53351805  ./scripts/phase2-chain.sh
 e383a79f57de2d9c6d127d99e044c112d58c1418572f9d680563e1e3f0c54b92  ./scripts/phase2-d-guard.sh
+beae2e20dbdf65369c597e503150472f2759a9115ea85fcf501d97cec6a30c3c  ./scripts/phase2-o.sh
 2ee31c0cf92349748be7d1ba2e17131af5da258ebe5f3e352bdb9f61e91d9852  ./scripts/phase2-run.v2.sh
+5218047d3a3dcf29cbbb296855b893c17f6feb8d9adb090335ae017c6b4dbca2  ./scripts/phase2-run.v3.sh
 4f84e6008d54373804e2253effb52a85a9685a79728e10dda8cd84b511a50d6b  ./scripts/phase2_calib_read.py
 740efc1a88fae4c7e799b796192b5fcaea9f2f3a5b7a6c162685e2b4dc4a9105  ./scripts/phase2_check.py
 e9e89aec31e12f1372fedc6f06e7778f6db295386685b11717b406701af649a5  ./scripts/phase2_gate.py
@@ -51,6 +53,7 @@ d18c3c7693a354931379dec9a211df11a7ef0b1cc1a13b51bb27197173c1fcb0  ./scripts/run_
 dcc4962c1ab4f17459db1eaf2f5149c11e249825bfa59a85d223c9d3060f57df  ./tasks/cells-phase2-d.json
 57d4b928770d36a849811a68060ed74069ad0365643b29897942e2a313f9a3c2  ./tasks/cells-phase2-f.json
 7e479b9996342ea76fe81e4cc6e0ac190e0f322de2638de96c97aed1b7596b6c  ./tasks/cells-phase2-main.json
+ff81045d340cd1f504cf1c076550a5851a6fccedec08253fdcd3ce7250add4fe  ./tasks/cells-phase2-o.json
 0ee87cb32e5cb2471af3e368bba9eb3fe5b9dfcb45fad73aa212034d3818aa3f  ./tasks/cells-phase2-screen.json
 d81b600eb4c8377b335b67fd3ffde2434fe08ec83d4c2eefbcd527988c2b0d7f  ./tasks/cells-phase2-smoke-d.json
 cdf65fc0ee102c71dfd1b535c019f8e2ff4a981615403f2a489c6f6d66e0d09b  ./tasks/cells-phase2-smoke-f.json
@@ -62,4 +65,4 @@ d8bbc5896d7a5709e7939290b2292e46ffbcb822177ff9461c010e3df895a4f1  ./tasks/cells-
 f16d7c497b5cb0db18f3f5a6a90d20debec48d7cec241a457e79be0da2767589  ./tasks/phase2-drb2-index.json
 93b0a91ba199eea18779cb3866e83109bf1e450f98c761a58b71a31bbd03c383  ./tasks/phase2-drb2-tasks-v4pro.jsonl
 f256c823e5acc6228cd070af5a3a6a1f36b5a0f3da517a335b46be3505c3ee0f  ./tasks/phase2-drb2-tasks.jsonl
-291c4c040deeaa4ac652e9aa746a200def06dfad1e89ad6330c41502906e4672  ./tasks/phase2-sentences.json
+44de71f00e4b9e62489cc38d7fff3431d129b0440b15ddd4786ee4950cfcb04f  ./tasks/phase2-sentences.json
