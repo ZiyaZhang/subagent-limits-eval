@@ -598,8 +598,9 @@ class Batch:
             # made 0.3-1.2 GB stages and the copy took 20-30 min per run. Now: every session log (home/) is kept; from
             # the workspace only changed files up to COLLECT_FILE_MAX each and COLLECT_TOTAL_MAX in all (the deliverable
             # first, then small files first); the stage tmp and the fake home only files under COLLECT_FILE_MAX; the
-            # container's /tmp is listed, not copied. .ws-listing (sha256, size, path) records every changed workspace
-            # file, copied or not, so saved pages can still be counted.
+            # container's /tmp is listed, not copied. Library folders the model installs (.venv, site-packages,
+            # node_modules ...) are listed but never copied. .ws-listing (sha256, size, path) records every changed
+            # workspace file, copied or not, so saved pages can still be counted.
             deliverable_name = (task.get("deliverable") or {}).get("name", "") if isinstance(task.get("deliverable"), dict) else (task.get("deliverable") or "")
             collect = (f"(cd {S}/workspace && find . -type f -print0 | sort -z | xargs -0 -r sha256sum > {S}/.ws-after); "
                        f"find /tmp -mindepth 1 -printf '%y\\t%s\\t%p\\n' > {S}/.ctmp-listing 2>/dev/null; "
@@ -613,7 +614,9 @@ class Batch:
                        "changed = [k for k, v in a.items() if b.get(k) != v]\n"
                        "def size(k):\n    try: return os.path.getsize(S + '/workspace/' + k[2:])\n    except OSError: return 0\n"
                        "with open(S + '/.ws-listing', 'w') as fh:\n    for k in changed: fh.write(a[k] + '\\t' + str(size(k)) + '\\t' + k[2:] + '\\n')\n"
-                       "order = sorted(changed, key=lambda k: (0 if (deliv and k[2:] == deliv) else 1, size(k)))\n"
+                       "LIB = ('/.venv/', '/venv/', 'site-packages', 'node_modules', '__pycache__', '/.git/', 'dist-info', '/.cache/')\n"
+                       "def lib(k):\n    s = '/' + k[2:]\n    return any(x in s for x in LIB)\n"
+                       "order = sorted((k for k in changed if not lib(k)), key=lambda k: (0 if (deliv and k[2:] == deliv) else 1, size(k)))\n"
                        "total = 0\n"
                        "with open(S + '/.ws-collect', 'w') as fh:\n"
                        "    for k in order:\n        s = size(k)\n        if k[2:] != deliv and (s > fmax or total + s > tmax): continue\n"
