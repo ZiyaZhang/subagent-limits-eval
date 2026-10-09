@@ -115,6 +115,8 @@ PY
     && log "leak look: $(tail -n +2 $HC/leak-score.txt | head -n 1)" || { log "leak look score FAILED"; exit 1; }
   analysis results results/master-p2 results/analysis-phase2 || exit 1
   balance
+  python $J/phase2_combine.py --phase1 results --judge results/drb2-score-gpt --contrasts results/analysis-phase2/contrasts.csv --out results/analysis-phase2/combined.md \
+    > results/analysis-phase2/combined.txt 2>&1 && log "two-phase table written (results/analysis-phase2/combined.md)" || log "two-phase table FAILED (results/analysis-phase2/combined.txt)"
   log "unblinded: results/analysis-phase2/{confirmatory.md,table1.md,recommend.md,summary.md,contrasts.csv,levels.csv,demand.csv}"
   ;;
 blind)

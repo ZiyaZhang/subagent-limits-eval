@@ -108,7 +108,7 @@ TREND_CELLS = [("n8K2", 2), ("n8K4", 4), ("n8K6", 6), ("n8K8", 8)]
 EXPLORATORY = {  # family -> [(cell, reference)]
     "A": [(c, "K8") for c in A_CELLS[1:]] + [("K1", "D0"), ("K8", "K1"), ("D2K2", "K2"), ("D3K2", "K2"), ("D3K2", "D2K2"), ("D2K4", "K4"),
                                               ("D3K4", "K4"), ("D3K4", "D2K4"), ("D3K16", "D2K16"), ("D3K64", "D3K16"), ("D3K16", "D3K8")],
-    "B": [("n3K8", "K8"), ("n8K8", "K8"), ("n8K4", "K8"), ("n8K2", "n8K8"), ("n8K6", "n8K8"), ("n3K8", "D0"), ("n8K8", "D0")],
+    "B": [("n3K8", "K8"), ("n8K8", "K8"), ("n8K4", "K8"), ("n8K2", "K8"), ("n8K6", "K8"), ("n8K2", "n8K8"), ("n8K6", "n8K8"), ("n3K8", "D0"), ("n8K8", "D0")],
     "G": [("more", "D0"), ("seg", "D0"), ("merge4", "D0"), ("K8", "D0"), ("n3K8", "D0"), ("n8K8", "D0"), ("more", "K8"), ("seg", "K8"), ("merge4", "K8")],
     "D": [("D0", "K8"), ("K2", "K8"), ("D2K8", "K8"), ("D3K64", "K8")],
     "A@D": [("K8", "D0"), ("D0", "K8"), ("K2", "K8"), ("D2K8", "K8"), ("D3K64", "K8")],
@@ -704,7 +704,7 @@ def main() -> None:
     dem = demand(build_all(df))
     dem.to_csv(a.out / "demand.csv", index=False)
     used = pd.concat([f.assign(family_used=name)[["id", "batch", "task", "rep", "cell", "family_used", "status5", "leak", "q", "total_yuan",
-                                                   "t_answer_s", "search_requests", "D", "K", "opened", "wanted", "peak_alive", "rejected_cap"]]
+                                                   "t_answer_s", "search_requests", "D", "K", "opened", "wanted", "peak_alive", "rejected_cap", "rejected_depth", "kids_d1"]]
                       for name, f in fams_by["confirmatory"].items()])
     used.to_csv(a.out / "runs_used.csv", index=False)
 

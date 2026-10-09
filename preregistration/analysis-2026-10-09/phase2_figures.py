@@ -15,6 +15,11 @@ cells (method mixed2), the same estimate as in the tables; --method joint draws 
   fig7-models.svg        the same four cells on flash and on v4-pro
   fig8-coding-time.svg   large coding task: minutes until all files were written and until the final answer
   fig10-orchestration.svg  prescribed orchestration against the model's own, money and quality
+  fig9-behaviors.svg     with --behavior: share of runs in which the judge model marked each behaviour of the checklist, by cell
+  fig9b-delegation.svg   with --delegation: what subagents hand on when they delegate (classified by meaning), by cell
+  figA-dose.svg          appendix, descriptive: module B, quality against the default on the number of subagents actually opened
+  figA-capped.svg        appendix, descriptive: in each capped cell, runs that had a call rejected by the cap and runs that had none
+  figA-rejections.svg    appendix, descriptive: rejected delegation calls of a run against its quality relative to the task's default
 
 Usage: phase2_figures.py --in results/analysis-phase2 [--out results/analysis-phase2/figs] [--method mixed2]
        then: bash scripts/render-brief.sh results/analysis-phase2/figs
@@ -570,8 +575,233 @@ def fig_coding_time(d: Data, out: Path, family="F:toolkit-xl"):
     s.save(out / "fig8-coding-time.svg", d.sim)
 
 
+def task_default(d: Data, family="A", ref="K8") -> dict:
+    """Mean quality of the reference cell per task, from the runs the analysis used."""
+    by = {}
+    for r in d.runs:
+        if r["family_used"] == family and r["cell"] == ref and r["q"] not in ("", "nan"):
+            by.setdefault(r["task"], []).append(float(r["q"]))
+    return {t: st.mean(v) for t, v in by.items()}
+
+
+def mean_ci(v: list):
+    if len(v) < 3:
+        return None
+    m, se = st.mean(v), st.stdev(v) / math.sqrt(len(v))
+    return m, m - 1.96 * se, m + 1.96 * se
+
+
+def fig_dose(d: Data, out: Path):
+    cells = [("K8", "原题面"), ("n3K8", "指令拆 3 份"), ("n8K2", "指令拆 8 份，K=2"), ("n8K4", "指令拆 8 份，K=4"), ("n8K6", "指令拆 8 份，K=6"), ("n8K8", "指令拆 8 份，K=8")]
+    pts = []
+    for c, lab in cells:
+        x = d.l("B", c, "mean_opened")
+        q = (0.0, 0.0, 0.0) if c == "K8" else d.c("B", c, "K8", "q")
+        if x is not None and q:
+            pts.append((c, lab, x, q))
+    if len(pts) < 3:
+        return
+    H = 430
+    s = Svg(W, H)
+    x0, x1, y0, y1 = 86, W - 40, H - 70, 60
+    vals = [v for p in pts for v in p[3]]
+    lo, hi, ticks, fmt = nice_bounds(vals, False)
+    xmax = max(10, math.ceil(max(p[2] for p in pts) + 1))
+    sx, sy = Scale(0, xmax, x0, x1), Scale(lo, hi, y0, y1)
+    y_axis(s, sy, ticks, x0, x1, fmt, zero=0)
+    for v in range(0, int(xmax) + 1, 2):
+        s.line(sx(v), y0, sx(v), y0 + 5, "axis")
+        s.text(sx(v), y0 + 22, str(v), 13, "middle", "muted")
+    s.line(x0, y0, x1, y0, "axis", 1.4)
+    s.text((x0 + x1) / 2, H - 20, "每次运行实际开成的 subagent 数（各格平均）", 14, "middle", "ink2")
+    s.text(22, (y0 + y1) / 2, "评分项通过率对原题面默认之差（百分点）", 14, "middle", "ink2", rotate=True)
+    obstacles, items = [], []
+    for c, lab, x, q in pts:
+        col = "ink" if c == "K8" else ("l2" if c.startswith("n8") else "l1")
+        if c != "K8":
+            whisker(s, sx(x), sy.clip(q[1]), sy.clip(q[2]), col, 1.6, 4)
+            obstacles.append(((sx(x) - 2, sy.clip(q[2]), sx(x) + 2, sy.clip(q[1]), sx(x), sy(q[0])), 1.5))
+        s.circle(sx(x), sy(q[0]), 5.5, col)
+        obstacles.append(((sx(x) - 7, sy(q[0]) - 7, sx(x) + 7, sy(q[0]) + 7, sx(x), sy(q[0])), 8))
+        items.append((sx(x), sy(q[0]), lab, "ink2", 400))
+    place_labels(s, sorted(items), obstacles)
+    s.save(out / "figA-dose.svg", d.sim)
+
+
+def fig_capped(d: Data, out: Path):
+    base = task_default(d)
+    groups = [("A", c, name(c)) for c in ("K1", "K2", "K3", "K4")] + [("B", c, name(c)) for c in ("n8K2", "n8K4", "n8K6")]
+    ref_b = task_default(d, "B", "n8K8")
+    rows = []
+    for fam, c, lab in groups:
+        ref = base if fam == "A" else ref_b
+        hit = [float(r["q"]) - ref[r["task"]] for r in d.runs if r["family_used"] == fam and r["cell"] == c and r["q"] not in ("", "nan") and r["task"] in ref and float(r["rejected_cap"] or 0) > 0]
+        free = [float(r["q"]) - ref[r["task"]] for r in d.runs if r["family_used"] == fam and r["cell"] == c and r["q"] not in ("", "nan") and r["task"] in ref and float(r["rejected_cap"] or 0) == 0]
+        if hit or free:
+            rows.append((lab, mean_ci(hit), len(hit), mean_ci(free), len(free)))
+    if not rows:
+        return
+    row_h, top = 46, 86
+    H = top + row_h * len(rows) + 70
+    s = Svg(W, H)
+    lab_w = 210
+    x0, x1 = lab_w + 24, W - 150
+    vals = [v for r in rows for ci in (r[1], r[3]) if ci for v in ci] + [0.0]
+    lo, hi = math.floor(min(vals) - 1), math.ceil(max(vals) + 1)
+    sx = Scale(lo, hi, x0, x1)
+    bottom = top + row_h * len(rows)
+    step = 2 if hi - lo <= 16 else 5
+    for v in [v for v in range(int(lo), int(hi) + 1) if v % step == 0]:
+        s.line(sx(v), top - 8, sx(v), bottom, "grid")
+        s.text(sx(v), bottom + 20, f"{v:+d}" if v else "0", 13, "middle", "muted")
+    s.line(sx(0), top - 8, sx(0), bottom, "muted", 1.4)
+    s.text((x0 + x1) / 2, bottom + 46, "评分项通过率对同一道题参照格之差（百分点；参照：原题面看默认，指令拆 8 份看 K=8）", 13, "middle", "ink2")
+    for i, (lab, hit, nh, free, nf) in enumerate(rows):
+        y = top + row_h * (i + 0.5)
+        s.text(lab_w, y + 5, lab, 14, "end", "ink")
+        for ci, n, col, dy in ((hit, nh, "l2", -8), (free, nf, "l1", 8)):
+            if ci:
+                s.line(sx.clip(ci[1]), y + dy, sx.clip(ci[2]), y + dy, col, 2.0)
+                s.circle(sx(ci[0]), y + dy, 4.6, col)
+            s.text(x1 + 14, y + dy + 4, f"{n} 次" + ("" if ci else "，太少不画"), 12, "start", col)
+    legend(s, lab_w + 24, 42, [("有调用被上限拒过的运行", "l2", False), ("没有被拒的运行", "l1", False)])
+    s.text(lab_w + 18, 64, "只作描述：被拒不是随机分的，被拒那条消息本身也会改变模型的做法", 12.5, "start", "muted")
+    s.save(out / "figA-capped.svg", d.sim)
+
+
+def fig_rejections(d: Data, out: Path):
+    base = task_default(d)
+    pts = []
+    for r in d.runs:
+        if r["family_used"] != "A" or r["cell"] == "D0" or r["q"] in ("", "nan") or r["task"] not in base:
+            continue
+        rej = float(r.get("rejected_cap") or 0) + float(r.get("rejected_depth") or 0)
+        pts.append((rej, float(r["q"]) - base[r["task"]], int(float(r["D"]))))
+    if len(pts) < 20:
+        return
+    H = 460
+    s = Svg(W, H)
+    x0, x1, y0, y1 = 86, W - 36, H - 70, 70
+    xmax = 30
+    sx, sy = Scale(0, xmax, x0, x1), Scale(-30, 30, y0, y1)
+    y_axis(s, sy, (-30, -20, -10, 0, 10, 20, 30), x0, x1, lambda v: f"{v:+d}" if v else "0", zero=0)
+    for v in range(0, xmax + 1, 5):
+        s.line(sx(v), y0, sx(v), y0 + 5, "axis")
+        s.text(sx(v), y0 + 22, str(v) + ("+" if v == xmax else ""), 13, "middle", "muted")
+    s.line(x0, y0, x1, y0, "axis", 1.4)
+    s.text((x0 + x1) / 2, H - 20, "这次运行里被拒的开 subagent 调用数（被 K 拒加被深度拒）", 14, "middle", "ink2")
+    s.text(22, (y0 + y1) / 2, "评分项通过率对同题默认之差（百分点）", 14, "middle", "ink2", rotate=True)
+    col = {1: "l1", 2: "l2", 3: "l4"}
+    for x, y, depth in pts:
+        s.out.append(f'<circle cx="{sx(min(x, xmax)):.1f}" cy="{sy(max(-30, min(30, y))):.1f}" r="2.6" fill="{C[col.get(depth, "muted")]}" opacity="0.45"/>')
+    for lo_, hi_ in ((0, 0), (1, 2), (3, 5), (6, 10), (11, 20), (21, 10 ** 6)):
+        v = [y for x, y, _ in pts if lo_ <= x <= hi_]
+        ci = mean_ci(v)
+        if ci:
+            cx = sx(min((lo_ + min(hi_, xmax)) / 2, xmax))
+            whisker(s, cx, sy.clip(ci[1]), sy.clip(ci[2]), "ink", 1.8, 5)
+            s.circle(cx, sy(ci[0]), 5, "ink")
+    legend(s, x0, 44, [("深度 1", "l1", False), ("深度 2", "l2", False), ("深度 3", "l4", False), ("黑点：按被拒次数分段的平均和 95% 区间", "ink", False)])
+    s.save(out / "figA-rejections.svg", d.sim)
+
+
+BEHAVIORS = [("planner_self_work", "主 agent 自己做了大部分搜索"), ("premature_completion", "过早宣布完成"), ("pass_through", "原样转包"),
+             ("duplicate_work", "重复分工"), ("over_spawning", "开得过多或开了不用"), ("handback_loss", "交回的内容丢了"),
+             ("wall_banging", "被拒后原样重试三次以上"), ("looping", "原地重复"), ("phantom_coordination", "说做了其实没做"), ("repeated_review", "重复复核")]
+SHOW_CELLS = ["K2", "K4", "K8", "D2K8", "D3K8", "D3K64", "n8K2", "n8K8"]
+
+
+def cell_of_run(d: Data) -> dict:
+    out = {}
+    for r in d.runs:
+        out.setdefault(r["id"], r["cell"])
+    return out
+
+
+def fig_behaviors(d: Data, out: Path, summary: Path, skip: set):
+    """Rows: behaviours; columns: cells. A bar and a number: runs marked yes over runs marked yes or no."""
+    cell = cell_of_run(d)
+    yes, n = {}, {}
+    for r in csv.DictReader(open(summary, encoding="utf-8")):
+        c = cell.get(r["id"])
+        if c is None or r["answer"] not in ("yes", "no"):
+            continue
+        n[(r["item"], c)] = n.get((r["item"], c), 0) + 1
+        yes[(r["item"], c)] = yes.get((r["item"], c), 0) + (r["answer"] == "yes")
+    cells = [c for c in SHOW_CELLS if any((it, c) in n for it, _ in BEHAVIORS)]
+    if not cells:
+        return
+    lab_w, top, row_h = 232, 96, 38
+    cw = (W - lab_w - 30) / len(cells)
+    H = top + row_h * len(BEHAVIORS) + 46
+    s = Svg(W, H)
+    for j, c in enumerate(cells):
+        x = lab_w + cw * j
+        lines_ = ("默认，K=8" if c == "K8" else short(c)).replace("，", "\n").split("\n")
+        for k, part in enumerate(lines_):
+            s.text(x + cw / 2, top - 30 + 16 * k, part, 13, "middle", "ink", 600 if c == "K8" else 400)
+    for i, (item, lab) in enumerate(BEHAVIORS):
+        y = top + row_h * i
+        s.line(14, y, W - 20, y, "grid")
+        dim = item in skip
+        s.text(lab_w - 12, y + row_h / 2 + 5, lab, 14, "end", "muted" if dim else "ink")
+        for j, c in enumerate(cells):
+            x = lab_w + cw * j
+            k = n.get((item, c), 0)
+            if not k:
+                s.text(x + cw / 2, y + row_h / 2 + 5, "-", 13, "middle", "muted")
+                continue
+            share = yes.get((item, c), 0) / k
+            if dim:
+                s.text(x + cw / 2, y + row_h / 2 + 5, "只给例子", 12, "middle", "muted")
+                continue
+            s.rect(x + 8, y + 9, (cw - 54) * share, row_h - 18, "bar", rx=2)
+            s.text(x + cw - 8, y + row_h / 2 + 5, f"{100 * share:.0f}%", 13, "end", "ink")
+    s.line(14, top + row_h * len(BEHAVIORS), W - 20, top + row_h * len(BEHAVIORS), "grid")
+    s.text(24, H - 16, "每格：判分模型标“是”的运行占标了“是”或“否”的运行的比例；灰色的行人工核对时错得多，只在正文给例子", 12.5, "start", "muted")
+    s.save(out / "fig9-behaviors.svg", d.sim)
+
+
+def fig_delegation(d: Data, out: Path, cells_csv: Path):
+    rows = {r["cell"]: r for r in csv.DictReader(open(cells_csv, encoding="utf-8")) if r["batch"] == "p2-main"}
+    kinds = [("whole", "原样转包", "bad"), ("part", "分片", "l1"), ("narrow", "收窄", "bar2"), ("new", "新子题", "l4"), ("review", "复核", "l3"), ("unclear", "拿不准", "grid")]
+    cells = [c for c in ["K1", "K2", "K4", "K8", "D2K8", "D2K16", "D3K8", "D3K16", "D3K64", "n8K8"] if c in rows and int(rows[c]["delegating_subagents"]) > 0]
+    if not cells:
+        return
+    lab_w, top, row_h = 190, 84, 36
+    H = top + row_h * len(cells) + 64
+    s = Svg(W, H)
+    x0, x1 = lab_w + 16, W - 250
+    for v in (0, 25, 50, 75, 100):
+        x = x0 + (x1 - x0) * v / 100
+        s.line(x, top - 6, x, top + row_h * len(cells), "grid")
+        s.text(x, top + row_h * len(cells) + 20, f"{v}%", 13, "middle", "muted")
+    for i, c in enumerate(cells):
+        r = rows[c]
+        y = top + row_h * i
+        total = sum(int(r[f"type_{k}"]) for k, _, _ in kinds) or 1
+        s.text(lab_w, y + row_h / 2 + 5, "默认（深度 1，K=8）" if c == "K8" else short(c), 14, "end", "ink", 600 if c == "K8" else 400)
+        x = x0
+        for k, _, col in kinds:
+            w = (x1 - x0) * int(r[f"type_{k}"]) / total
+            s.rect(x, y + 7, w, row_h - 14, col)
+            x += w
+        subs = int(r["subagents"]) or 1
+        s.text(x1 + 14, y + row_h / 2 + 5, f"{int(r['delegating_subagents'])} 个，占全部 subagent 的 {100 * int(r['delegating_subagents']) / subs:.0f}%", 12.5, "start", "ink2")
+    lx = x0
+    for k, lab, col in kinds:
+        s.rect(lx, 30, 14, 14, col, rx=2)
+        s.text(lx + 20, 42, lab, 13, "start", "ink2")
+        lx += 34 + 13.5 * len(lab)
+    s.text(x0, H - 14, "横条：这一格里试图再派活的 subagent 按派出去的任务分类（含被上限拒绝的尝试）；右边：这样的 subagent 有多少", 12.5, "start", "muted")
+    s.save(out / "fig9b-delegation.svg", d.sim)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap.add_argument("--behavior", type=Path, help="behavior_annotate.py summary.csv")
+    ap.add_argument("--behavior-skip", default="", help="checklist items whose human check failed (examples only), comma-separated")
+    ap.add_argument("--delegation", type=Path, help="delegation_classify.py cells.csv")
     ap.add_argument("--in", dest="src", type=Path, required=True)
     ap.add_argument("--out", type=Path)
     ap.add_argument("--method", default="mixed2", choices=["mixed2", "joint", "paired-t"])
@@ -588,6 +818,13 @@ def main() -> None:
     fig_models(d, out)
     fig_coding_time(d, out)
     fig_cost_quality(d, out, family="O", ref="K8", cells=["planK8"], fname="fig10-orchestration.svg", ref_label="模型自定（默认）")
+    fig_dose(d, out)
+    fig_capped(d, out)
+    fig_rejections(d, out)
+    if a.behavior and a.behavior.exists():
+        fig_behaviors(d, out, a.behavior, set(filter(None, a.behavior_skip.split(","))))
+    if a.delegation and a.delegation.exists():
+        fig_delegation(d, out, a.delegation)
 
 
 if __name__ == "__main__":

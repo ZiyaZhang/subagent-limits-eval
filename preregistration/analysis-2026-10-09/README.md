@@ -16,6 +16,7 @@ protocol's change log under 2026-10-09T03:00Z and at the top of `phase2_report.p
 | `phase2_fake_master.py` | simulated rows for dry runs of the scripts; nothing it writes is a result |
 | `label_page.py`, `phase2-forms.sh` | one offline page per blind check form, filled with the keyboard, exporting exactly the answer file the scoring scripts read |
 | `tool_errors.py`, `run_excerpt.py`, `phase2-pull-figs.sh` | failed searches and fetches per run; a viewer of one run's agents and timelines; the Mac-side fetch-and-draw step |
+| `phase2_combine.py` | appendix, exploratory: the contrasts both phases have, each phase's estimate and their random-effects combination (phase-1 side checked against the phase-1 numbers) |
 | `retry_waits.py` | seconds each run waited for automatic retries of failed model requests (names the blocks hit by the interface fault) |
 | `delegation_classify.py` | what subagents hand on when they delegate: extraction, classification by the judge model, human check, per-cell summary |
 
