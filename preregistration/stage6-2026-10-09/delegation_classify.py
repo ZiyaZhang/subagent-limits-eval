@@ -404,7 +404,8 @@ def cmd_check(a) -> None:
             if others:
                 form += ["它派出去的其他任务（各取开头）："] + ["- " + scrub(cut(x["task"], 110)).replace("\n", " ") for x in others] + [""]
             form += ["[ ] 原样转包　[ ] 分片　[ ] 收窄　[ ] 新子题　[ ] 复核　[ ] 拿不准", "", "---", ""]
-        (out / "check-form.md").write_text("\n".join(form), encoding="utf-8")
+        # task texts name the run's working directory (/work/<run id>/...): the form shows no run id
+        (out / "check-form.md").write_text(re.sub(r"/work/[a-z0-9]{10}\b", "/work/<run>", "\n".join(form)), encoding="utf-8")
         with open(out / "check-answers-template.csv", "w", newline="", encoding="utf-8") as fh:
             w = csv.writer(fh)
             w.writerow(["entry", "answer"])
