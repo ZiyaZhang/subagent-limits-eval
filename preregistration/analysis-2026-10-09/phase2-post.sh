@@ -33,11 +33,19 @@ ALL_CSV=$(echo $ALL | tr ' ' ',')
 HC=results/human-check
 log "mode $MODE; report batches:$REPORT; all:$ALL; scripts $(sha256sum $J/phase2_report.py $J/master_table.py $J/phase2_models.py | cut -c1-12 | tr '\n' ' ')"
 
+retries() {  # seconds each run waited for automatic retries of failed model requests (names no cell)
+  for b in $ALL; do
+    [ -s results/analysis-$b-retry.json ] || python $J/retry_waits.py results/runs/$b --out results/analysis-$b-retry.json --jobs 16 > results/analysis-$b-retry.txt 2>&1 \
+      && log "retry waits $b: $(tail -n 1 results/analysis-$b-retry.txt | cut -c1-200)" || true
+  done
+}
+
 analysis() {  # $1 judge dir, $2 master out, $3 analysis out
   EXP_ROOT=$P python $J/master_table.py --batches "$ALL_CSV" --out "$2" --raw-dir results/master/raw --judge-dir "$1" > "$2.log" 2>&1 \
     || { log "master table FAILED (see $2.log)"; tail -n 5 "$2.log"; return 1; }
   grep -E '^phase 2|WARNING' "$2.log" | tee -a "$LOG"
-  PYTHONPATH=$P/pylib:${PYTHONPATH:-} python $J/phase2_report.py --runs "$2/runs.csv" --out "$3" --merge-index tasks/phase2-merge-index.json > "$3.log" 2>&1 \
+  retries; RETRY=$(ls results/analysis-p2-*-retry.json 2>/dev/null | tr '\n' ' ')
+  PYTHONPATH=$P/pylib:${PYTHONPATH:-} python $J/phase2_report.py --runs "$2/runs.csv" --out "$3" --merge-index tasks/phase2-merge-index.json --retry $RETRY > "$3.log" 2>&1 \
     || { log "analysis FAILED (see $3.log)"; tail -n 5 "$3.log"; return 1; }
   log "analysis written to $3 ($(grep -c . "$3/contrasts.csv") contrast rows; problems: $(grep -c '^  ' <(sed -n '/PROBLEMS/,$p' "$3/run.log") 2>/dev/null || echo 0))"
 }
@@ -60,6 +68,7 @@ pre)
     n_runs=$(($(wc -l < results/master/raw/$b.csv) - 1)); n_judged=$(ls results/drb2-score-gpt/$b/*.r1.json 2>/dev/null | wc -l)
     log "$b: $n_runs runs, $n_judged judge files"
   done
+  retries
   if have p2-f; then
     python -u $J/write_timing.py results/runs/p2-f --task toolkit-xl --file-regex '(?:^|/)workspace/(toolkit/.+\.py)$' --units 61 \
       --out results/analysis-p2-f-timing-xl.json > results/analysis-p2-f-timing-xl.txt 2>&1 && log "timing of the large coding task written" || log "timing xl FAILED"

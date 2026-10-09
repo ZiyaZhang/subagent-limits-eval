@@ -30,6 +30,12 @@ Rows
                      of the cells that have two (default, depth 2 with K=8, "8 parts" with K=4 and K=8) and the extra
                      "no subagents" runs came hours later than the cells they are compared with. Money and time
                      multiples are therefore given in this version too; merge4 has no rep1 version (it needs all four).
+  no-fault version   the confirmatory set without the blocks hit by the interface fault. With --retry (retry_waits.py)
+                     every run carries the seconds it waited between a failed model request and its automatic retry.
+                     A run is "heavy" when the waits of all its sessions exceed 10% of its answer time; a block (batch,
+                     task, repetition: the runs that ran side by side) is faulty when at least a quarter of its runs
+                     and at least two are heavy. The fault is infrastructure (it came in bursts and hit whole blocks),
+                     so the faulty blocks are named by this rule, not by any outcome.
   Reference cells (the default K8 and "no subagents" D0): a flagged run is replaced by another run of the same task and
   cell when there is one (K8 has two runs; D0 has four on the 40 tasks of module G); a task whose reference cell has no
   unflagged run leaves every contrast of its batch and is listed. A cell with more than 8% flagged runs is descriptive
@@ -77,6 +83,7 @@ OUT_REPORT = [("q", "diff"), ("total_yuan", "ratio"), ("model_yuan", "ratio"), (
               ("drb2_recall", "diff"), ("drb2_analysis", "diff"), ("drb2_presentation", "diff")]
 OUT_CODE = [("q", "diff"), ("total_yuan", "ratio"), ("t_answer_s", "ratio"), ("all_written_s", "ratio")]
 LEAK_MAX = 0.08
+HEAVY_RETRY, FAULT_SHARE, FAULT_MIN = 0.10, 0.25, 2  # see "no-fault version" above
 A_CELLS = ["K8", "D0", "K1", "K2", "K3", "K4", "D2K8", "D2K16", "D3K8", "D2K2", "D2K4", "D3K2", "D3K4", "D3K16", "D3K64"]
 B_CELLS = ["n8K8", "n8K2", "n8K4", "n8K6", "n3K8", "K8", "D0"]
 G_CELLS = ["D0", "more", "seg", "merge4", "K8", "n3K8", "n8K8"]
@@ -137,6 +144,32 @@ def status5(r) -> str:
     if r["oom_kill"] == 1:
         return "内存被杀"
     return {"ok": "完成", "no_answer": "提前结束", "crash_at_exit": "退出时崩溃", "timeout": "超时"}.get(r["status"], "其他非零退出")
+
+
+def join_retries(df: pd.DataFrame, files: list, log) -> pd.DataFrame:
+    """Retry waits per run and the faulty blocks. Without files the columns stay empty and no block is faulty."""
+    waits = {}
+    for f in files or []:
+        for r in json.loads(Path(f).read_text(encoding="utf-8")):
+            waits[r["id"]] = r
+    for col in ("retries", "retry_wait_all_s", "retry_wait_root_s"):
+        df[col] = [waits.get(i, {}).get(col, np.nan) for i in df["id"]]
+    df["heavy_retry"] = df["retry_wait_all_s"] > HEAVY_RETRY * df["t_answer_s"]
+    df["fault_block"] = False
+    if not waits:
+        log("retry waits: no file given (--retry); the no-fault version equals the confirmatory one")
+        return df
+    g = df.groupby(["batch", "task", "rep"])["heavy_retry"].agg(["sum", "mean", "size"])
+    bad = g[(g["sum"] >= FAULT_MIN) & (g["mean"] >= FAULT_SHARE)]
+    keys = set(bad.index)
+    df["fault_block"] = [(b, t_, r) in keys for b, t_, r in zip(df["batch"], df["task"], df["rep"])]
+    known = df["retries"].notna()
+    log(f"retry waits: {int(known.sum())} of {len(df)} runs have a record; {int((df['retries'] > 0).sum())} had a retry; "
+        f"{int(df['heavy_retry'].sum())} heavy (waits above {HEAVY_RETRY:.0%} of the answer time); faulty blocks: {len(keys)} "
+        f"({int(df['fault_block'].sum())} runs)")
+    for (b, t_, r), row in bad.iterrows():
+        log(f"  faulty block {b} {t_} rep {int(r)}: {int(row['sum'])} of {int(row['size'])} runs heavy")
+    return df
 
 
 def load(path: Path, merge_index: Path | None, log) -> pd.DataFrame:
@@ -202,6 +235,7 @@ def merge_pipeline(df: pd.DataFrame, log) -> pd.DataFrame:
         r["t_answer_s"] = float(inp["t_answer_s"].max()) + float(m["t_answer_s"]) if pd.notna(m["t_answer_s"]) else np.nan
         r["merge_step_yuan"], r["merge_step_s"] = m["total_yuan"], m["t_answer_s"]
         r["leak"] = bool(m["leak"] or inp["leak"].any())
+        r["fault_block"] = bool(m.get("fault_block", False) or inp["fault_block"].any()) if "fault_block" in inp.columns else False
         r["input_ids"] = " ".join(inp["id"])
         out.append(r)
     log(f"merge pipelines: {len(out)} of {len(steps)} merge runs; inputs from " + ", ".join(f"{k} {v}" for k, v in src.items() if v))
@@ -228,7 +262,7 @@ def dropped_tasks(batch_df: pd.DataFrame, refs=("K8", "D0")) -> dict:
 
 
 def build_families(df: pd.DataFrame, mode: str, log) -> tuple:
-    """mode: confirmatory / all-runs / with-leaks / rep1. Returns ({family: frame}, notes)."""
+    """mode: confirmatory / all-runs / with-leaks / rep1 / no-fault. Returns ({family: frame}, notes)."""
     keep_leaks, keep_failed = mode == "with-leaks", mode == "all-runs"
     notes = {"dropped_tasks": {}, "mode": mode}
     work = df.copy()
@@ -284,6 +318,10 @@ def build_families(df: pd.DataFrame, mode: str, log) -> tuple:
         n_fail = n0 - n_task_drop - n_leak - len(f)
         notes[name] = {"rows_in": n0, "task_dropped_rows": n_task_drop, "leak_rows": n_leak, "failed_rows": n_fail, "rows_used": len(f),
                        "tasks": int(f["task"].nunique())}
+        if mode == "no-fault" and "fault_block" in f.columns:
+            f = f[~f["fault_block"].astype(bool)]
+            notes[name]["fault_rows"] = notes[name]["rows_used"] - len(f)
+            notes[name]["rows_used"], notes[name]["tasks"] = len(f), int(f["task"].nunique())
         out[name] = f
     return out, notes
 
@@ -356,6 +394,9 @@ def trend(f: pd.DataFrame, errors: list) -> list:
     sub = as_cells(f, [cells[-1]] + cells[:-1])  # reference n8K8
     sub = sub[sub["q"].notna()].copy()
     rows = []
+    if any((sub["cell"] == c).sum() == 0 for c in cells):
+        errors.append("trend: a cell of the four has no judged run")
+        return rows
     try:
         use_tc = any(v >= 2 for v in pm.replication(sub).values())
         res, info = pm.fit_mixed(sub, "q", False, use_tc)
@@ -474,6 +515,10 @@ def levels(df_all: pd.DataFrame, fams: dict, fams_all: dict) -> pd.DataFrame:
             r["depth_reject_share"] = float((e["rejected_depth"].fillna(0) > 0).mean())
             r["hit_cap_share"] = float((e["peak_alive"] >= cap).mean()) if pd.notna(cap) and e["peak_alive"].notna().any() else np.nan
             r["no_subagent_share"] = float((e["opened"] == 0).mean())
+            if "retry_wait_all_s" in e.columns and e["retry_wait_all_s"].notna().any():
+                r["mean_retry_wait_all_s"] = float(e["retry_wait_all_s"].mean())
+                r["heavy_retry_share"] = float(e["heavy_retry"].mean())
+                r["fault_block_runs"] = int(e["fault_block"].sum())
             r["answer_before_kids_done_share"] = float((e["kids_after_answer"].fillna(0) > 0).mean())
             if r["q"] == r["q"] and r["total_yuan"] == r["total_yuan"] and r["total_yuan"] > 0:
                 r["points_per_yuan"] = r["q"] / r["total_yuan"]
@@ -540,6 +585,7 @@ def main() -> None:
     ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--merge-index", type=Path, default=Path("tasks/phase2-merge-index.json"))
     ap.add_argument("--skip-joint", action="store_true", help="skip the joint models (faster dry runs)")
+    ap.add_argument("--retry", nargs="*", default=[], help="retry_waits.py outputs of the batches (results/analysis-<batch>-retry.json)")
     a = ap.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
     lines: list[str] = []
@@ -549,11 +595,12 @@ def main() -> None:
         lines.append(msg)
 
     df = load(a.runs, a.merge_index, log)
+    df = join_retries(df, a.retry, log)
     sim = df.attrs["simulated"]
     errors: list[str] = []
     all_rows, notes_by = [], {}
     fams_by = {}
-    for version in ("confirmatory", "all-runs", "with-leaks", "rep1"):
+    for version in ("confirmatory", "all-runs", "with-leaks", "rep1", "no-fault"):
         fams, notes = build_families(df, version, log)
         fams_by[version], notes_by[version] = fams, notes
         log(f"\n== rows, version {version} ==")
@@ -579,11 +626,11 @@ def main() -> None:
             for r in rows:
                 r["contrast_id"] = cid
             add(rows, family, "confirmatory")
-        if version == "rep1":  # money and time against the reference, first repetitions only
-            for family in ("A", "B", "G"):
+        if version in ("rep1", "no-fault"):  # money and time against the reference in the two side versions
+            for family in ("A", "B", "G", "D"):
                 for cell, ref in EXPLORATORY[family]:
-                    if cell != "merge4" and ref != "merge4":
-                        add(two_cell(fams[family], cell, ref, OUT_REPORT[:4], errors, f"rep1 {family}"), family, "exploratory")
+                    if family in fams and not (version == "rep1" and "merge4" in (cell, ref)):
+                        add(two_cell(fams[family], cell, ref, OUT_REPORT[:4], errors, f"{version} {family}"), family, "exploratory")
         if version != "confirmatory":
             continue
         # exploratory contrasts: two cells, paired, and the joint model of the family
@@ -666,10 +713,10 @@ def main() -> None:
         m = m.iloc[0]
         md.append(f"| {cid} | {name} | {test} | {exp} | {f_diff(m)} | {f_diff(p.iloc[0]) if len(p) else '-'} | {int(m['n_pairs'])} | {m['p']:.3g} | "
                   f"{m['p_holm']:.3g} | {m['verdict']} |")
-    md += ["", "## 三套敏感性版本（模型估计 [95%]，Holm p）", "", "| 编号 | 确认性 | 全部运行（失败按实际得分） | 含泄漏标记的运行 | 只用第一次重复 |", "|---|---|---|---|---|"]
+    md += ["", "## 四套敏感性版本（模型估计 [95%]，Holm p）", "", "| 编号 | 确认性 | 全部运行（失败按实际得分） | 含泄漏标记的运行 | 只用第一次重复 | 去掉接口故障区组 |", "|---|---|---|---|---|---|"]
     for cid, *_ in CONFIRMATORY:
         cells_ = []
-        for version in ("confirmatory", "all-runs", "with-leaks", "rep1"):
+        for version in ("confirmatory", "all-runs", "with-leaks", "rep1", "no-fault"):
             m = tab[(tab["contrast_id"] == cid) & (tab["version"] == version) & (tab["method"] == "mixed2")]
             cells_.append(f"{f_diff(m.iloc[0])}，p {m.iloc[0]['p_holm']:.3g}" if len(m) else "没算出")
         md.append(f"| {cid} | " + " | ".join(cells_) + " |")
@@ -677,6 +724,7 @@ def main() -> None:
 
     # ---- table1.md
     t1 = [banner + "# 表 1　模块 A 八格对默认（深度 1、K=8）", "",
+          "想开的个数 = 开成的 subagent 数加被拒的开 subagent 调用数，每次运行的平均；被拒的调用可以重试，所以它是调用数，不是不同子任务数。", "",
           "| 格 | 想开的个数 | 开成的个数 | 评分项通过率之差 [95%] | 总费用倍数 [95%] | 用户等的时间倍数 [95%] | 完成率 | 被上限拒过的运行比例 | 同时活着到过上限的运行比例 | 判断 |",
           "|---|---|---|---|---|---|---|---|---|---|"]
     la = lev[lev["family"] == "A"].set_index("cell")
@@ -685,7 +733,8 @@ def main() -> None:
         if cell not in la.index:
             continue
         L_ = la.loc[cell]
-        beh = f"{L_['mean_wanted']:.1f} | {L_['mean_opened']:.1f}"
+        beh = (f"{L_['mean_wanted']:.1f}（被 K 拒 {L_['mean_rejected_cap']:.1f}，被深度拒 {L_['mean_rejected_depth']:.1f}） | {L_['mean_opened']:.1f}"
+               if L_["mean_wanted"] > 0 else "0 | 0")
         tailc = f"{100 * L_['complete_rate']:.0f}% | {100 * L_['stuck_share']:.0f}% | " + (f"{100 * L_['hit_cap_share']:.0f}%" if pd.notna(L_["hit_cap_share"]) else "-")
         if cell == "K8":
             t1.append(f"| 默认 K8 | {beh} | 通过率 {L_['q']:.1f} | {L_['total_yuan']:.2f} 元 | {L_['t_answer_s'] / 60:.1f} 分钟 | {tailc} | 参照 |")
@@ -738,11 +787,15 @@ def main() -> None:
     sm += ["", "## 退出状态（每个家族全部运行）", "", "| 家族 | 格 | 运行 | " + " | ".join(STATUS5) + " |", "|---|---|---|" + "---|" * len(STATUS5)]
     for _, r in lev.iterrows():
         sm.append(f"| {r['family']} | {r['cell']} | {r['runs']} | " + " | ".join(str(int(r[f'status:{s}'])) for s in STATUS5) + " |")
-    sm += ["", "## 时间和费用倍数：全部重复对只用第一次重复", "",
-           "跑批程序先跑完全部第一次重复，再跑第二次；默认格的第二次比同题其他格晚几个小时。下面把模块 A 各格对默认的倍数用两种取法并排。", "",
-           "| 格 | 时间倍数，全部重复 | 时间倍数，只用第一次 | 费用倍数，全部重复 | 费用倍数，只用第一次 |", "|---|---|---|---|---|"]
+    fb = df[df["fault_block"]].groupby(["batch", "task", "rep"]).size()
+    sm += ["", "## 时间和费用倍数的三种取法", "",
+           "跑批程序先跑完全部第一次重复，再跑第二次，默认格的第二次比同题其他格晚几个小时；另有少数区组撞上接口故障，模型请求反复重试。"
+           f"故障区组的认定：一个区组（同一道题同一次重复、并排跑的那些运行）里至少两次且至少四分之一的运行，重试等待超过自己回答时间的 {HEAVY_RETRY:.0%}。"
+           f"共 {len(fb)} 个区组、{int(df['fault_block'].sum())} 次运行"
+           + ("：" + "、".join(f"{b} {t_} 第 {int(r)} 次" for (b, t_, r) in fb.index) if len(fb) else "") + "。", "",
+           "| 格 | 时间倍数，主版本 | 只用第一次重复 | 去掉故障区组 | 费用倍数，主版本 | 只用第一次重复 | 去掉故障区组 |", "|---|---|---|---|---|---|---|"]
     for cell in A_CELLS[1:]:
-        vals = [pick(tab, "A", cell, "K8", o, version=v) for o in ("t_answer_s", "total_yuan") for v in ("confirmatory", "rep1")]
+        vals = [pick(tab, "A", cell, "K8", o, version=v) for o in ("t_answer_s", "total_yuan") for v in ("confirmatory", "rep1", "no-fault")]
         if any(v is not None for v in vals):
             sm.append(f"| {cell} | " + " | ".join(f_ratio(v) if v is not None else "-" for v in vals) + " |")
     if errors:
