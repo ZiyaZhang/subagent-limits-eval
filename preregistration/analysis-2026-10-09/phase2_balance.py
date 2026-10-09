@@ -30,7 +30,9 @@ def main() -> None:
     ap.add_argument("--raw", type=Path, required=True)
     ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--ref", default="W-D1-K8")
+    ap.add_argument("--tools", type=Path, help="tool_errors.py output: failed web searches and page fetches per run")
     a = ap.parse_args()
+    tools = {r["id"]: r for r in json.loads(a.tools.read_text(encoding="utf-8"))} if a.tools and a.tools.exists() else {}
     timing = {r["id"]: r for r in json.loads(a.timing.read_text(encoding="utf-8"))}
     rows = list(csv.DictReader(open(a.raw, encoding="utf-8")))
     by = collections.defaultdict(list)
@@ -41,6 +43,8 @@ def main() -> None:
         hit, miss = float(r["tok_hit"] or 0), float(r["tok_miss"] or 0)
         rec = {"tps": t["tps_med"], "ttft": (t["ttft_med_ms"] or 0) / 1000, "hit": hit, "miss": miss, "start": r["started_utc"],
                "requests": t.get("requests") or 0, "retries": (t.get("flagged") or {}).get("llm/retry", 0)}
+        x = tools.get(r["id"]) or {}
+        rec.update(ws=x.get("web_search", 0), wse=x.get("web_search_error", 0), wf=x.get("web_fetch", 0), wfe=x.get("web_fetch_error", 0))
         by[(r["group"], "all")].append(rec)
         by[(r["group"], f"rep {r['rep']}")].append(rec)
     ref = by.get((a.ref, "rep 1")) or by.get((a.ref, "all"))
@@ -51,8 +55,9 @@ def main() -> None:
     lines = [f"# 平衡性检查：各格拿到的接口速度（{a.raw.name}，{len(rows)} 次运行，其中 {sum(len(v) for (g, k), v in by.items() if k == 'all')} 次有请求计时）", "",
              f"参照：{a.ref} 的第一次重复，输出速度中位数 {ref_tps:.1f} token/秒。输出速度和参照差超过 5% 的行打了标记。", "",
              "重试：模型请求失败后 DSH 自动重发的次数（跑批时配了最多 12 次、间隔 2–60 秒的重试），每千次请求几次、每次运行几次；重试的等待算在运行时间里。", "",
-             "| 格 | 重复 | 运行 | 输出速度中位数（token/秒） | 相对参照 | 首字时间中位数（秒） | 输入读缓存的比例 | 每千次请求重试 | 每次运行重试 | 开始时刻（最早 / 中位 / 最晚，UTC） | 标记 |",
-             "|---|---|---|---|---|---|---|---|---|---|---|"]
+             "搜索失败、打开网页失败：工具调用返回错误的比例（打开网页失败多数是网站拒绝或超时，属正常上网情况；这里只看各格是否一致）。", "",
+             "| 格 | 重复 | 运行 | 输出速度中位数（token/秒） | 相对参照 | 首字时间中位数（秒） | 输入读缓存的比例 | 每千次请求重试 | 每次运行重试 | 搜索失败 | 打开网页失败 | 开始时刻（最早 / 中位 / 最晚，UTC） | 标记 |",
+             "|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
     flagged = []
     for (g, k) in sorted(by, key=lambda x: (x[0], x[1])):
         if k != "all" and g not in multi:
@@ -67,7 +72,9 @@ def main() -> None:
         hit, miss = sum(x["hit"] for x in v), sum(x["miss"] for x in v)
         lines.append(f"| {g} | {'全部' if k == 'all' else '第 ' + k[4:] + ' 次'} | {len(v)} | {tps:.1f} | ×{ratio:.3f} | {st.median(x['ttft'] for x in v):.2f} | "
                      f"{100 * hit / (hit + miss) if hit + miss else 0:.1f}% | {1000 * sum(x['retries'] for x in v) / max(sum(x['requests'] for x in v), 1):.1f} | "
-                     f"{sum(x['retries'] for x in v) / len(v):.1f} | {starts[0][5:16] if starts else '-'} / {starts[len(starts) // 2][5:16] if starts else '-'} / {starts[-1][5:16] if starts else '-'} | {mark} |")
+                     f"{sum(x['retries'] for x in v) / len(v):.1f} | "
+                     + (f"{100 * sum(x['wse'] for x in v) / max(sum(x['ws'] for x in v), 1):.1f}% | {100 * sum(x['wfe'] for x in v) / max(sum(x['wf'] for x in v), 1):.1f}%" if tools else "- | -")
+                     + f" | {starts[0][5:16] if starts else '-'} / {starts[len(starts) // 2][5:16] if starts else '-'} / {starts[-1][5:16] if starts else '-'} | {mark} |")
     lines += ["", ("打了标记的行：" + "、".join(flagged) + "。这些格的时间倍数要和标准化时长并排报。") if flagged else "没有一行的输出速度和参照差超过 5%。"]
     a.out.write_text("\n".join(lines) + "\n", encoding="utf-8")
     print("\n".join(lines[:4]))

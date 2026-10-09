@@ -37,6 +37,8 @@ retries() {  # seconds each run waited for automatic retries of failed model req
   for b in $ALL; do
     [ -s results/analysis-$b-retry.json ] || python $J/retry_waits.py results/runs/$b --out results/analysis-$b-retry.json --jobs 16 > results/analysis-$b-retry.txt 2>&1 \
       && log "retry waits $b: $(tail -n 1 results/analysis-$b-retry.txt | cut -c1-200)" || true
+    [ -s results/analysis-$b-toolerrors.json ] || PYTHONPATH=$P/$J python $J/tool_errors.py results/runs/$b --out results/analysis-$b-toolerrors.json --jobs 16 > results/analysis-$b-toolerrors.txt 2>&1 \
+      && log "tool errors $b: $(head -n 1 results/analysis-$b-toolerrors.txt | cut -c1-200)" || true
   done
 }
 
@@ -55,7 +57,8 @@ balance() {  # interface speed by cell (names cells, shows no outcome): request 
     [ -s results/analysis-$b-reqtiming.json ] || python -u $J/request_timing.py results/runs/$b --json results/analysis-$b-reqtiming.json > results/analysis-$b-reqtiming.txt 2>&1 \
       || { log "request timing $b FAILED"; continue; }
     ref=W-D1-K8
-    python $J/phase2_balance.py --timing results/analysis-$b-reqtiming.json --raw results/master/raw/$b.csv --out results/analysis-$b-balance.md --ref $ref > results/analysis-$b-balance.txt 2>&1 \
+    python $J/phase2_balance.py --timing results/analysis-$b-reqtiming.json --raw results/master/raw/$b.csv --out results/analysis-$b-balance.md --ref $ref \
+      --tools results/analysis-$b-toolerrors.json > results/analysis-$b-balance.txt 2>&1 \
       && log "balance $b: $(tail -n 2 results/analysis-$b-balance.txt | head -n 1)" || log "balance $b FAILED (see results/analysis-$b-balance.txt)"
   done
 }

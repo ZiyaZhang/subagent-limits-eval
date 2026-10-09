@@ -86,6 +86,7 @@ OUT_REPORT = [("q", "diff"), ("total_yuan", "ratio"), ("model_yuan", "ratio"), (
 OUT_CODE = [("q", "diff"), ("total_yuan", "ratio"), ("t_answer_s", "ratio"), ("all_written_s", "ratio")]
 LEAK_MAX = 0.08
 HEAVY_RETRY, FAULT_SHARE, FAULT_MIN = 0.10, 0.25, 2  # see "no-fault version" above
+JUDGE_MAX_CHARS = 150000  # drb2_score.py: the judge reads the first 150,000 characters of a report
 A_CELLS = ["K8", "D0", "K1", "K2", "K3", "K4", "D2K8", "D2K16", "D3K8", "D2K2", "D2K4", "D3K2", "D3K4", "D3K16", "D3K64"]
 B_CELLS = ["n8K8", "n8K2", "n8K4", "n8K6", "n3K8", "K8", "D0"]
 G_CELLS = ["D0", "more", "seg", "merge4", "K8", "n3K8", "n8K8"]
@@ -519,6 +520,7 @@ def levels(df_all: pd.DataFrame, fams: dict, fams_all: dict) -> pd.DataFrame:
             r["depth_reject_share"] = float((e["rejected_depth"].fillna(0) > 0).mean())
             r["hit_cap_share"] = float((e["peak_alive"] >= cap).mean()) if pd.notna(cap) and e["peak_alive"].notna().any() else np.nan
             r["no_subagent_share"] = float((e["opened"] == 0).mean())
+            r["reports_over_judge_cap"] = int((e["report_chars"] > JUDGE_MAX_CHARS).sum())
             if "retry_wait_all_s" in e.columns and e["retry_wait_all_s"].notna().any():
                 r["mean_retry_wait_all_s"] = float(e["retry_wait_all_s"].mean())
                 r["heavy_retry_share"] = float(e["heavy_retry"].mean())
@@ -808,6 +810,10 @@ def main() -> None:
         vals = [pick(tab, "A", cell, "K8", o, version=v) for o in ("t_answer_s", "total_yuan") for v in ("confirmatory", "rep1", "no-fault")]
         if any(v is not None for v in vals):
             sm.append(f"| {cell} | " + " | ".join(f_ratio(v) if v is not None else "-" for v in vals) + " |")
+    over = lev[lev["reports_over_judge_cap"] > 0]
+    sm += ["", f"## 超过判分读入上限的报告（判分只读前 {JUDGE_MAX_CHARS:,} 个字符）", ""]
+    sm += (["| 家族 | 格 | 运行 | 超长报告 |", "|---|---|---|---|"] + [f"| {r['family']} | {r['cell']} | {r['runs']} | {int(r['reports_over_judge_cap'])} |" for _, r in over.iterrows()]
+           if len(over) else ["没有。"])
     if errors:
         sm += ["", "## 没算出来的（要处理）", ""] + [f"- {e}" for e in errors]
     (a.out / "summary.md").write_text("\n".join(sm) + "\n", encoding="utf-8")
