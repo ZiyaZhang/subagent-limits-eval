@@ -55,6 +55,7 @@ EXP = Path(os.environ["EXP_ROOT"]).resolve() if os.environ.get("EXP_ROOT") else 
 PRICES = {"deepseek-flash": {"peak": {"miss": 2.0, "hit": 0.04, "out": 8.0}, "offpeak": {"miss": 1.0, "hit": 0.02, "out": 4.0}},
           "deepseek-v4-pro": {"peak": {"miss": 9.0, "hit": 0.30, "out": 27.0}, "offpeak": {"miss": 4.5, "hit": 0.15, "out": 13.5}}}
 PRICE = PRICES["deepseek-flash"]["peak"]  # phase 1 ran deepseek-flash only
+P2_SEARCH_PROBE = "results/search-cost-probe-p2-main.json"  # phase 2 re-measures the price on 100 requests of its own main batch (protocol 五)
 SEARCH_PROBE = "results/search-cost-probe-main-office.json"  # yuan per request of the search plugin's own model, measured on a sample
 
 BATCHES = ["main-office", "main-code", "main-code-B", "ctl-main", "wait-office-2", "ctl-dk", "ctl-free", "ctl-free-b2", "xl-main", "xl-depth", "office-confirm", "office-highk",
@@ -252,6 +253,8 @@ def p2_complete(x: dict, man: dict | None, judge: dict | None) -> tuple:
 
 def build(raw_dir: Path, judge_dir: Path, batches: list) -> tuple:
     price_search = json.loads((EXP / SEARCH_PROBE).read_text(encoding="utf-8"))["per_request_cny_peak"]
+    p2_probe = read_json(EXP / P2_SEARCH_PROBE)
+    price_search_p2 = p2_probe["per_request_cny_peak"] if p2_probe else price_search
     old_batches = [b for b in batches if b in BATCHES]
     old, facts, bench, recog, xl_grade = {}, {}, {}, {}, {}
     if old_batches:
@@ -347,7 +350,7 @@ def build(raw_dir: Path, judge_dir: Path, batches: list) -> tuple:
                    "review_kids": o.get("review_kids", "") if o else "",
                    "spawn_calls": x["spawn_calls"], "rejected_depth": x["rejected_depth"], "rejected_cap": x["rejected_cap"],
                    "tok_miss": x["tok_miss"], "tok_hit": x["tok_hit"], "tok_out": x["tok_out"], "search_requests": x["search_requests"], "n_web_search": x["n_web_search"], "n_web_fetch": x["n_web_fetch"],
-                   "pages_saved": o.get("pages_saved", "") if o else "", "model_yuan": round(model, 4), "search_yuan": round(sr * price_search, 4) if fam in ("office", "ws", "drb2") else 0.0,
+                   "pages_saved": o.get("pages_saved", "") if o else "", "model_yuan": round(model, 4), "search_yuan": round(sr * (price_search_p2 if is_p2 else price_search), 4) if fam in ("office", "ws", "drb2") else 0.0,
                    "root_turns": x["root_turns"], "mem_peak_gb": x["mem_peak_gb"], "parallel": x["parallel"], "report_chars": o.get("deliv_chars", "") if o else "",
                    "complete": "", "recognized": recog.get(x["id"], ""), "q": "", "q_metric": "", "facts63": "", "facts_all": "", "facts_wrong": "", "facts_right_n": "", "tests_failed": "", "rubric_score": "",
                    "module": "", "model": model_name, "model_requested": x.get("model_requested", ""),
@@ -361,6 +364,7 @@ def build(raw_dir: Path, judge_dir: Path, batches: list) -> tuple:
                 note.setdefault("human_leak", 0)
                 note["human_leak"] += int(x["id"] in human_leak)
                 note["rows"] += 1
+                note["search_price"] = (round(price_search_p2, 6), "phase-2 probe" if p2_probe else "PHASE-1 probe (the phase-2 probe has not been run)")
                 note["module"][row["module"]] += 1
                 if fam == "drb2":
                     g1 = read_json(judge_dir / JUDGE_GPT / b / f"{x['id']}.r1.json")
@@ -534,7 +538,7 @@ def main() -> None:
               + "; sentence from " + ", ".join(f"{k} {v}" for k, v in n["hint_source"].items()) + f"; judged {n['judged']}"
               + ("; no score: " + ", ".join(f"{k} {v}" for k, v in n["judge_note"].items()) if n["judge_note"] else "")
               + "; complete from " + (", ".join(f"{k} {v}" for k, v in n["complete_source"].items()) or "-")
-              + f"; flagged by the human leak look {n.get('human_leak', 0)}")
+              + f"; flagged by the human leak look {n.get('human_leak', 0)}; search price {n.get('search_price')}")
         if n["unresolved"]:
             print(f"  WARNING {b}: the sentence of {len(n['unresolved'])} runs could not be resolved (hint left empty): " + ", ".join(n["unresolved"][:10]) + (" ..." if len(n["unresolved"]) > 10 else ""))
 

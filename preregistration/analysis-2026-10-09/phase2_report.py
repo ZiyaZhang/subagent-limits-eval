@@ -30,6 +30,8 @@ Rows
                      of the cells that have two (default, depth 2 with K=8, "8 parts" with K=4 and K=8) and the extra
                      "no subagents" runs came hours later than the cells they are compared with. Money and time
                      multiples are therefore given in this version too; merge4 has no rep1 version (it needs all four).
+  new33 version      the confirmatory set restricted to the tasks that phase 1 did not run (protocol 三: 33 of the 66
+                     tasks were used in phase 1; the index marks them). Confirmatory contrasts only.
   no-fault version   the confirmatory set without the blocks hit by the interface fault. With --retry (retry_waits.py)
                      every run carries the seconds it waited between a failed model request and its automatic retry.
                      A run is "heavy" when the waits of all its sessions exceed 10% of its answer time; a block (batch,
@@ -262,12 +264,14 @@ def dropped_tasks(batch_df: pd.DataFrame, refs=("K8", "D0")) -> dict:
 
 
 def build_families(df: pd.DataFrame, mode: str, log) -> tuple:
-    """mode: confirmatory / all-runs / with-leaks / rep1 / no-fault. Returns ({family: frame}, notes)."""
+    """mode: confirmatory / all-runs / with-leaks / rep1 / no-fault / new33. Returns ({family: frame}, notes)."""
     keep_leaks, keep_failed = mode == "with-leaks", mode == "all-runs"
     notes = {"dropped_tasks": {}, "mode": mode}
     work = df.copy()
     if mode == "rep1":
         work = work[(work["rep"] == 1) & (work["batch"] != "p2-merge")]
+    if mode == "new33":
+        work = work[~work["base_task"].isin(df.attrs.get("phase1_tasks") or set())]
     if keep_failed:  # a run that handed in nothing satisfies nothing
         none = work["q"].isna() & (work["complete"] == 0) & (work["family"] == "drb2")
         work.loc[none, ["q", "drb2_recall", "drb2_analysis", "drb2_presentation"]] = 0.0
@@ -585,6 +589,7 @@ def main() -> None:
     ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--merge-index", type=Path, default=Path("tasks/phase2-merge-index.json"))
     ap.add_argument("--skip-joint", action="store_true", help="skip the joint models (faster dry runs)")
+    ap.add_argument("--index", type=Path, default=Path("tasks/phase2-drb2-index.json"), help="task index (marks the tasks phase 1 ran)")
     ap.add_argument("--retry", nargs="*", default=[], help="retry_waits.py outputs of the batches (results/analysis-<batch>-retry.json)")
     a = ap.parse_args()
     a.out.mkdir(parents=True, exist_ok=True)
@@ -596,11 +601,15 @@ def main() -> None:
 
     df = load(a.runs, a.merge_index, log)
     df = join_retries(df, a.retry, log)
+    index = json.loads(a.index.read_text(encoding="utf-8")) if a.index and a.index.exists() else {}
+    df.attrs["phase1_tasks"] = {k for k, v in index.items() if v.get("phase1")}
+    log(f"task index: {len(index)} tasks, {len(df.attrs['phase1_tasks'])} of them run in phase 1" if index else "task index: not given (--index); no new33 version")
     sim = df.attrs["simulated"]
     errors: list[str] = []
     all_rows, notes_by = [], {}
     fams_by = {}
-    for version in ("confirmatory", "all-runs", "with-leaks", "rep1", "no-fault"):
+    versions = ["confirmatory", "all-runs", "with-leaks", "rep1", "no-fault"] + (["new33"] if df.attrs.get("phase1_tasks") else [])
+    for version in versions:
         fams, notes = build_families(df, version, log)
         fams_by[version], notes_by[version] = fams, notes
         log(f"\n== rows, version {version} ==")
@@ -713,10 +722,11 @@ def main() -> None:
         m = m.iloc[0]
         md.append(f"| {cid} | {name} | {test} | {exp} | {f_diff(m)} | {f_diff(p.iloc[0]) if len(p) else '-'} | {int(m['n_pairs'])} | {m['p']:.3g} | "
                   f"{m['p_holm']:.3g} | {m['verdict']} |")
-    md += ["", "## 四套敏感性版本（模型估计 [95%]，Holm p）", "", "| 编号 | 确认性 | 全部运行（失败按实际得分） | 含泄漏标记的运行 | 只用第一次重复 | 去掉接口故障区组 |", "|---|---|---|---|---|---|"]
+    md += ["", "## 五套敏感性版本（模型估计 [95%]，Holm p）", "",
+           "| 编号 | 确认性 | 全部运行（失败按实际得分） | 含泄漏标记的运行 | 只用第一次重复 | 去掉接口故障区组 | 只用第一阶段没跑过的题 |", "|---|---|---|---|---|---|---|"]
     for cid, *_ in CONFIRMATORY:
         cells_ = []
-        for version in ("confirmatory", "all-runs", "with-leaks", "rep1", "no-fault"):
+        for version in ("confirmatory", "all-runs", "with-leaks", "rep1", "no-fault", "new33"):
             m = tab[(tab["contrast_id"] == cid) & (tab["version"] == version) & (tab["method"] == "mixed2")]
             cells_.append(f"{f_diff(m.iloc[0])}，p {m.iloc[0]['p_holm']:.3g}" if len(m) else "没算出")
         md.append(f"| {cid} | " + " | ".join(cells_) + " |")
