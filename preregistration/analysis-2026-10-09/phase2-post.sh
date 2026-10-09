@@ -31,6 +31,7 @@ REPORT_CSV=$(echo $REPORT | tr ' ' ',')
 ALL="$REPORT"; have p2-f && ALL="$ALL p2-f"
 ALL_CSV=$(echo $ALL | tr ' ' ',')
 HC=results/human-check
+[ -n "$ALL" ] || { log "no phase-2 run table in results/master/raw yet (a batch writes it when it finishes): nothing to do"; exit 1; }
 log "mode $MODE; report batches:$REPORT; all:$ALL; scripts $(sha256sum $J/phase2_report.py $J/master_table.py $J/phase2_models.py | cut -c1-12 | tr '\n' ' ')"
 
 retries() {  # seconds each run waited for automatic retries of failed model requests (names no cell)
