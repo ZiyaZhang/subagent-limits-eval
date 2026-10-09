@@ -18,6 +18,6 @@ fi
 mkdir -p $H/leak
 scp -q "dev-cpu-hg:$P/results/human-check/form.md" "dev-cpu-hg:$P/results/human-check/answer-template.csv" $H/
 scp -q "dev-cpu-hg:$P/results/human-check/leak/leak-form.md" "dev-cpu-hg:$P/results/human-check/leak/leak-answers-template.csv" $H/leak/
-python3 scripts/label_page.py --form $H/form.md --template $H/answer-template.csv --choices 满足,不满足,拿不准 --save-as answers.csv --out $H/form.html --title "评分项判定核对（200 条）"
+python3 scripts/label_page.py --form $H/form.md --template $H/answer-template.csv --choices 满足,不满足,拿不准 --save-as answers.csv --out $H/form.html --title "评分项判定核对（$(($(wc -l < $H/answer-template.csv) - 1)) 条）"
 python3 scripts/label_page.py --form $H/leak/leak-form.md --template $H/leak/leak-answers-template.csv --choices 没有,有,拿不准 --save-as leak-answers.csv --out $H/leak/leak-form.html --title "解盲前的泄漏人工关"
 echo "open: $PWD/$H/form.html and $PWD/$H/leak/leak-form.html"

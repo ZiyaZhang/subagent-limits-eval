@@ -29,7 +29,7 @@ from pathlib import Path
 ENTRY = re.compile(r"^## 条目 (\d+)\s*$", re.M)
 BOLD = re.compile(r"\*\*(.+?)\*\*")
 CODE = re.compile(r"`([^`]+)`")
-BOXES = re.compile(r"^(?:判断：)?\s*\[ \].*$")
+BOXES = re.compile(r"^.{0,12}\[ \].*\[ \].*$")  # the paper form's line of tick boxes, with or without a label in front
 
 
 def inline(s: str) -> str:

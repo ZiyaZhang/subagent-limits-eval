@@ -73,6 +73,21 @@ pre)
     log "$b: $n_runs runs, $n_judged judge files"
   done
   retries
+  # The human check of judgements: 60 pairs = 120 entries (her decision of 2026-10-09, the plan's fallback for a short
+  # day: both strata cut in proportion, 30 pairs where the two judges agree and 30 where they disagree). The chain's last
+  # stage wrote the 100-pair version; nobody has opened it, it is set aside and the sample is drawn again with the same seed.
+  HC_AGREE=${HC_AGREE:-30}; HC_DISAGREE=${HC_DISAGREE:-30}
+  if [ ! -s $HC/answers.csv ]; then
+    have_n=$(python -c "import json,sys; print(len(json.load(open(sys.argv[1]))['entries']))" $HC/sample.json 2>/dev/null || echo 0)
+    if [ "$have_n" != "$((2 * (HC_AGREE + HC_DISAGREE)))" ]; then
+      [ -d $HC ] && mv $HC results/human-check-chain-$(date -u +%Y%m%dT%H%M%SZ) && log "the chain's human-check sample ($have_n entries) set aside"
+      python $J/human_check_sample.py make --gpt results/drb2-score-gpt/p2-main --opus results/drb2-score/p2-main --runs results/master/raw/p2-main.csv \
+        --reports results/runs/p2-main --out $HC --seed 20261008 --n-agree $HC_AGREE --n-disagree $HC_DISAGREE > results/human-check.out 2>&1 \
+        && log "human-check sample: $(grep -E '^sample:' results/human-check.out | cut -c1-160)" || { log "human-check sample FAILED (results/human-check.out)"; exit 1; }
+    fi
+  else
+    log "answers.csv exists: the human-check sample is left as it is"
+  fi
   if have p2-f; then
     python -u $J/write_timing.py results/runs/p2-f --task toolkit-xl --file-regex '(?:^|/)workspace/(toolkit/.+\.py)$' --units 61 \
       --out results/analysis-p2-f-timing-xl.json > results/analysis-p2-f-timing-xl.txt 2>&1 && log "timing of the large coding task written" || log "timing xl FAILED"
@@ -88,6 +103,7 @@ pre)
     && log "judgments table and agreement written (results/analysis-phase2-judge/agreement.md)" || log "judgments FAILED"
   PYTHONPATH=$P/$J python $J/leak_top20.py make --scores results/drb2-score-gpt --batches "$REPORT_CSV" --runs results/runs --index tasks/phase2-drb2-index.json \
     --merge-index tasks/phase2-merge-index.json --out $HC/leak > $HC/leak.out 2>&1 && log "leak look: $(tail -n 3 $HC/leak.out | head -n 1)" || log "leak look FAILED (see $HC/leak.out)"
+  mkdir -p $HC/leak
   log "forms for her: $HC/form.md + $HC/answer-template.csv (save as answers.csv); $HC/leak/leak-form.md + leak-answers-template.csv (save as leak-answers.csv)"
   ;;
 unblind)
