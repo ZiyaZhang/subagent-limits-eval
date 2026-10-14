@@ -1,0 +1,33 @@
+120 entries; answered 81, 拿不准 39 (agree 26, disagree 13); answers sha256 7cec8ab030783e32cbc53f43e2e99d6f892e8b55234ebc770a9cc28b5f32a62a
+
+human vs GPT (entries with a 满足/不满足 verdict):
+  all                                n=  81 agreement 0.679 kappa 0.367  (human 1/judge 1 29, 1/0 8, 0/1 18, 0/0 26)
+  stratum agree                      n=  34 agreement 0.794 kappa 0.588  (human 1/judge 1 17, 1/0 0, 0/1 7, 0/0 10)
+  stratum disagree                   n=  47 agreement 0.596 kappa 0.189  (human 1/judge 1 12, 1/0 8, 0/1 11, 0/0 16)
+  dim info_recall                    n=  45 agreement 0.733 kappa 0.47  (human 1/judge 1 14, 1/0 3, 0/1 9, 0/0 19)
+  dim analysis                       n=  27 agreement 0.519 kappa 0.069  (human 1/judge 1 7, 1/0 4, 0/1 9, 0/0 7)
+  dim presentation                   n=   9 agreement 0.889 kappa 0.0  (human 1/judge 1 8, 1/0 1, 0/1 0, 0/0 0)
+  excerpt by evidence                n=  66 agreement 0.606 kappa 0.169  (human 1/judge 1 29, 1/0 8, 0/1 18, 0/0 11)
+  excerpt by keyword                 n=  15 agreement 1.000 kappa None  (human 1/judge 1 0, 1/0 0, 0/1 0, 0/0 15)
+  excerpt by none                    n=0
+
+human vs OPUS (entries with a 满足/不满足 verdict):
+  all                                n=  81 agreement 0.716 kappa 0.448  (human 1/judge 1 34, 1/0 3, 0/1 20, 0/0 24)
+  stratum agree                      n=  34 agreement 0.794 kappa 0.588  (human 1/judge 1 17, 1/0 0, 0/1 7, 0/0 10)
+  stratum disagree                   n=  47 agreement 0.660 kappa 0.346  (human 1/judge 1 17, 1/0 3, 0/1 13, 0/0 14)
+  dim info_recall                    n=  45 agreement 0.711 kappa 0.455  (human 1/judge 1 16, 1/0 1, 0/1 12, 0/0 16)
+  dim analysis                       n=  27 agreement 0.630 kappa 0.293  (human 1/judge 1 9, 1/0 2, 0/1 8, 0/0 8)
+  dim presentation                   n=   9 agreement 1.000 kappa None  (human 1/judge 1 9, 1/0 0, 0/1 0, 0/0 0)
+  excerpt by evidence                n=  66 agreement 0.652 kappa 0.245  (human 1/judge 1 34, 1/0 3, 0/1 20, 0/0 9)
+  excerpt by keyword                 n=  15 agreement 1.000 kappa None  (human 1/judge 1 0, 1/0 0, 0/1 0, 0/0 15)
+  excerpt by none                    n=0
+
+GPT accuracy weighted by the population shares of the strata: 0.770 [0.649, 0.891] (agree 0.794 x 0.878; disagree 0.596 x 0.122)
+
+OPUS accuracy weighted by the population shares of the strata: 0.778 [0.657, 0.898] (agree 0.794 x 0.878; disagree 0.660 x 0.122)
+
+paired difference, W-D1-K8 minus D0, on the 33 pairs with both sides answered (share of items satisfied, percentage points):
+  human  -6.1 pp [-23.7, +11.5] (n=33); stratum-weighted -6.5 pp (agree -6.7 (n=15); disagree -5.6 (n=18))
+  gpt    -3.0 pp [-21.8, +15.7] (n=33); stratum-weighted +9.7 pp (agree +13.3 (n=15); disagree -16.7 (n=18))
+  opus   +0.0 pp [-17.7, +17.7] (n=33); stratum-weighted +10.4 pp (agree +13.3 (n=15); disagree -11.1 (n=18))
+  the GPT-judged difference on these pairs that survives the human verdicts: 200%
