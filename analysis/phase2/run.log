@@ -1,0 +1,111 @@
+input: results/master-p2/runs.csv (sha256 0e7a33ee7fad2871...), 2200 rows, phase-2 rows: 2200
+phase-2 rows by batch and module: p2-d/D=180, p2-f/F=116, p2-main/A=726, p2-main/B=462, p2-main/C=66, p2-main/G=200, p2-main/H=330, p2-merge/G=40, p2-o/O=80
+retry waits: 2200 of 2200 runs have a record; 90 had a retry; 59 heavy (waits above 10% of the answer time); faulty blocks: 3 (64 runs)
+  faulty block p2-main drb2_zh_037 rep 1: 19 of 20 runs heavy
+  faulty block p2-main drb2_zh_105 rep 1: 21 of 22 runs heavy
+  faulty block p2-main drb2_zh_119 rep 1: 19 of 22 runs heavy
+task index: 66 tasks, 33 of them run in phase 1
+merge pipelines: 40 of 40 merge runs; inputs from index 40
+
+== rows, version confirmatory ==
+  A                      in  1119  task dropped  65  leaks  16  failed  20  used  1018  tasks 62
+  B                      in   657  task dropped  37  leaks  10  failed   6  used   604  tasks 62
+  G                      in   480  task dropped  24  leaks   8  failed   1  used   447  tasks 38
+  D                      in   180  task dropped  10  leaks   0  failed   0  used   170  tasks 38
+  A@D                    in   279  task dropped  13  leaks   3  failed   4  used   259  tasks 38
+  O                      in    80  task dropped   4  leaks   0  failed   1  used    75  tasks 38
+  F:n1-chain16           in    20  task dropped   0  leaks   0  failed   0  used    20  tasks 1
+  F:pw-exercises-free    in    40  task dropped   0  leaks   0  failed   0  used    40  tasks 1
+  F:toolkit-xl           in    56  task dropped   0  leaks   0  failed   0  used    56  tasks 1
+  tasks out of every contrast of p2-main (reference cell flagged, no replacement): drb2_zh_013 (K8), drb2_zh_027 (D0), drb2_zh_031 (D0), drb2_zh_043 (K8/D0)
+  tasks out of every contrast of p2-d (reference cell flagged, no replacement): drb2_zh_043 (D0)
+  tasks out of every contrast of p2-o (reference cell flagged, no replacement): drb2_zh_025 (K8), drb2_zh_043 (K8)
+  joint model A: reference K8, cells ['K8', 'D0', 'K1', 'K2', 'K3', 'K4', 'D2K8', 'D2K16', 'D3K8', 'D2K2', 'D2K4', 'D3K2', 'D3K4', 'D3K16', 'D3K64'], 1018 rows
+  joint model B: reference n8K8, cells ['n8K8', 'n8K2', 'n8K4', 'n8K6', 'n3K8', 'K8', 'D0'], 604 rows
+  joint model G: reference D0, cells ['D0', 'more', 'seg', 'merge4', 'K8', 'n3K8', 'n8K8'], 447 rows
+  joint model D: reference K8, cells ['K8', 'D0', 'K2', 'D2K8', 'D3K64'], 170 rows
+
+== rows, version all-runs ==
+  A                      in  1119  task dropped  65  leaks  16  failed   0  used  1038  tasks 62
+  B                      in   657  task dropped  37  leaks  10  failed   0  used   610  tasks 62
+  G                      in   480  task dropped  24  leaks   8  failed   0  used   448  tasks 38
+  D                      in   180  task dropped  10  leaks   0  failed   0  used   170  tasks 38
+  A@D                    in   279  task dropped  13  leaks   3  failed   0  used   263  tasks 38
+  O                      in    80  task dropped   4  leaks   0  failed   0  used    76  tasks 38
+  F:n1-chain16           in    20  task dropped   0  leaks   0  failed   0  used    20  tasks 1
+  F:pw-exercises-free    in    40  task dropped   0  leaks   0  failed   0  used    40  tasks 1
+  F:toolkit-xl           in    56  task dropped   0  leaks   0  failed   0  used    56  tasks 1
+
+== rows, version with-leaks ==
+  A                      in  1122  task dropped   0  leaks   0  failed  24  used  1098  tasks 66
+  B                      in   660  task dropped   0  leaks   0  failed   8  used   652  tasks 66
+  G                      in   480  task dropped   0  leaks   0  failed   1  used   479  tasks 40
+  D                      in   180  task dropped   0  leaks   0  failed   0  used   180  tasks 40
+  A@D                    in   280  task dropped   0  leaks   0  failed   6  used   274  tasks 40
+  O                      in    80  task dropped   0  leaks   0  failed   1  used    79  tasks 40
+  F:n1-chain16           in    20  task dropped   0  leaks   0  failed   0  used    20  tasks 1
+  F:pw-exercises-free    in    40  task dropped   0  leaks   0  failed   0  used    40  tasks 1
+  F:toolkit-xl           in    56  task dropped   0  leaks   0  failed   0  used    56  tasks 1
+
+== rows, version rep1 ==
+  A                      in   986  task dropped  86  leaks   8  failed  18  used   874  tasks 60
+  B                      in   458  task dropped  38  leaks   5  failed   2  used   413  tasks 60
+  G                      in   240  task dropped  18  leaks   3  failed   0  used   219  tasks 37
+  D                      in   180  task dropped  14  leaks   0  failed   0  used   166  tasks 37
+  A@D                    in   198  task dropped  13  leaks   3  failed   3  used   179  tasks 37
+  O                      in    40  task dropped   0  leaks   1  failed   1  used    38  tasks 38
+  F:n1-chain16           in     2  task dropped   0  leaks   0  failed   0  used     2  tasks 1
+  F:pw-exercises-free    in     5  task dropped   0  leaks   0  failed   0  used     5  tasks 1
+  F:toolkit-xl           in     7  task dropped   0  leaks   0  failed   0  used     7  tasks 1
+
+== rows, version no-fault ==
+  A                      in  1119  task dropped  65  leaks  16  failed  20  used   973  tasks 62
+  B                      in   657  task dropped  37  leaks  10  failed   6  used   584  tasks 62
+  G                      in   480  task dropped  24  leaks   8  failed   1  used   433  tasks 38
+  D                      in   180  task dropped  10  leaks   0  failed   0  used   170  tasks 38
+  A@D                    in   279  task dropped  13  leaks   3  failed   4  used   249  tasks 38
+  O                      in    80  task dropped   4  leaks   0  failed   1  used    75  tasks 38
+  F:n1-chain16           in    20  task dropped   0  leaks   0  failed   0  used    20  tasks 1
+  F:pw-exercises-free    in    40  task dropped   0  leaks   0  failed   0  used    40  tasks 1
+  F:toolkit-xl           in    56  task dropped   0  leaks   0  failed   0  used    56  tasks 1
+
+== rows, version new33 ==
+  A                      in   560  task dropped  33  leaks  15  failed  10  used   502  tasks 31
+  B                      in   329  task dropped  19  leaks   8  failed   4  used   298  tasks 31
+  G                      in   192  task dropped  12  leaks   5  failed   0  used   175  tasks 15
+  D                      in    70  task dropped   5  leaks   0  failed   0  used    65  tasks 15
+  A@D                    in   112  task dropped   7  leaks   2  failed   3  used   100  tasks 15
+  O                      in    32  task dropped   0  leaks   0  failed   0  used    32  tasks 16
+  F:n1-chain16           in    20  task dropped   0  leaks   0  failed   0  used    20  tasks 1
+  F:pw-exercises-free    in    40  task dropped   0  leaks   0  failed   0  used    40  tasks 1
+  F:toolkit-xl           in    56  task dropped   0  leaks   0  failed   0  used    56  tasks 1
+
+contrasts: 2254 rows; levels: 55 rows; demand: 200 rows
+
+每个对比用只含该两格的分层模型估计（题的随机截距；某格每题两次时另加题乘格的方差分量），旁边是题内配对差的 t 区间。判断词要同时满足 95% 区间不含 0 和校正后 p < 0.05。
+
+| 编号 | 对比 | 检验 | 事前预期 | 模型估计 [95%] | 配对差 [95%] | 题数 | p | Holm p | 判断 |
+|---|---|---|---|---|---|---|---|---|---|
+| C1 | K8 对 D0（A） | 优效 | +2 到 +5 | +2.8 [+1.1, +4.4] | +2.8 [+1.1, +4.5] | 62 | 0.00088 | 0.00792 | 优效 |
+| C2 | K4 对 K8（A） | 显著更差检验 | 没测出，排除 2.5 分以上的损失 | +0.0 [-1.6, +1.6] | +0.0 [-1.6, +1.6] | 61 | 0.97 | 1 | 没测出：排除了 1.6 分以上的损失，排除了 1.6 分以上的提高 |
+| C3 | D2K8 对 K8（A） | 优效检验 | 不优效，排除 2 分以上的提高 | -0.1 [-1.5, +1.3] | -0.1 [-1.5, +1.3] | 62 | 0.891 | 1 | 没测出：排除了 1.5 分以上的损失，排除了 1.3 分以上的提高 |
+| C4 | D3K8 对 D2K8（A） | 优效检验 | 不优效 | -0.6 [-2.5, +1.2] | -0.6 [-2.5, +1.3] | 57 | 0.505 | 1 | 没测出：排除了 2.5 分以上的损失，排除了 1.2 分以上的提高 |
+| C5 | D2K16 对 D2K8（A） | 优效检验 | 不优效，费用更高 | +1.8 [+0.2, +3.5] | +1.8 [+0.2, +3.4] | 56 | 0.0321 | 0.225 | 没测出：排除了 0.0 分以上的损失，排除了 3.5 分以上的提高（区间不含 0，但多重校正后 p ≥ 0.05） |
+| C6 | n8K8 对 n3K8（B） | 优效检验 | 不优效，费用约两倍 | +0.1 [-1.6, +1.8] | +0.1 [-1.6, +1.7] | 60 | 0.934 | 1 | 没测出：排除了 1.6 分以上的损失，排除了 1.8 分以上的提高 |
+| C7 | n8K4 对 n8K8（B） | 显著更差检验 | 没测出或小幅更差，时间更长 | -0.2 [-1.9, +1.5] | -0.1 [-1.9, +1.6] | 62 | 0.816 | 1 | 没测出：排除了 1.9 分以上的损失，排除了 1.5 分以上的提高 |
+| C8 | 质量随 K 的线性趋势，每翻一倍（B，指令 8） | 趋势 > 0 | 正 | +1.7 [+0.6, +2.8] | +1.7 [+0.1, +3.4] | 62 | 0.00317 | 0.0253 | 优效 |
+| C9 | K8 对 D0（D） | 优效 | 方向为正 | +1.9 [-0.8, +4.6] | +1.9 [-0.9, +4.6] | 38 | 0.172 | 1 | 没测出：排除了 0.8 分以上的损失，排除了 4.6 分以上的提高 |
+
+## 五套敏感性版本（模型估计 [95%]，Holm p）
+
+| 编号 | 确认性 | 全部运行（失败按实际得分） | 含泄漏标记的运行 | 只用第一次重复 | 去掉接口故障区组 | 只用第一阶段没跑过的题 |
+|---|---|---|---|---|---|---|
+| C1 | +2.8 [+1.1, +4.4]，p 0.00792 | +2.8 [+1.1, +4.4]，p 0.00792 | +2.3 [+0.7, +3.9]，p 0.041 | +2.9 [+1.2, +4.6]，p 0.00712 | +2.6 [+0.8, +4.3]，p 0.0297 | +2.0 [-0.3, +4.2]，p 0.584 |
+| C2 | +0.0 [-1.6, +1.6]，p 1 | +0.0 [-1.6, +1.6]，p 1 | +0.1 [-1.4, +1.6]，p 1 | -0.1 [-2.0, +1.9]，p 1 | +0.3 [-1.3, +2.0]，p 1 | +0.6 [-1.6, +2.8]，p 1 |
+| C3 | -0.1 [-1.5, +1.3]，p 1 | -0.2 [-1.6, +1.2]，p 1 | -0.1 [-1.4, +1.2]，p 1 | -0.0 [-2.0, +1.9]，p 1 | -0.2 [-1.7, +1.2]，p 1 | +0.8 [-1.0, +2.6]，p 1 |
+| C4 | -0.6 [-2.5, +1.2]，p 1 | -0.5 [-2.3, +1.2]，p 1 | -0.2 [-1.9, +1.5]，p 1 | -0.8 [-2.8, +1.3]，p 1 | -0.5 [-2.5, +1.4]，p 1 | -2.3 [-4.6, -0.0]，p 0.392 |
+| C5 | +1.8 [+0.2, +3.5]，p 0.225 | +2.1 [+0.4, +3.8]，p 0.124 | +2.0 [+0.4, +3.6]，p 0.0884 | +1.8 [+0.1, +3.5]，p 0.291 | +1.7 [+0.1, +3.4]，p 0.292 | +1.3 [-1.1, +3.7]，p 1 |
+| C6 | +0.1 [-1.6, +1.8]，p 1 | -0.3 [-2.3, +1.7]，p 1 | +0.3 [-1.3, +1.9]，p 1 | -0.6 [-2.6, +1.3]，p 1 | -0.0 [-1.8, +1.7]，p 1 | +0.1 [-1.9, +2.1]，p 1 |
+| C7 | -0.2 [-1.9, +1.5]，p 1 | -1.0 [-3.4, +1.5]，p 1 | -0.1 [-1.7, +1.5]，p 1 | +1.6 [-0.5, +3.8]，p 0.802 | +0.0 [-1.7, +1.7]，p 1 | +0.2 [-1.9, +2.2]，p 1 |
+| C8 | +1.7 [+0.6, +2.8]，p 0.0253 | +1.9 [+0.4, +3.5]，p 0.124 | +1.7 [+0.6, +2.7]，p 0.0161 | +1.4 [+0.1, +2.7]，p 0.291 | +1.8 [+0.6, +2.9]，p 0.0203 | +1.7 [+0.1, +3.2]，p 0.29 |
+| C9 | +1.9 [-0.8, +4.6]，p 1 | +1.9 [-0.8, +4.6]，p 1 | +1.8 [-0.8, +4.4]，p 1 | +1.9 [-0.8, +4.7]，p 0.857 | +1.9 [-0.8, +4.6]，p 1 | +0.4 [-3.3, +4.0]，p 1 |

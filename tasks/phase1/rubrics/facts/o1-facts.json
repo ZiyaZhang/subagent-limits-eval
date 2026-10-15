@@ -1,0 +1,4948 @@
+[
+ {
+  "id": "F01",
+  "category": "签证与入境",
+  "legacy": "B1",
+  "question": "持中国普通护照去新加坡旅游要不要签证？免签一次最多能停留多久？",
+  "canonical": "免签；最长停留 30 天（工作、新闻报道或停留超过 30 天仍须事先办签证）",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "免签（不需要事先办签证）",
+    "最长 30 天"
+   ],
+   "rule": "两个要素都写对算对。把 30 天写成 15 天、96 小时（那是过境免签）等算错。"
+  },
+  "also_accept": [
+   {
+    "value": "免签，实际停留期以入境时发的 e-Pass 为准",
+    "condition": "同时写了最长 30 天"
+   }
+  ],
+  "common_wrong": [],
+  "source_url": "https://beijing.mfa.gov.sg/consular-services/visa-information/",
+  "source_quote": "With effect from 9 February 2024, holders of Ordinary Passports issued by the People’s Republic of China will be exempted from visa requirements for a stay of up to 30 days in Singapore.",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.ica.gov.sg/news-and-publications/newsroom/media-release/mutual-30-day-visa-exemption-arrangement-between-singapore-and-the-people-s-republic-of-china",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 12,
+   "canonical": 12,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "使馆页 2026-05-18 更新；ICA 需签证名单（2026-06-25 更新）里没有中国普通护照。括号里“工作、新闻报道或停留超过 30 天仍须办签证”出自中国领事服务网的驻新使馆提醒（cs.mfa.gov.cn/zytz/202607/t20260721_11988435.html）。★ 严重项。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F02",
+  "category": "签证与入境",
+  "legacy": "B1",
+  "question": "中新互免普通护照签证从哪一天起生效？",
+  "canonical": "2024-02-09",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "2024 年 2 月 9 日"
+   ],
+   "rule": "日期一致算对；只写“2024 年 2 月”算对；写成 2024-01-25（ICA 新闻稿的发布日）或其他日期算错。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://beijing.mfa.gov.sg/consular-services/visa-information/",
+  "source_quote": "With effect from 9 February 2024, holders of Ordinary Passports issued by the People’s Republic of China will be exempted from visa requirements",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.ica.gov.sg/news-and-publications/newsroom/media-release/mutual-30-day-visa-exemption-arrangement-between-singapore-and-the-people-s-republic-of-china",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 12,
+   "canonical": 12,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F03",
+  "category": "签证与入境",
+  "question": "入境新加坡时，护照至少要有多长有效期？",
+  "canonical": "至少 6 个月",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "6 个月"
+   ],
+   "rule": "写出 6 个月算对；起算日写“入境日起”或不写都算对。"
+  },
+  "also_accept": [
+   {
+    "value": "从预定入境日起算 6 个月以上",
+    "condition": "使馆页的写法"
+   }
+  ],
+  "common_wrong": [],
+  "source_url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore",
+  "source_quote": "All travellers, except Singapore passport holders, must ensure their passport has a minimum validity of 6 months.",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://beijing.mfa.gov.sg/consular-services/visa-information/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 12,
+   "canonical": 12,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "D0-r2 写的是“离境日起 6 个月以上”，起算日说法和使馆页（入境日起）不同，数字对，按对处理。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F04",
+  "category": "签证与入境",
+  "legacy": "B2",
+  "question": "SG Arrival Card（SGAC，电子入境卡）最早什么时候可以提交？",
+  "canonical": "抵达前 3 天内（含抵达当天）",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "抵达前 3 天内",
+    "含抵达当天"
+   ],
+   "rule": "写出“3 天内”算对；没写“含抵达当天”不扣。写成 72 小时内也算对。写成“抵达后填”“提前 7 天”算错。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/sg-arrival-card",
+  "source_quote": "You are required to submit the SGAC within three (3) days (including the day of arrival) before arrival in Singapore",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 12,
+   "canonical": 12,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "★ 严重项。ICA 页面 2024-09-18 更新。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F05",
+  "category": "签证与入境",
+  "legacy": "B2",
+  "question": "提交 SGAC 要不要钱？",
+  "canonical": "免费；ICA 不认可收费代办",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "免费"
+   ],
+   "rule": "写出免费算对。写了收费金额或推荐收费代办算错。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/sg-arrival-card",
+  "source_quote": "SGAC submission is free of charge. ICA does not support or endorse services offered by commercial entities assisting to submit the SG Arrival Card at a fee.",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 12,
+   "canonical": 12,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "★ 严重项。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F06",
+  "category": "签证与入境",
+  "legacy": "B2",
+  "question": "SGAC 的官方提交渠道是什么？",
+  "canonical": "ICA 官网的 SGAC e-Service（eservices.ica.gov.sg/sgarrivalcard）或 MyICA Mobile 应用",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "ICA 官网 SGAC e-Service 或 MyICA Mobile 应用（写出其中一个即可）"
+   ],
+   "rule": "写出至少一个官方渠道、且没有把第三方网站当官方渠道，算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/sg-arrival-card",
+  "source_quote": "You can submit the SGAC via: SGAC e-Service (submit online here) ; or MyICA Mobile application",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 12,
+   "canonical": 12,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F07",
+  "category": "签证与入境",
+  "question": "入境后护照上盖不盖入境章？停留期限以什么为准？",
+  "canonical": "不盖章；ICA 用电子邮件发电子访问准证（e-Pass），停留期限以 e-Pass 为准（2022-03-11 起）",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "停留期限以 e-Pass（电子访问准证）为准，发到 SGAC 填的邮箱"
+   ],
+   "rule": "写出 e-Pass 通过邮件发放、以它为准，或写出护照不再盖章，算对；没写 2022-03-11 不扣。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/visa_requirements",
+  "source_quote": "From 11 March 2022, all foreign visitors arriving in Singapore will be notified digitally of their Visit Pass (e-Pass) through email. There will not be any endorsement on your passport.",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 10,
+   "canonical": 10,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "写了日期 2022-03-11 的有 7 份。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F08",
+  "category": "签证与入境",
+  "question": "带多少现金入境新加坡必须申报？",
+  "canonical": "现金及无记名可转让票据合计超过 S$20,000（或等值外币）",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$20,000",
+   "sgd_tolerance": "0",
+   "cny_range": "约 ¥10 万（按当日汇率，写 ¥9.4 万–12.3 万内算对）",
+   "rule": "写出 S$20,000 算对。写成 S$30,000 等算错。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore",
+  "source_quote": "declaration if you are entering Singapore carrying a total value of CBNI exceeding S$20,000 (or its equivalent in a foreign currency).",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.ica.gov.sg/enter-transit-depart/at-our-checkpoints/for-travellers/CBNI",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 11,
+   "canonical": 11,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "申报须在抵/离境前 72 小时内在线提交（CBNI 页），4 份样本写了这一点，没有单独设条。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F09",
+  "category": "签证与入境",
+  "question": "ICA 对短期旅客入境时随身证明的要求是什么？",
+  "canonical": "应备有足够资金（sufficient cash）和续程/回程证明（机票等）",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "足够资金",
+    "续程或回程机票证明"
+   ],
+   "rule": "两个要素写出至少一个、且没有编造具体金额门槛，算对。写成“必须出示酒店订单/存款证明”等官方没有的硬性要求算错。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore",
+  "source_quote": "Short-Term travellers should have sufficient cash and proof of onward travel (tickets, visas), and ensure that you do not stay beyond your Visit Pass validity",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 11,
+   "canonical": 11,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "官方没有规定最低金额。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F10",
+  "category": "通信与支付",
+  "legacy": "B4",
+  "question": "在新加坡坐地铁、公交，能不能直接刷境外发行的银行卡？哪些卡可以？",
+  "canonical": "能。带非接触标识的 Visa、Mastercard、American Express、NETS 卡，以及绑了这些卡的手机钱包",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "可以直接刷境外发行的非接触 Visa 或 Mastercard（含手机钱包）"
+   ],
+   "rule": "写出可以直接刷 Visa/Mastercard 非接触卡算对。说银联卡、支付宝或微信二维码可以直接刷闸机的，算错。"
+  },
+  "also_accept": [],
+  "common_wrong": [
+   {
+    "value": "支持 contactless 的银联卡也可以直接拍卡进闸",
+    "files": [
+     "D0-r2-n0zmaz73ba.md"
+    ],
+    "why": "SimplyGo 只列了 American Express、Mastercard、NETS、Visa 四种卡；该报告的表格里又写对了，两处不一致"
+   }
+  ],
+  "source_url": "https://simplygo.com.sg/faqs/cards-and-charms/simplygo/contactless-bank-cards/",
+  "source_quote": "American Express, Mastercard, NETS and Visa bank cards with the EMVCo Contactless Indicator, including foreign-issued cards*",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.smrt.com.sg/public-transport/getting-around/visiting-singapore/how-to-pay/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 12,
+   "canonical": 11,
+   "wrong": 1,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [
+    "D0-r2-n0zmaz73ba.md"
+   ],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "同页还写明进出站要用同一张卡或同一台设备。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F11",
+  "category": "通信与支付",
+  "legacy": "B4",
+  "question": "用境外发行的银行卡刷地铁公交，要收多少行政费？",
+  "canonical": "每使用一天收 S$0.60（境外发行的 Mastercard、Visa）",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$0.60",
+   "sgd_tolerance": "0",
+   "cny_range": "¥3–4",
+   "rule": "写成 S$0.60 算对（官网定价，不留误差）；写人民币时，落在 ¥3–4 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。只写“有行政费/手续费，金额待核验”判“待核验”。"
+  },
+  "also_accept": [
+   {
+    "value": "S$0.60/天，只对 Mastercard/Visa 收，American Express 不收",
+    "condition": "同页只点名 Mastercard 和 Visa"
+   }
+  ],
+  "common_wrong": [],
+  "source_url": "https://simplygo.com.sg/faqs/cards-and-charms/simplygo/contactless-bank-cards/",
+  "source_quote": "*A SGD0.60 Foreign Bank Card Admin Fee per day will apply for foreign-issued Mastercard or Visa debit/credit cards",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 3,
+   "canonical": 3,
+   "wrong": 0,
+   "hedged_only": 6,
+   "canonical_files": [
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D2-K8-r3-en7lfymdyv.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D2-K8-r3-en7lfymdyv.md"
+   ],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "D2-K8-r3 写了 S$0.60 但标“待核验”。SMRT、LTA、樟宜机场三处页面只写“有行政费”、没写金额，所以多数报告查不到数。",
+  "coverage_basis": "原答案键 B4（写出数值的样本不足 4 份）",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F12",
+  "category": "通信与支付",
+  "question": "买一张 EZ-Link 交通卡多少钱？里面有多少可用余额？",
+  "canonical": "售价 S$10，其中储值 S$5、卡费 S$5（卡费不退）",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$10",
+   "sgd_tolerance": "0",
+   "cny_range": "¥47–62",
+   "rule": "写成 S$10 算对（官网定价，不留误差）；写人民币时，落在 ¥47–62 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。还要写出含 S$5 储值（或卡费 S$5）才算完整；只写 S$10 也算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://simplygo.com.sg/travel-cards/",
+  "source_quote": "SimplyGo EZ-Link cards $10 $5 $5",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.smrt.com.sg/public-transport/getting-around/visiting-singapore/how-to-pay/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 10,
+   "canonical": 10,
+   "wrong": 0,
+   "hedged_only": 1,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K1-r1-y2pr6ldjcs.md"
+   ],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "引文是表格的一行，表头是 Retail Price / Stored Value / Card Cost。SMRT 页原文：These cost $10 and come with a stored value of $5。D1-K1-r1 写对了但标“待核验”。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F13",
+  "category": "通信与支付",
+  "question": "Singapore Tourist Pass（游客通行证）1 日票多少钱？",
+  "canonical": "S$17",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$17",
+   "sgd_tolerance": "0",
+   "cny_range": "¥80–105",
+   "rule": "写成 S$17 算对（官网定价，不留误差）；写人民币时，落在 ¥80–105 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。报告把 1–5 日票价一起列出（S$17/24/29/37/45）的，看其中 1 日票的数。"
+  },
+  "also_accept": [
+   {
+    "value": "S$22",
+    "condition": "注明是 Merlion Charm 纪念版 1 日票"
+   }
+  ],
+  "common_wrong": [],
+  "source_url": "https://simplygo.com.sg/travel-cards/",
+  "source_quote": "The Singapore Tourist Pass comes with a fixed cost per day (S$17 for the 1-Day Pass, S$24 for the 2-Day Pass, S$29 for the 3-Day Pass, S$37 for the 4-Day Pass and S$45 for the 5-Day Pass).",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "https://thesingaporetouristpass.com.sg/type-of-passes/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 10,
+   "canonical": 10,
+   "wrong": 0,
+   "hedged_only": 2,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "2 日 S$24、4 日 S$37、5 日 S$45，报告写了的按同一来源核对。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F14",
+  "category": "通信与支付",
+  "question": "Singapore Tourist Pass 3 日票多少钱？",
+  "canonical": "S$29",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$29",
+   "sgd_tolerance": "0",
+   "cny_range": "¥136–179",
+   "rule": "写成 S$29 算对（官网定价，不留误差）；写人民币时，落在 ¥136–179 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。报告把 1–5 日票价一起列出（S$17/24/29/37/45）的，看其中 3 日票的数。"
+  },
+  "also_accept": [
+   {
+    "value": "S$34",
+    "condition": "注明是 Merlion Charm 纪念版 3 日票"
+   }
+  ],
+  "common_wrong": [],
+  "source_url": "https://simplygo.com.sg/travel-cards/",
+  "source_quote": "The Singapore Tourist Pass comes with a fixed cost per day (S$17 for the 1-Day Pass, S$24 for the 2-Day Pass, S$29 for the 3-Day Pass, S$37 for the 4-Day Pass and S$45 for the 5-Day Pass).",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "https://thesingaporetouristpass.com.sg/type-of-passes/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 10,
+   "canonical": 10,
+   "wrong": 0,
+   "hedged_only": 2,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F15",
+  "category": "通信与支付",
+  "question": "Singapore Tourist Pass 能不能用来坐圣淘沙捷运（Sentosa Express）？",
+  "canonical": "不能。不含 Sentosa Express、RWS8、M2 Khatib 巴士、快速巴士等",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "不含 Sentosa Express"
+   ],
+   "rule": "写出不含 Sentosa Express（圣淘沙捷运）算对；其他几项不要求。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://thesingaporetouristpass.com.sg/type-of-passes/",
+  "source_quote": "The pass excludes rides on premium/private services such as Sentosa Express, RWS8, M2 – Khatib Bus, express buses as well as other premium and niche bus services.",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "https://simplygo.com.sg/travel-cards/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 8,
+   "canonical": 8,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "第二来源 SimplyGo 的原文：excluding rides on premium services such as the Sentosa Express, RWS8 and express buses, as well as other premium and niche bus services。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F16",
+  "category": "通信与支付",
+  "question": "Singtel hi! Tourist 游客卡里，30 天、含中国在内亚太漫游的那一档多少钱？",
+  "canonical": "S$15（30 天；本地 500GB；18GB 亚太漫游含中国；8GB 全球漫游）",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$15",
+   "sgd_tolerance": "0",
+   "cny_range": "¥70–92",
+   "rule": "写成 S$15 算对（官网定价，不留误差）；写人民币时，落在 ¥70–92 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。只核对 S$15 这一档。最低档不核对（见备注）。报告只写了其他档位（如 S$10、S$12、S$30）、没写 S$15 这一档的，判“没写”。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.singtel.com/personal/products-services/mobile/prepaid-plans/hi-tourist",
+  "source_quote": "$15 hi! Tourist Plan For 30 days 500GB 5G+ (SG, Msia, Indo, Thai, HK) 18GB APAC roaming + China + S. Korea +Japan",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.singtel.com/personal/singtel-blog/hi-tourist-esim-sim-singapore",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 9,
+   "canonical": 9,
+   "wrong": 0,
+   "hedged_only": 2,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md"
+   ]
+  },
+  "stability": "changes often",
+  "note": "最低档各官方页面说法不同：产品页是 S$10/7 天，Singtel 博客（2026-06-26）是 S$12/30 天 eSIM，樟宜机场页是 S$12/14 天 100GB，所以不设条。D1-K8-r1 只引了樟宜机场页的 S$12/S$30/S$50，没写 S$15 这一档，按“没提到”处理。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F17",
+  "category": "通信与支付",
+  "question": "在新加坡坐公交、地铁能不能付现金？找不找零？",
+  "canonical": "只有巴士可以付现金，不找零，要备好正好的车资；地铁不收现金",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "巴士可付现金但不找零（或：现金只能用于巴士）"
+   ],
+   "rule": "写出“现金只能用于巴士”或“巴士现金不找零”任一点算对。说地铁可以付现金算错（LTA：现金只适用于巴士）。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.smrt.com.sg/public-transport/getting-around/visiting-singapore/how-to-pay/",
+  "source_quote": "Travellers may also opt to pay in cash on buses. Please prepare the exact fare as no change will be given.",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.lta.gov.sg/content/ltagov/en/getting_around/public_transport/plan_your_journey.html",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 10,
+   "canonical": 10,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F18",
+  "category": "通信与支付",
+  "question": "游客购物退税（TRS/eTRS）的最低消费金额是多少？",
+  "canonical": "同一商家同一天消费满 S$100（含 GST）",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$100",
+   "sgd_tolerance": "0",
+   "cny_range": "¥468–616",
+   "rule": "写成 S$100 算对（官网定价，不留误差）；写人民币时，落在 ¥468–616 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。写成“满 S$100”算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.customs.gov.sg/at-customs/departing-singapore/tourist-refund-scheme/",
+  "source_quote": "Are at least S$100 (including GST).",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/consumers/tourist-refund-scheme",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 11,
+   "canonical": 11,
+   "wrong": 0,
+   "hedged_only": 1,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D2-K8-r3-en7lfymdyv.md"
+   ],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r2-n0zmaz73ba.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "海关页 2026-02-23 更新。同页写明须满 16 岁、从樟宜或实里达机场乘飞机离境。IRAS 页原文：Spend at least SGD100 (including GST)。D2-K8-r3 写了 S$100 但标“待核验”。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F19",
+  "category": "通信与支付",
+  "question": "退税凑满最低金额时，最多可以合并几张发票？",
+  "canonical": "同一天、同一商家（同一 GST 注册号和店名）最多 3 张",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "最多 3 张",
+    "同一天同一商家"
+   ],
+   "rule": "写出 3 张算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.customs.gov.sg/at-customs/departing-singapore/tourist-refund-scheme/",
+  "source_quote": "You may accumulate up to three same-day invoices/receipts from retailers bearing the same GST registration number and shop name to meet this minimum purchase amount.",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/consumers/tourist-refund-scheme",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 8,
+   "canonical": 8,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F20",
+  "category": "机场与市内交通",
+  "legacy": "B5",
+  "question": "从樟宜机场坐地铁进市区怎么换乘？",
+  "canonical": "从樟宜机场站（CG2）坐到丹那美拉 Tanah Merah（EW4），换东西线往 Tuas Link 方向；也可以坐到 Expo（CG1/DT35）换滨海市区线",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "要换乘一次：在 Tanah Merah 换东西线（或在 Expo 换滨海市区线）"
+   ],
+   "rule": "写出在 Tanah Merah 或 Expo 换乘算对。写成“东西线直达市区、不用换乘”算错。"
+  },
+  "also_accept": [],
+  "common_wrong": [
+   {
+    "value": "搭 MRT 东西线（绿线）从 T2/T3 直达市区",
+    "files": [
+     "D1-K4-r2-vszaqoc7fc.md"
+    ],
+    "why": "机场支线必须在 Tanah Merah（或 Expo）换乘"
+   }
+  ],
+  "source_url": "https://www.changiairport.com/en/at-changi/transport-and-directions/leaving-the-airport.html",
+  "source_quote": "take the train from Changi Airport MRT Station (CG2) to Tanah Merah MRT Station (EW4), then transfer to the East West Line towards Tuas Link MRT Station (EW33).",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.smrt.com.sg/public-transport/getting-around/visiting-singapore/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 11,
+   "canonical": 10,
+   "wrong": 1,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [
+    "D1-K4-r2-vszaqoc7fc.md"
+   ],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "第二来源 SMRT 的原文：alight at Tanah Merah MRT station (EW4), and transfer to the East-West Line (EWL) in the direction of Tuas Link MRT Station (EW33)。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F21",
+  "category": "机场与市内交通",
+  "legacy": "B5",
+  "question": "樟宜机场站的地铁首班车是几点？",
+  "canonical": "周一至周六 5:31；周日及公共假日 5:59",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "5:31（周一至周六）",
+    "5:59（周日及公共假日）"
+   ],
+   "rule": "写出 5:31 算对；两个时间都写更完整。只写“约 5:30”不算对，判“没写”。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.changiairport.com/en/at-changi/transport-and-directions/leaving-the-airport.html",
+  "source_quote": "From Changi Airport MRT Station to Tanah Merah MRT Station: Monday to Saturday: 5:31 AM Sunday and public holidays: 5:59 AM",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 5,
+   "canonical": 5,
+   "wrong": 0,
+   "hedged_only": 3,
+   "canonical_files": [
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r2-or21auukat.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F22",
+  "category": "机场与市内交通",
+  "question": "从樟宜机场站坐地铁进市区（往 Tuas Link 方向），末班车是几点？",
+  "canonical": "23:18（每日）",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "23:18"
+   ],
+   "rule": "写出 23:18 算对。把往 Pasir Ris 的 00:06 当成进市区末班车算错。"
+  },
+  "also_accept": [
+   {
+    "value": "往 Tuas Link 23:18、往 Pasir Ris 00:06",
+    "condition": "两个都写且方向对应正确"
+   }
+  ],
+  "common_wrong": [],
+  "source_url": "https://www.changiairport.com/en/at-changi/transport-and-directions/leaving-the-airport.html",
+  "source_quote": "Connecting to Tuas Link: 11:18 PM, daily Connecting to Pasir Ris: 12:06 AM, daily",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 5,
+   "canonical": 5,
+   "wrong": 0,
+   "hedged_only": 1,
+   "canonical_files": [
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r2-n0zmaz73ba.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F23",
+  "category": "机场与市内交通",
+  "legacy": "B5",
+  "question": "从樟宜机场打出租车到市区，大约多久、多少钱？",
+  "canonical": "约 30 分钟，S$25–45（打表）",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number_range",
+   "sgd": "S$25–45",
+   "sgd_tolerance": "区间内",
+   "cny_range": "¥117–277",
+   "rule": "写成 S$25–45 算对。写了别的区间的：下限不低于 S$22.5、上限不高于 S$50（官方区间两端各放宽约 10%）算对；下限低于 S$22.5 或上限高于 S$50 算错。写人民币时，整个区间落在 ¥117–277 内算对。时长写 20–30 分钟、约 30 分钟都算对，时长不单独判错。"
+  },
+  "also_accept": [],
+  "common_wrong": [
+   {
+    "value": "机场到市区约 S$20–40（标了待核验）",
+    "files": [
+     "D1-K4-r2-vszaqoc7fc.md"
+    ],
+    "why": "下限低于官方区间；报告给这个数标了待核验"
+   }
+  ],
+  "source_url": "https://www.changiairport.com/en/at-changi/transport-and-directions/leaving-the-airport.html",
+  "source_quote": "A ride to the city takes about 30 minutes and costs between S$25 and S$45. All fares are metered.",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 9,
+   "canonical": 8,
+   "wrong": 1,
+   "hedged_only": 2,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K1-r1-y2pr6ldjcs.md"
+   ],
+   "wrong_files": [
+    "D1-K4-r2-vszaqoc7fc.md"
+   ],
+   "wrong_but_hedged_files": [
+    "D1-K4-r2-vszaqoc7fc.md"
+   ],
+   "hedged_only_files": [
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r2-or21auukat.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "D1-K1-r1 的 S$25–30（第三方，标了待核验）、D2-K8-r3 的分时段报价、D3-K8-r1 的 S$25–40 来自第三方或估算，都落在官方区间内，按对处理。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F24",
+  "category": "机场与市内交通",
+  "legacy": "B5",
+  "question": "从樟宜机场出发的出租车，机场附加费是多少？",
+  "canonical": "17:00–23:59 为 S$8；其他时段 S$6",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$8（17:00–23:59）/ S$6（其他时段）",
+   "sgd_tolerance": "0",
+   "cny_range": "S$8≈¥37–49；S$6≈¥28–37",
+   "rule": "两个金额和对应时段都写对算对；只写其中一个且时段对应正确也算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.changiairport.com/en/at-changi/transport-and-directions/leaving-the-airport.html",
+  "source_quote": "There is an additional Airport Surcharge for all trips originating from the Airport: Mon–Sun (5:00PM – 11:59PM): S$8 All other times: S$6",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.lta.gov.sg/content/ltagov/en/getting_around/point_to_point_transport_and_cross_border_services/taxi_fares_payment_methods.html",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 8,
+   "canonical": 8,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "changes yearly",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F25",
+  "category": "机场与市内交通",
+  "legacy": "B5",
+  "question": "新加坡出租车的午夜附加费是多少、什么时段？",
+  "canonical": "00:00–05:59，加收计价器车资的 50%",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "50%",
+    "午夜至 5:59"
+   ],
+   "rule": "写出 50% 算对；时段写“午夜/深夜”也算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.changiairport.com/en/at-changi/transport-and-directions/leaving-the-airport.html",
+  "source_quote": "Midnight surcharge (50% of final metered fare): Mon-Sun (12:00AM – 5:59AM)",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.lta.gov.sg/content/ltagov/en/getting_around/point_to_point_transport_and_cross_border_services/taxi_fares_payment_methods.html",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 8,
+   "canonical": 8,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F26",
+  "category": "机场与市内交通",
+  "legacy": "B5",
+  "question": "新加坡出租车的高峰附加费是多少？",
+  "canonical": "加收计价器车资的 25%（周一至五 6:00–9:29；周六日及公假 10:00–13:59；每日 17:00–23:59）",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "25%"
+   ],
+   "rule": "写出 25% 算对；写了时段的，时段要和官方一致。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.changiairport.com/en/at-changi/transport-and-directions/leaving-the-airport.html",
+  "source_quote": "Peak-hour surcharge (25% of final metered fare): Mon-Fri, excluding Public Holidays (6:00AM–9:29AM) Sat, Sun and Public Holidays (10:00AM-1:59PM) Mon-Sun (5:00PM-11:59PM)",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.lta.gov.sg/content/ltagov/en/getting_around/point_to_point_transport_and_cross_border_services/taxi_fares_payment_methods.html",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 8,
+   "canonical": 8,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F27",
+  "category": "机场与市内交通",
+  "question": "地铁、公交成人刷卡的最低车资是多少（2026 年 10 月现行）？",
+  "canonical": "S$1.28（3.2 公里以内）",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$1.28",
+   "sgd_tolerance": "0",
+   "cny_range": "¥6–8",
+   "rule": "写成 S$1.28 算对（官网定价，不留误差）；写人民币时，落在 ¥6–8 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。报告常把车资写成一个区间（如“S$1.28–2.57”）：区间的下限按“最低车资”这一条判，上限按“最高车资”那一条判，不要因为写的是区间就判错。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.ptc.gov.sg/fares/public-transport-fares-and-passes/",
+  "source_quote": "Distance Fare Per Ride ($) Card Cash Up to 3.2 km 1.28 2.10",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://simplygo.com.sg/travel-fares/adult-fares/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 12,
+   "canonical": 12,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "changes yearly",
+  "note": "现行票价 2025-12-27 起生效。工作日 7:45 前入闸的地铁最低 S$0.78，见早鸟一条。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F28",
+  "category": "机场与市内交通",
+  "question": "地铁、公交成人刷卡的最高车资是多少（2026 年 10 月现行）？",
+  "canonical": "S$2.57（超过 40.2 公里）",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$2.57",
+   "sgd_tolerance": "0",
+   "cny_range": "¥12–16",
+   "rule": "写成 S$2.57 算对（官网定价，不留误差）；写人民币时，落在 ¥12–16 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。把票价表中间一行（如 28.3–29.2 公里 S$2.45）当成全表上限、写成“单程 S$1.28–2.45”的，算错。只在表格里列出 S$2.45 那一行、没说它是上限的，不算错，判“没写”。报告常把车资写成一个区间（如“S$1.28–2.57”）：区间的下限按“最低车资”这一条判，上限按“最高车资”那一条判，不要因为写的是区间就判错。"
+  },
+  "also_accept": [],
+  "common_wrong": [
+   {
+    "value": "成人卡票价区间 S$1.28–2.45",
+    "files": [
+     "D0-r1-v7ro5e48hi.md",
+     "D1-K1-r2-or21auukat.md",
+     "D1-K4-r2-vszaqoc7fc.md",
+     "D3-K8-r1-pk61a2q6pn.md",
+     "D3-K8-r2-rr4ncbnr3f.md"
+    ],
+    "why": "S$2.45 是 28.3–29.2 公里那一行，票价表一直列到“超过 40.2 公里 S$2.57”；看起来是抓取的页面被截断"
+   }
+  ],
+  "source_url": "https://www.ptc.gov.sg/fares/public-transport-fares-and-passes/",
+  "source_quote": "Distance Fare Per Ride ($) Card Cash … Over 40.2 km 2.57 3.20",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://simplygo.com.sg/travel-fares/adult-fares/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 12,
+   "canonical": 7,
+   "wrong": 5,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "changes yearly",
+  "note": "12 份样本里分歧最大的一条：7 份写 S$2.57，5 份写 S$2.45。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F29",
+  "category": "机场与市内交通",
+  "question": "成人坐巴士付现金，车资是多少（2026 年 10 月现行）？",
+  "canonical": "S$2.10–3.20（按距离）",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number_range",
+   "sgd": "S$2.10–3.20",
+   "sgd_tolerance": "区间内",
+   "cny_range": "¥10–20",
+   "rule": "写成 S$2.10–3.20 或落在这个区间内的子区间算对；写人民币时，整个区间落在 ¥10–20 内算对。上限写成 S$3.40 等算错。"
+  },
+  "also_accept": [],
+  "common_wrong": [
+   {
+    "value": "巴士现金票价 S$2.10–3.40",
+    "files": [
+     "D1-K8-r1-ebdcdzqn57.md"
+    ],
+    "why": "现行上限是 S$3.20；2026-12-26 起每程加 20 分后才是 S$2.30–3.40"
+   }
+  ],
+  "source_url": "https://www.ptc.gov.sg/fares/public-transport-fares-and-passes/",
+  "source_quote": "Distance Fare Per Ride ($) Card Cash Up to 3.2 km 1.28 2.10 … Over 40.2 km 2.57 3.20",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://simplygo.com.sg/travel-fares/adult-fares/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 12,
+   "canonical": 11,
+   "wrong": 1,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [
+    "D1-K8-r1-ebdcdzqn57.md"
+   ],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "changes yearly",
+  "note": "两列依次是刷卡价、现金价；引文取表格第一行和最后一行。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F30",
+  "category": "机场与市内交通",
+  "question": "地铁的早鸟优惠是什么？",
+  "canonical": "工作日 7:45 前入闸，地铁车资最多便宜 50 分（最低 S$0.78）",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "工作日 7:45 前入闸",
+    "便宜最多 50 分（或最低 S$0.78）"
+   ],
+   "rule": "写出 7:45 前入闸有优惠、且金额（50 分或 S$0.78）对，算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.lta.gov.sg/content/ltagov/en/getting_around/public_transport/plan_your_journey.html",
+  "source_quote": "enjoy up to 50-cent discount off their rail trips under the Morning Pre-Peak Fares | Public Transport Council scheme when they tap in before 7.45am at any rail station islandwide on weekdays",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://simplygo.com.sg/travel-fares/adult-fares/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 7,
+   "canonical": 7,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "changes yearly",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F31",
+  "category": "机场与市内交通",
+  "question": "新加坡公共交通下一次涨价从哪天起、成人刷卡每程涨多少？",
+  "canonical": "2026-12-26 起；成人刷卡每程涨 12 分（3.2 公里以内）或 13 分（超过 3.2 公里），整体 7.0%",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "2026 年 12 月 26 日"
+   ],
+   "rule": "写出 2026-12-26 这个日期算对；幅度写了的，要是成人刷卡每程 12–13 分或整体 7%。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.ptc.gov.sg/media-centre/newsroom/fare-review-exercise-2026/",
+  "source_quote": "The fare adjustments, which are applicable from 26 December 2026 , are as follows: … Card Fares (per journey) Adults 12 cents (up to 3.2km) 13 cents (> 3.2km)",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 8,
+   "canonical": 8,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "PTC 2026-09-29 公布，整体 7.0%（Fare adjustment granted by PTC 7.0%）；成人现金每程 +20 分；月票不变。只对 12-26 以后出行的人有用，题面没要求，不提记 0。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F32",
+  "category": "机场与市内交通",
+  "question": "新加坡出租车起步价是多少？",
+  "canonical": "标准型 S$4.40–5.20（各公司不同）",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number_range",
+   "sgd": "S$4.40–5.20",
+   "sgd_tolerance": "区间内",
+   "cny_range": "¥21–32",
+   "rule": "写成 S$4.40–5.20 或落在这个区间内的子区间算对；写人民币时，整个区间落在 ¥21–32 内算对。写出某一家公司的起步价（如 S$4.60、S$4.80、S$5.20）且在区间内，算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.lta.gov.sg/content/ltagov/en/getting_around/point_to_point_transport_and_cross_border_services/taxi_fares_payment_methods.html",
+  "source_quote": "Flag-down Fare Type of Taxi Range of flag-down fare Standard $4.40 to $5.20",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 6,
+   "canonical": 6,
+   "wrong": 0,
+   "hedged_only": 2,
+   "canonical_files": [
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D1-K1-r2-or21auukat.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "LTA 页面 2025-11-10 更新。里程费 LTA 页写 26 分/400 米，D2-K8-r3 称因油价临时加 1 分到 27 分，两处说法不同，里程费不设条。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F33",
+  "category": "机场与市内交通",
+  "question": "坐圣淘沙捷运（Sentosa Express）进岛多少钱？",
+  "canonical": "S$4（标准入岛费）",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$4",
+   "sgd_tolerance": "0",
+   "cny_range": "¥19–25",
+   "rule": "写成 S$4 算对（官网定价，不留误差）；写人民币时，落在 ¥19–25 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.sentosa.com.sg/en/getting-to-sentosa/",
+  "source_quote": "Sentosa Express Fees CARD FEE Standard Entry Fee $4",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "https://abigbigworld.sentosa.com.sg/getting-here.html",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 9,
+   "canonical": 9,
+   "wrong": 0,
+   "hedged_only": 3,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D2-K8-r3-en7lfymdyv.md"
+   ],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "页面要点“Sentosa Express”标签页才显示。同一标签页写：7 岁以下儿童由成人陪同免费。D2-K8-r3 写了 S$4 但标“待核验”。多份样本还写“岛内各站之间免费乘坐”，这一句我没有在官方页面上核对到，不判。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "浏览器打开后逐字匹配"
+ },
+ {
+  "id": "F34",
+  "category": "机场与市内交通",
+  "question": "圣淘沙捷运首班车、末班车是几点？",
+  "canonical": "首班 7:00，末班 24:00",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "首班 7:00",
+    "末班 24:00（即 00:00）"
+   ],
+   "rule": "时间与标准值一致算对；12 小时制/24 小时制、24:00/00:00/午夜 视为相同；不留误差。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.sentosa.com.sg/en/getting-to-sentosa/",
+  "source_quote": "First train: 7 am • Last train: 12 am",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "https://abigbigworld.sentosa.com.sg/getting-here.html",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 7,
+   "canonical": 7,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K4-r1-sqss1lrgrp.md"
+   ],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "浏览器打开后逐字匹配"
+ },
+ {
+  "id": "F35",
+  "category": "机场与市内交通",
+  "question": "从 VivoCity 走跨海步行道（Sentosa Boardwalk）进圣淘沙要不要钱？",
+  "canonical": "免费",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "免费"
+   ],
+   "rule": "写出步行进岛免费算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.sentosa.com.sg/en/getting-to-sentosa/",
+  "source_quote": "You can travel into Sentosa on foot via the Sentosa Boardwalk. … Admission Charge FREE",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 6,
+   "canonical": 6,
+   "wrong": 0,
+   "hedged_only": 4,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K4-r1-sqss1lrgrp.md"
+   ],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "引文两句在同一个标签页（Walk）里，中间省略了一段施工说明。页面要点“Walk”标签页才显示。页面还写：2025-05-22 起部分步行道因 RWS 工程关闭、预计 2030 年重开，行人改走有盖连道。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "浏览器打开后逐字匹配"
+ },
+ {
+  "id": "F36",
+  "category": "机场与市内交通",
+  "question": "新加坡缆车双线（Mount Faber Line + Sentosa Line）往返成人票多少钱？",
+  "canonical": "S$35（官网原价；官网线上价 S$32.90）",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$35",
+   "sgd_tolerance": "0",
+   "cny_range": "¥164–216",
+   "rule": "写成 S$35 算对（官网定价，不留误差）；写人民币时，落在 ¥164–216 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。写 S$32.90（官网线上价）也算对。写第三方平台价（如约 S$30.5）算错。"
+  },
+  "also_accept": [
+   {
+    "value": "S$32.90",
+    "condition": "官网线上价"
+   },
+   {
+    "value": "S$33",
+    "condition": "注明只坐 Mount Faber Line 单线"
+   }
+  ],
+  "common_wrong": [
+   {
+    "value": "往返 from 约 S$30.5",
+    "files": [
+     "D1-K4-r1-sqss1lrgrp.md"
+    ],
+    "why": "Trip.com 的价格，不是官网价；报告给这一行标了 ⚠️（它的图例：只从第三方平台读到，官网未核实）"
+   }
+  ],
+  "source_url": "https://mountfaberleisure.com/attraction/singapore-cable-car/",
+  "source_quote": "SkyPass: Mount Faber Line and Sentosa Line (Round Trip) … Adult (13 years old & above) U.P. $35.00 $32.90 Child (4-12 years old) U.P. $25.00 $23.50",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "https://abigbigworld.sentosa.com.sg/getting-here.html",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 7,
+   "canonical": 6,
+   "wrong": 1,
+   "hedged_only": 3,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K1-r2-or21auukat.md"
+   ],
+   "wrong_files": [
+    "D1-K4-r1-sqss1lrgrp.md"
+   ],
+   "wrong_but_hedged_files": [
+    "D1-K4-r1-sqss1lrgrp.md"
+   ],
+   "hedged_only_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "引文省略了中间一句介绍。U.P. 是原价，后面是官网线上价。圣淘沙页面：Mount Faber Line + Sentosa Line: Adult $35, Child $25。D1-K1-r2 写“约 S$35+”并标待核验，按对。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F37",
+  "category": "机场与市内交通",
+  "question": "新加坡缆车每天运营到几点？",
+  "canonical": "8:45–22:00，最后登车 21:30",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "8:45–22:00"
+   ],
+   "rule": "写出 8:45–22:00 算对；最后登车 21:30 写了更完整。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://mountfaberleisure.com/attraction/singapore-cable-car/",
+  "source_quote": "Opening Hours: 8:45AM – 10:00PM daily Last Boarding: 9:30PM",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "https://abigbigworld.sentosa.com.sg/getting-here.html",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 6,
+   "canonical": 6,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K4-r1-sqss1lrgrp.md"
+   ],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F38",
+  "category": "机场与市内交通",
+  "question": "坐公共交通去万态（Mandai）的动物园、夜间野生动物园，地铁坐到哪一站、怎么接驳？",
+  "canonical": "地铁到 Khatib（NS14），换 Mandai Khatib 巴士（M2）；也可以从 Ang Mo Kio/Springleaf 坐 138 路、从 Choa Chu Kang 坐 927 路",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "Khatib 站换接驳巴士（或 Ang Mo Kio/Springleaf 换 138、Choa Chu Kang 换 927）"
+   ],
+   "rule": "写出 Khatib 换 Mandai 接驳巴士算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.mandai.com/en/plan-your-visit/getting-to-and-around/getting-to-mandai-wildlife-reserve.html",
+  "source_quote": "MRT stations Connecting buses Khatib (NS14) M2 - Khatib Bus Choa Chu Kang (NS4) 927 Ang Mo Kio (NS16) 138 Springleaf (TE4)* 138",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.mandai.com/en/faq/shuttle-services.html",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 7,
+   "canonical": 7,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "Mandai Khatib 巴士车费 S$2.50/人（7 岁及以上，2024-10-01 起），每天 8:30–24:00。只有 2 份样本写了车费（都对），4 份标待核验，没有单独设条。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F39",
+  "category": "景点门票",
+  "legacy": "B7",
+  "question": "滨海湾花园 花穹 + 云雾林 双馆票，非居民成人多少钱？",
+  "canonical": "S$46",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$46",
+   "sgd_tolerance": "0",
+   "cny_range": "¥215–283",
+   "rule": "写成 S$46 算对（官网定价，不留误差）；写人民币时，落在 ¥215–283 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。写成居民价 S$34、花穹单馆居民价 S$12 的，算错（属于归错）。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.gardensbythebay.com.sg/en/things-to-do/attractions/flower-dome.html",
+  "source_quote": "FLOWER DOME & CLOUD FOREST (FEATURING JURASSIC WORLD: THE EXPERIENCE) Recommended duration : 2 hours Adult $46 Child (3-12 yrs old) $32",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.gardensbythebay.com.sg/en/things-to-do/attractions/cloud-forest.html",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 11,
+   "canonical": 11,
+   "wrong": 0,
+   "hedged_only": 1,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r2-n0zmaz73ba.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "引文在 Non-Resident 页签下；非居民页签没有单馆票。儿童（3–12 岁）S$32。D0-r2 说官网“From S$8 / From S$12 onwards”口径不一、标了待核验（这两个数是居民价）。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F40",
+  "category": "景点门票",
+  "question": "滨海湾花园 OCBC Skyway（空中步道）非居民成人票多少钱？",
+  "canonical": "S$14",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$14",
+   "sgd_tolerance": "0",
+   "cny_range": "¥66–86",
+   "rule": "写成 S$14 算对（官网定价，不留误差）；写人民币时，落在 ¥66–86 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。明确把 S$10 写成非居民（游客）成人价的算错（S$10 是居民成人价，也是非居民儿童价）。只照抄官网景点列表页的“From S$10 onwards”（起价）、没说是成人价或游客价的，判“没写”。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.gardensbythebay.com.sg/en/things-to-do/attractions/ocbc-skyway.html",
+  "source_quote": "Admission Rates Non-Resident Singapore Resident OCBC Skyway Recommended duration : 15 min Adult $14 Child (3-12 yrs old) $10",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 11,
+   "canonical": 11,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "changes yearly",
+  "note": "居民价：成人 S$10，长者、儿童 S$7。D0-r2 只照抄了官网景点列表页的“From S$10 onwards”，没说是哪类票，按没提处理。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F41",
+  "category": "景点门票",
+  "question": "滨海湾花园 Supertree Observatory（擎天树观景台）非居民成人票多少钱？",
+  "canonical": "S$14",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$14",
+   "sgd_tolerance": "0",
+   "cny_range": "¥66–86",
+   "rule": "写成 S$14 算对（官网定价，不留误差）；写人民币时，落在 ¥66–86 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。明确把 S$10 写成非居民（游客）成人价的算错（S$10 是居民成人价，也是非居民儿童价）。只照抄官网景点列表页的“From S$10 onwards”（起价）、没说是成人价或游客价的，判“没写”。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.gardensbythebay.com.sg/en/things-to-do/attractions/supertree-observatory.html",
+  "source_quote": "Admission Rates Non-Resident Singapore Resident SUPERTREE OBSERVATORY Adult $14 Child (3-12 yrs old) $10",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 10,
+   "canonical": 10,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "changes yearly",
+  "note": "居民价：成人 S$10，长者、儿童 S$6。D0-r2 只照抄了官网景点列表页的“From S$10 onwards”，没说是哪类票，按没提处理。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F42",
+  "category": "景点门票",
+  "question": "滨海湾花园的户外花园（含 Supertree Grove 擎天树丛）要不要门票？",
+  "canonical": "免费",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "免费"
+   ],
+   "rule": "写出户外花园或擎天树丛免费算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.gardensbythebay.com.sg/en/things-to-do/attractions/supertree-grove.html",
+  "source_quote": "Opening Hours Daily: 5.00am - 2.00am* *The Supertrees lights will be switched off at 11.30pm every night. Admission Rates Free admission",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.gardensbythebay.com.sg/en/things-to-do/attractions/heritage-gardens.html",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 9,
+   "canonical": 9,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "引文是 Supertree Grove 页。Heritage Gardens 页同样写：Opening Hours Daily: 5.00am – 2.00am Admission Rates Free Admission。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F43",
+  "category": "景点门票",
+  "legacy": "B7",
+  "question": "新加坡动物园非居民（游客）成人票多少钱？",
+  "canonical": "S$49",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$49",
+   "sgd_tolerance": "0",
+   "cny_range": "¥229–302",
+   "rule": "写成 S$49 算对（官网定价，不留误差）；写人民币时，落在 ¥229–302 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。写成本地居民价（平日 S$39、高峰日 S$44）的算错（属于归错）。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.mandai.com/en/tickets-and-passes/single-attractions/singapore-zoo.html",
+  "source_quote": "Admission Prices for Non-Residents Adult Child S$49 S$34",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.mandai.com/en/tickets-and-passes/single-attractions.html",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 11,
+   "canonical": 11,
+   "wrong": 0,
+   "hedged_only": 1,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "儿童（3–12 岁）S$34。原答案键的网址 single-park-admission.html 现在会跳转到 single-attractions.html，价格没变。各园单页的游客价只有一个价格，不分平日和高峰日；总览页游客那张表的表头写着 Regular Days，但页面上没有对应的游客 Peak Days 表。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F44",
+  "category": "景点门票",
+  "legacy": "B7",
+  "question": "夜间野生动物园（Night Safari）非居民（游客）成人票多少钱？",
+  "canonical": "S$58",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$58",
+   "sgd_tolerance": "0",
+   "cny_range": "¥271–357",
+   "rule": "写成 S$58 算对（官网定价，不留误差）；写人民币时，落在 ¥271–357 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。写成本地居民价（S$48/S$52）或其他数的算错。"
+  },
+  "also_accept": [],
+  "common_wrong": [
+   {
+    "value": "游客价常规日 S$56、旺季日 S$60",
+    "files": [
+     "D1-K1-r2-or21auukat.md"
+    ],
+    "why": "官网游客价只有 S$58 一档，不分平日和高峰日；分档的是本地居民价（S$48/S$52）"
+   }
+  ],
+  "source_url": "https://www.mandai.com/en/tickets-and-passes/single-attractions/night-safari.html",
+  "source_quote": "Admission Prices for Non-Residents Adult Child S$58 S$41",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.mandai.com/en/tickets-and-passes/single-attractions.html",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 11,
+   "canonical": 10,
+   "wrong": 1,
+   "hedged_only": 1,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [
+    "D1-K1-r2-or21auukat.md"
+   ],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "儿童 S$41。D1-K1-r2 写的“游客价，常规日”对应总览页游客表的表头 Regular Days，但表里夜间动物园是 S$58；页面上找不到 S$56 和 S$60。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F45",
+  "category": "景点门票",
+  "question": "河川生态园（River Wonders）非居民成人票多少钱？",
+  "canonical": "S$45",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$45",
+   "sgd_tolerance": "0",
+   "cny_range": "¥211–277",
+   "rule": "写成 S$45 算对（官网定价，不留误差）；写人民币时，落在 ¥211–277 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.mandai.com/en/tickets-and-passes/single-attractions/river-wonders.html",
+  "source_quote": "Admission Prices for Non-Residents Adult Child S$45 S$33",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.mandai.com/en/tickets-and-passes/single-attractions.html",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 6,
+   "canonical": 6,
+   "wrong": 0,
+   "hedged_only": 3,
+   "canonical_files": [
+    "D1-K1-r2-or21auukat.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F46",
+  "category": "景点门票",
+  "question": "新加坡飞禽公园（Bird Paradise）非居民成人票多少钱？",
+  "canonical": "S$49",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$49",
+   "sgd_tolerance": "0",
+   "cny_range": "¥229–302",
+   "rule": "写成 S$49 算对（官网定价，不留误差）；写人民币时，落在 ¥229–302 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.mandai.com/en/tickets-and-passes/single-attractions/bird-paradise.html",
+  "source_quote": "Admission Prices for Non-Residents Adult Child S$49 S$34",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.mandai.com/en/tickets-and-passes/single-attractions.html",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 5,
+   "canonical": 5,
+   "wrong": 0,
+   "hedged_only": 3,
+   "canonical_files": [
+    "D1-K1-r2-or21auukat.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F47",
+  "category": "景点门票",
+  "question": "万态“任选 2 个景点 1 日”套票成人多少钱？",
+  "canonical": "S$88",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$88",
+   "sgd_tolerance": "0",
+   "cny_range": "¥412–542",
+   "rule": "写成 S$88 算对（官网定价，不留误差）；写人民币时，落在 ¥412–542 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.mandai.com/en/tickets-and-passes/multi-attractions.html",
+  "source_quote": "Save up to 25% off single admission rates when you choose any 2 attractions with this tourist pass. Adult: S$88 Child (Ages 3 to 12): S$60",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 8,
+   "canonical": 8,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "changes yearly",
+  "note": "动物园 + 夜间野生动物园单买共 S$107，套票省 S$19。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F48",
+  "category": "景点门票",
+  "question": "万态“6 个景点 1 日”套票成人多少钱？",
+  "canonical": "S$118",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$118",
+   "sgd_tolerance": "0",
+   "cny_range": "¥552–727",
+   "rule": "写成 S$118 算对（官网定价，不留误差）；写人民币时，落在 ¥552–727 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.mandai.com/en/tickets-and-passes/multi-attractions.html",
+  "source_quote": "6 Attractions Destination Pass (1-Day) Adult: S$118 *Child: S$90",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 10,
+   "canonical": 10,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "changes yearly",
+  "note": "6 个景点 5 日套票成人 S$158、儿童 S$110，写了的按同页核对。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F49",
+  "category": "景点门票",
+  "legacy": "B7",
+  "question": "新加坡环球影城（USS）成人一日票多少钱？",
+  "canonical": "S$76 起（非高峰日）。官网按日期分三档：非高峰 S$76、高峰 S$83、超高峰 S$89；2026 年 10 月抽查的各天都是高峰价 S$83",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$76（起价/非高峰日）；S$83（高峰日，含 2026 年 10 月）",
+   "sgd_tolerance": "0",
+   "cny_range": "S$76≈¥356–468；S$83≈¥388–511",
+   "rule": "写出 S$76、“S$76 起”或“非高峰 S$76”算对。写 S$83 也算对（高峰日票价；2026 年 10 月官网抽查的 11 天都是这个价，报告不用特别说明是高峰日）。写 S$89 并说明是超高峰日或 12 月的票价，算对。写了查询日期和具体日期的票价、且与官网当日一致，也算对。只写 S$98、或把 S$98 当作确定的门票价或高峰票价而没有写出 S$76 或 S$83 的，算错（官网三档是 S$76、S$83、S$89；S$98 是 Singtel“电话卡 + 门票”套餐页上的原价）。S$76 写对、另外提到“套餐原价 S$98 可能对应高峰日”的，仍算对。"
+  },
+  "also_accept": [
+   {
+    "value": "S$83",
+    "condition": "高峰日票价。核对时官网订票数据里 2026-10-04 至 10-11 每天、10-17、10-24、10-31 都是 Adult - Peak SGD83"
+   },
+   {
+    "value": "S$89",
+    "condition": "说明是超高峰日或 12 月的票价。核对时 12-12、12-19、12-24、12-25、12-26、12-31 是 Super Peak SGD89"
+   }
+  ],
+  "common_wrong": [
+   {
+    "value": "高峰日成人 S$98",
+    "files": [
+     "D3-K8-r1-pk61a2q6pn.md",
+     "D2-K8-r1-a0k7gt3v95.md"
+    ],
+    "why": "官网三档是非高峰 S$76、高峰 S$83、超高峰 S$89（抽查了 21 个日期），没有 S$98。S$98 是 Singtel 电话卡 + 门票套餐页上写的原价（U.P. $98，等于 S$15 卡 + S$83 门票）。这两份报告的 S$76 都写对了；S$98 一句，D2-K8-r1 写的是“可能对应高峰日”，D3-K8-r1 一处写“可能”、另两处直接写成高峰票价。按规则两份都仍算对"
+   }
+  ],
+  "source_url": "https://www.rwsentosa.com/en/play/universal-studios-singapore/tickets",
+  "source_quote": "Book Universal Studios Singapore Tickets from SGD 76",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 8,
+   "canonical": 8,
+   "wrong": 0,
+   "hedged_only": 4,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "changes often",
+  "note": "引文是页面标题。核对当天在浏览器里看了官网页面自己取的订票数据：10-04 至 10-11 每天、10-17、10-24、10-31 是 Peak S$83；11-07、11-08、11-18、11-28 是 Non Peak S$76；12-12、12-19、12-24、12-25、12-26、12-31 是 Super Peak S$89。儿童票（4–12 岁）三档都是 S$69，不设条。开放时间每天不同：核对当天（10-04）官网写 10 AM – 8 PM，多份样本在 10-02 看到的是 10 AM – 6 PM，所以不设条。D1-K1-r1 只写了第三方的“S$83 起”并标待核验，预算里又按约 S$88 估，按待核验处理。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配；另在浏览器里看了页面订票接口返回的票价（21 个日期）"
+ },
+ {
+  "id": "F50",
+  "category": "景点门票",
+  "question": "新加坡海洋馆（Singapore Oceanarium，原 S.E.A. 海洋馆）成人票多少钱？",
+  "canonical": "S$55（13–59 岁；官网写 From SGD55，抽查的各天都是 S$55）",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$55",
+   "sgd_tolerance": "0",
+   "cny_range": "¥257–339",
+   "rule": "写成 S$55 或“S$55 起”算对（官网定价，不留误差）；写人民币时，落在 ¥257–339 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。写成“成人 S$49 起”算错：官网正文写 From SGD55，订票数据里抽查的 18 天成人票都是 S$55，没有 S$49 的票；S$49 只出现在这个页面内嵌的、给搜索引擎读的问答数据里（Adult tickets start from SGD 49），页面上看不到。同时写了 S$55 和 S$49、以 S$55 为主的，算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [
+   {
+    "value": "成人 S$49 起",
+    "files": [
+     "D2-K8-r1-a0k7gt3v95.md"
+    ],
+    "why": "官网正文写 From SGD55；订票数据里抽查的 18 个日期（10 月至 12 月，含周末和圣诞）成人一日票都是 S$55。S$49 出自同一页面内嵌的结构化数据（问答：Adult tickets start from SGD 49；一日票 price 49），页面上看不到。数字在官网上有、但不是现价，属于归错，不是编造"
+   }
+  ],
+  "source_url": "https://www.rwsentosa.com/en/play/singapore-oceanarium",
+  "source_quote": "Admission Adult (Ages 13 to 59) : From SGD55 Child (Ages 4 to 12) : From SGD43 Senior (Ages 60 and above) : From SGD43",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 7,
+   "canonical": 6,
+   "wrong": 1,
+   "hedged_only": 5,
+   "canonical_files": [
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [
+    "D2-K8-r1-a0k7gt3v95.md"
+   ],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D2-K8-r3-en7lfymdyv.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "D3-K8-r1 主要写的是 S$55 起，另提到“官网另标 S$49 起”，按对。官网页面内嵌数据和正文不一致，见说明第 6 节第 17 条。傍晚票（Evening Entry，16:00 后入场，含两张 S$5 代金券）成人也是 S$55。开放时间按日历，不设条。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配；另在浏览器里看了页面订票接口返回的票价（18 个日期）"
+ },
+ {
+  "id": "F51",
+  "category": "景点门票",
+  "legacy": "B7",
+  "question": "新加坡植物园要不要门票？",
+  "canonical": "免费（只有园内的国家胡姬花园收费）",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "免费"
+   ],
+   "rule": "写出植物园（主园）免费算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://sbg.nparks.gov.sg/visit/general-info/",
+  "source_quote": "Admission charges only apply for entry into the National Orchid Garden. The Gardens is free entry for everyone, everyday.",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 10,
+   "canonical": 10,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F52",
+  "category": "景点门票",
+  "legacy": "B7",
+  "question": "植物园内的国家胡姬花园（National Orchid Garden）标准成人票（非本地居民）多少钱？",
+  "canonical": "S$15",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$15",
+   "sgd_tolerance": "0",
+   "cny_range": "¥70–92",
+   "rule": "写成 S$15 算对（官网定价，不留误差）；写人民币时，落在 ¥70–92 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。写成本地居民价 S$5 的算错（属于归错）。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://sbg.nparks.gov.sg/visit/general-info/",
+  "source_quote": "Ticket charges for the National Orchid Garden Category Local 1 Standard Seniors (60 years of age and above) $1 $3 Adults $5 $15 Students 2 $1 $3 Child below 12 years of age Free",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://sbg.nparks.gov.sg/attractions/national-orchid-garden/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 8,
+   "canonical": 8,
+   "wrong": 0,
+   "hedged_only": 2,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D2-K8-r3-en7lfymdyv.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "表格两列依次是 Local、Standard。学生和 60 岁以上 S$3，12 岁以下免费。只在门口售票处买。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F53",
+  "category": "景点门票",
+  "question": "新加坡国家美术馆（National Gallery Singapore）外国游客普通门票多少钱？",
+  "canonical": "S$20",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$20",
+   "sgd_tolerance": "0",
+   "cny_range": "¥94–123",
+   "rule": "写成 S$20 算对（官网定价，不留误差）；写人民币时，落在 ¥94–123 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.nationalgallery.sg/sg/en/visit/visitor-information.html",
+  "source_quote": "Pricing: Local – Singaporeans & PRs: Free Standard – Other Nationalities: $20",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 6,
+   "canonical": 6,
+   "wrong": 0,
+   "hedged_only": 4,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r3-en7lfymdyv.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "特展 S$25，All Access S$30；7–12 岁、60 岁以上等减 S$5。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F54",
+  "category": "景点门票",
+  "question": "滨海湾金沙 SkyPark 观景台成人票多少钱？",
+  "canonical": "非高峰时段（9:30–16:30）S$35；高峰时段（17:00–22:00）S$39",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$35（非高峰）/ S$39（高峰）",
+   "sgd_tolerance": "0",
+   "cny_range": "S$35≈¥164–216；S$39≈¥183–240",
+   "rule": "写出 S$35 或 S$39（时段对应正确，或两个都写）算对。写第三方平台价（如 S$32、S$25.78、S$33）算错。"
+  },
+  "also_accept": [
+   {
+    "value": "S$46",
+    "condition": "注明是 2026-10-10、10-11（F1 周末）的票价"
+   }
+  ],
+  "common_wrong": [
+   {
+    "value": "成人 S$32、优惠 S$28",
+    "files": [
+     "D1-K4-r1-sqss1lrgrp.md"
+    ],
+    "why": "Trip.com 指南页的价格，与官网不符；报告给这一行标了 ⚠️（它的图例：只从第三方平台读到，官网未核实）"
+   },
+   {
+    "value": "平台参考价约 S$25.78（标了待核验）",
+    "files": [
+     "D1-K8-r1-ebdcdzqn57.md"
+    ],
+    "why": "第三方平台价，与官网不符；报告同时写了“官网票价待核验”"
+   }
+  ],
+  "source_url": "https://www.marinabaysands.com/attractions/skypark-observation-deck.html",
+  "source_quote": "Adult S$35 S$24.50 From S$44.00 … Adult S$39 S$27.30 From S$48.00",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 6,
+   "canonical": 4,
+   "wrong": 2,
+   "hedged_only": 5,
+   "canonical_files": [
+    "D1-K1-r2-or21auukat.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D2-K8-r1-a0k7gt3v95.md"
+   ],
+   "wrong_files": [
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md"
+   ],
+   "wrong_but_hedged_files": [
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md"
+   ],
+   "hedged_only_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r3-en7lfymdyv.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "引文是官网票价表里 NON-PEAK 和 PEAK 两张表的成人行（三列依次是标准价、会员价、含餐套票）。非高峰 9:30–16:30（最后入场 16:00），高峰 17:00–22:00（最后入场 21:30）。优惠票 S$31/S$35。这个网站用脚本抓取会超时，要用浏览器打开；多数样本因此写了待核验。官网通知：10-09 因私人活动关闭。D2-K8-r1 写“第三方约 S$39”并标待核验，数值对。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "浏览器打开后逐字匹配"
+ },
+ {
+  "id": "F55",
+  "category": "景点门票",
+  "question": "新加坡河游船（Singapore River Cruise，约 40 分钟）成人票多少钱？",
+  "canonical": "S$28",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$28",
+   "sgd_tolerance": "0",
+   "cny_range": "¥131–172",
+   "rule": "写成 S$28 算对（官网定价，不留误差）；写人民币时，落在 ¥131–172 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://rivercruise.com.sg/river-cruise/",
+  "source_quote": "TICKET PRICE Adult: $28 Child (3 to 11 years old): $18",
+  "source_type": "operator",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 2,
+   "canonical": 2,
+   "wrong": 0,
+   "hedged_only": 4,
+   "canonical_files": [
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D2-K8-r1-a0k7gt3v95.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "D2-K8-r1 引的是另一家运营商 WaterB 的“S$28 起”，数值相同，按对。只有 2 份样本写了价格，4 份标待核验；这个景点在 6 份样本里出现，按“出现 4 份以上的景点”设条。",
+  "coverage_basis": "景点在 4 份以上样本的行程里出现，但写出数值的不足 4 份（多数标了待核验）",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F56",
+  "category": "景点门票",
+  "question": "星耀樟宜 Canopy Park（星空花园）标准入场票多少钱？",
+  "canonical": "S$8（成人、儿童同价）",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$8",
+   "sgd_tolerance": "0",
+   "cny_range": "¥37–49",
+   "rule": "写成 S$8 算对（官网定价，不留误差）；写人民币时，落在 ¥37–49 内算对（按 1 S$=5.2–5.6 元换算后 ±10%）。把 Walking Net、Hedge Maze 等园内加购项目的价格（S$11.90–18.90）说成 Canopy Park 入场票价的算错。只列出这些加购项目各自的价格、并写明是各项目价格的，判“没写”。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.jewelchangiairport.com/en/attractions/canopy-park.html",
+  "source_quote": "Standard Rate Adult/Child - SGD 8",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 3,
+   "canonical": 3,
+   "wrong": 0,
+   "hedged_only": 1,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D1-K1-r2-or21auukat.md"
+   ]
+  },
+  "stability": "changes yearly",
+  "note": "新加坡居民 S$6。5 合 1 套票成人 S$39、儿童 S$29。D1-K8-r2 只列了园内各加购项目的价格（写明是“各项目 S$11.90–18.90”），没写入场票价，按没提处理。",
+  "coverage_basis": "景点在 4 份以上样本的行程里出现，但写出数值的不足 4 份（多数标了待核验）",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F57",
+  "category": "景点开放时间",
+  "legacy": "B7",
+  "question": "滨海湾花园花穹、云雾林每天几点开到几点？",
+  "canonical": "每天 9:00–21:00",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "9:00–21:00"
+   ],
+   "rule": "时间与标准值一致算对；12 小时制/24 小时制、24:00/00:00/午夜 视为相同；不留误差。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.gardensbythebay.com.sg/en/plan-your-visit/opening-hours.html",
+  "source_quote": "Cloud Forest Opening Hours Daily: 9.00am – 9.00pm (Last Admission: 8.00pm)",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 12,
+   "canonical": 12,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "每月各有一天维护闭馆。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F58",
+  "category": "景点开放时间",
+  "legacy": "B7",
+  "question": "花穹、云雾林最后入场时间分别是几点？",
+  "canonical": "云雾林 20:00；花穹 20:30",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "云雾林 20:00",
+    "花穹 20:30"
+   ],
+   "rule": "两个馆至少写对一个、且没有把两个馆对调，算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.gardensbythebay.com.sg/en/plan-your-visit/opening-hours.html",
+  "source_quote": "Cloud Forest Opening Hours Daily: 9.00am – 9.00pm (Last Admission: 8.00pm) … Flower Dome Opening Hours Daily: 9.00am – 9.00pm (Last Admission: 8.30pm)",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 12,
+   "canonical": 12,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "D0-r2 写“花穹/云雾林…最后入场 20:00/20:30”，顺序和馆名对不上，按不扣分处理，由评分员看上下文。D1-K1-r2 只写了云雾林 20:00。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F59",
+  "category": "景点开放时间",
+  "question": "滨海湾花园户外花园（含 Supertree Grove）每天几点开到几点？",
+  "canonical": "每天 5:00–次日 2:00",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "5:00–2:00"
+   ],
+   "rule": "时间与标准值一致算对；12 小时制/24 小时制、24:00/00:00/午夜 视为相同；不留误差。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.gardensbythebay.com.sg/en/plan-your-visit/opening-hours.html",
+  "source_quote": "Outdoor Gardens (Outdoor gardens include: Serene Garden, Supertree Grove, Sun Pavillion, Heritage Gardens, World of Plants, Dragonfly & Kingfisher Lakes) Opening Hours Daily: 5.00am – 2.00am",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 10,
+   "canonical": 10,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "擎天树的灯 23:30 关。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F60",
+  "category": "景点开放时间",
+  "question": "OCBC Skyway 每天几点开到几点？",
+  "canonical": "每天 9:00–21:00，最后入场 20:30",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "9:00–21:00"
+   ],
+   "rule": "写出 9:00–21:00 算对；最后入场 20:30 写了更完整。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.gardensbythebay.com.sg/en/plan-your-visit/opening-hours.html",
+  "source_quote": "OCBC Skyway Opening Hours Daily: 9.00am – 9.00pm (Last admission at 8.30pm)",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 10,
+   "canonical": 10,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "Supertree Observatory 时间相同。2026-10 的维护闭馆日：OCBC Skyway 10-14，Supertree Observatory 10-15，Floral Fantasy 10-13。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F61",
+  "category": "景点开放时间",
+  "question": "滨海湾花园 Garden Rhapsody 灯光音乐秀每晚几点、要不要钱？",
+  "canonical": "每天 19:45 和 20:45 两场；免费",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "19:45",
+    "20:45"
+   ],
+   "rule": "两场时间都写对算对；免费不单独判。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.gardensbythebay.com.sg/en/things-to-do/calendar-of-events/garden-rhapsody.html",
+  "source_quote": "Show Timings Daily, 7.45pm & 8.45pm Admission Free admission",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 11,
+   "canonical": 11,
+   "wrong": 0,
+   "hedged_only": 1,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r2-n0zmaz73ba.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "遇圣诞等售票活动，Supertree Grove 可能收费。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F62",
+  "category": "景点开放时间",
+  "legacy": "B7",
+  "question": "花穹 2026 年 10 月哪天维护闭馆？",
+  "canonical": "2026-10-06（全天）",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "2026-10-06"
+   ],
+   "rule": "日期一致算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.gardensbythebay.com.sg/en/things-to-do/attractions/flower-dome.html",
+  "source_quote": "Flower Dome will be closed on maintenance days . The next closure will be on 6 Oct 2026.",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.gardensbythebay.com.sg/en/plan-your-visit/opening-hours.html",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 9,
+   "canonical": 9,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "changes often",
+  "note": "下一次是 2026-11-16。闭馆日每月变，只对 2026 年 10 月初写的攻略适用。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F63",
+  "category": "景点开放时间",
+  "question": "云雾林 2026 年 10 月哪天维护闭馆？",
+  "canonical": "2026-10-26（全天）",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "2026-10-26"
+   ],
+   "rule": "日期一致算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.gardensbythebay.com.sg/en/things-to-do/attractions/cloud-forest.html",
+  "source_quote": "Cloud Forest will be closed on maintenance days. The next closure will be on 26 Oct 2026.",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.gardensbythebay.com.sg/en/plan-your-visit/opening-hours.html",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 5,
+   "canonical": 5,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "changes often",
+  "note": "下一次是 2026-11-17。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F64",
+  "category": "景点开放时间",
+  "question": "新加坡动物园每天几点开到几点？",
+  "canonical": "每天 8:30–18:00，最后入场 17:00",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "8:30–18:00"
+   ],
+   "rule": "写出 8:30–18:00 算对；最后入场 17:00 写了更完整。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.mandai.com/en/singapore-zoo.html",
+  "source_quote": "Opening Hours: Daily, 8:30am – 6:00pm (Last Entry: 5:00pm)",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 8,
+   "canonical": 8,
+   "wrong": 0,
+   "hedged_only": 3,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K4-r1-sqss1lrgrp.md"
+   ],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "河川生态园、飞禽公园是 9:00–18:00（最后入场 17:00）。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F65",
+  "category": "景点开放时间",
+  "question": "夜间野生动物园（Night Safari）每天几点开到几点？",
+  "canonical": "每天 18:00–24:00，最后入场 23:15（步道和游园车 19:00 开始）",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "18:00–24:00"
+   ],
+   "rule": "写出 18:00–24:00 算对。写 19:15–24:00 算错：官网正文写 Daily, 6:00pm – 12:00am；19:15 只出现在这个页面内嵌的、给搜索引擎读的数据里（opens 19:15），页面上看不到。"
+  },
+  "also_accept": [
+   {
+    "value": "18:00 开门，19:00 起步道和游园车开放",
+    "condition": "同页写明 Walking Trails and Safari Adventure Tram start at 7:00pm"
+   }
+  ],
+  "common_wrong": [
+   {
+    "value": "19:15–24:00",
+    "files": [
+     "D0-r2-n0zmaz73ba.md"
+    ],
+    "why": "官网正文写 6:00pm–12:00am（最后入场 11:15pm）。19:15 出自同一页面内嵌的结构化数据（openingHoursSpecification：opens 19:15、closes 24:00），页面上看不到。数字在官网上有、但不是现行时间，属于归错，不是编造"
+   }
+  ],
+  "source_url": "https://www.mandai.com/en/night-safari.html",
+  "source_quote": "Opening Hours: Daily, 6:00pm – 12:00am (Last Entry: 11:15pm)",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 8,
+   "canonical": 7,
+   "wrong": 1,
+   "hedged_only": 3,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D1-K8-r1-ebdcdzqn57.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K4-r1-sqss1lrgrp.md"
+   ],
+   "wrong_files": [
+    "D0-r2-n0zmaz73ba.md"
+   ],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "官网页面内嵌数据和正文不一致，见说明第 6 节第 17 条。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F66",
+  "category": "景点开放时间",
+  "legacy": "B7",
+  "question": "新加坡植物园每天几点开到几点？",
+  "canonical": "每天 5:00–24:00",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "5:00–24:00"
+   ],
+   "rule": "时间与标准值一致算对；12 小时制/24 小时制、24:00/00:00/午夜 视为相同；不留误差。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://sbg.nparks.gov.sg/visit/general-info/",
+  "source_quote": "Opening Hours Gardens 5am to 12mn daily",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 6,
+   "canonical": 6,
+   "wrong": 0,
+   "hedged_only": 1,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F67",
+  "category": "景点开放时间",
+  "question": "国家胡姬花园每天几点开到几点？",
+  "canonical": "每天 8:30–19:00，最后售票和入场 18:00",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "8:30–19:00"
+   ],
+   "rule": "写出 8:30–19:00 算对；最后入场 18:00 写了更完整。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://sbg.nparks.gov.sg/visit/general-info/",
+  "source_quote": "National Orchid Garden 8.30am to 7pm (Last Ticket sale & entry at 6pm)",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://sbg.nparks.gov.sg/attractions/national-orchid-garden/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 8,
+   "canonical": 8,
+   "wrong": 0,
+   "hedged_only": 1,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r1-v7ro5e48hi.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F68",
+  "category": "景点开放时间",
+  "question": "新加坡国家美术馆每天几点开到几点？",
+  "canonical": "每天 10:00–19:00，最后入场 18:30",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "10:00–19:00"
+   ],
+   "rule": "写出 10:00–19:00 算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.nationalgallery.sg/sg/en/visit/visitor-information.html",
+  "source_quote": "Opening hours Daily, 10am – 7pm Last admission: 6.30pm",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 7,
+   "canonical": 7,
+   "wrong": 0,
+   "hedged_only": 2,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r2-or21auukat.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "UOB 东南亚展厅暂时关闭到 2027 年底。F1 期间（2026-10-07 至 10-13）停车场限时开放，开放时间不变。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F69",
+  "category": "景点开放时间",
+  "question": "星耀樟宜雨漩涡（Rain Vortex）灯光音乐秀每晚几点？",
+  "canonical": "周一至周四 20:00、21:00；周五至周日、公共假日及前夕 20:00、21:00、22:00",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "周一至周四 20:00、21:00",
+    "周五至周日及公假（前夕）加一场 22:00"
+   ],
+   "rule": "两组时间都写对算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.jewelchangiairport.com/en/attractions/rain-vortex.html",
+  "source_quote": "Light & Music Showcase: Monday to Thursdays: 8.00pm & 9.00pm Friday to Sunday, PH & Eve of PH: 8.00pm, 9.00pm & 10.00pm",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 7,
+   "canonical": 7,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F70",
+  "category": "景点开放时间",
+  "question": "星耀樟宜雨漩涡每天几点开到几点？",
+  "canonical": "每天 10:00–22:00",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "10:00–22:00"
+   ],
+   "rule": "时间与标准值一致算对；12 小时制/24 小时制、24:00/00:00/午夜 视为相同；不留误差。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.jewelchangiairport.com/en/attractions/rain-vortex.html",
+  "source_quote": "OPENING HOURS Daily: 10:00AM - 10:00PM",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 5,
+   "canonical": 5,
+   "wrong": 0,
+   "hedged_only": 2,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r2-vszaqoc7fc.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "雨漩涡是否免费，官网页面没有明写，不设条（见 notes）。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F71",
+  "category": "景点开放时间",
+  "question": "滨海湾金沙 Spectra 光影水舞秀每晚几点、要不要钱？",
+  "canonical": "周日至周四 20:00、21:00；周五、周六 20:00、21:00、22:00；免费，约 15 分钟",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "20:00、21:00（每晚）",
+    "周五、周六加一场 22:00"
+   ],
+   "rule": "写出每晚 20:00、21:00 算对；周五六 22:00 写了更完整。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.marinabaysands.com/attractions/spectra.html",
+  "source_quote": "SHOWTIMES DAILY Sun – Thu: 8pm & 9pm Fri & Sat: 8pm, 9pm & 10pm",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 6,
+   "canonical": 6,
+   "wrong": 0,
+   "hedged_only": 5,
+   "canonical_files": [
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D2-K8-r1-a0k7gt3v95.md"
+   ],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r3-en7lfymdyv.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "同页：Spectra – A Light & Water Show is a free, nightly outdoor 15-minute extravaganza displayed over the water at the Event Plaza。网站用脚本抓取会超时，要用浏览器打开。D1-K8-r1、D2-K8-r1、D1-K1-r2 写了时间但标待核验；D1-K1-r2 只写了 20:00/21:00。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "浏览器打开后逐字匹配"
+ },
+ {
+  "id": "F72",
+  "category": "景点开放时间",
+  "question": "滨海湾金沙 SkyPark 观景台每天几点开到几点？",
+  "canonical": "9:30–22:00（非高峰 9:30–16:30，最后入场 16:00；高峰 17:00–22:00，最后入场 21:30）",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "9:30 开",
+    "22:00 关"
+   ],
+   "rule": "写出 9:30–22:00 或两个时段算对。写成“周一至四 11:00–21:00、周五至日 11:00–22:00”等其他时间算错。"
+  },
+  "also_accept": [],
+  "common_wrong": [
+   {
+    "value": "周一至四 11:00–21:00；周五至日 11:00–22:00",
+    "files": [
+     "D1-K4-r1-sqss1lrgrp.md"
+    ],
+    "why": "Trip.com 的信息，与官网不符；报告给这一行标了 ⚠️（它的图例：只从第三方平台读到，官网未核实）"
+   }
+  ],
+  "source_url": "https://www.marinabaysands.com/attractions/skypark-observation-deck.html",
+  "source_quote": "OPENING HOURS Non-peak: 9.30am – 4.30pm (Last entry at 4pm) Peak: 5pm – 10pm (Last entry at 9.30pm)",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 4,
+   "canonical": 3,
+   "wrong": 1,
+   "hedged_only": 4,
+   "canonical_files": [
+    "D1-K1-r2-or21auukat.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K8-r1-ebdcdzqn57.md"
+   ],
+   "wrong_files": [
+    "D1-K4-r1-sqss1lrgrp.md"
+   ],
+   "wrong_but_hedged_files": [
+    "D1-K4-r1-sqss1lrgrp.md"
+   ],
+   "hedged_only_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r2-nfmiwa5npc.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "2026-10-09 因私人活动关闭；10-10、10-11 延长到 22:30。D1-K8-r1 写对了但标待核验。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "浏览器打开后逐字匹配"
+ },
+ {
+  "id": "F73",
+  "category": "景点开放时间",
+  "question": "艺术科学博物馆（ArtScience Museum）每天几点开到几点？",
+  "canonical": "每天 9:00–18:00，最后入场 17:00",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "9:00–18:00"
+   ],
+   "rule": "时间与标准值一致算对；12 小时制/24 小时制、24:00/00:00/午夜 视为相同；不留误差。写成“10:00–19:00”“周五六到 21:00”等其他时间算错。"
+  },
+  "also_accept": [],
+  "common_wrong": [
+   {
+    "value": "周日至四 10:00–19:00；周五至六 10:00–21:00",
+    "files": [
+     "D1-K4-r1-sqss1lrgrp.md"
+    ],
+    "why": "Trip.com 的信息，与官网通知（每天 9:00–18:00）不符；报告给这一行标了 ⚠️（它的图例：只从第三方平台读到，官网未核实）"
+   }
+  ],
+  "source_url": "https://www.marinabaysands.com/museum.html",
+  "source_quote": "ArtScience Museum is now open daily, 9am – 6pm (Last entry at 5pm)",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 3,
+   "canonical": 2,
+   "wrong": 1,
+   "hedged_only": 6,
+   "canonical_files": [
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D2-K8-r1-a0k7gt3v95.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K8-r1-ebdcdzqn57.md"
+   ],
+   "wrong_files": [
+    "D1-K4-r1-sqss1lrgrp.md"
+   ],
+   "wrong_but_hedged_files": [
+    "D1-K4-r1-sqss1lrgrp.md"
+   ],
+   "hedged_only_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "票价按展览分别定价，不设条。D1-K8-r1 写对了但标待核验。",
+  "coverage_basis": "景点在 4 份以上样本的行程里出现，但写出数值的不足 4 份（多数标了待核验）",
+  "verified_how": "浏览器打开后逐字匹配"
+ },
+ {
+  "id": "F74",
+  "category": "景点开放时间",
+  "question": "牛车水佛牙寺龙华院每天几点开到几点？",
+  "canonical": "每天 7:00–17:00",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "7:00–17:00"
+   ],
+   "rule": "时间与标准值一致算对；12 小时制/24 小时制、24:00/00:00/午夜 视为相同；不留误差。说整座寺院在 2026 年 9 月至 12 月关闭的算错（官网通知关闭的只是屋顶花园）。"
+  },
+  "also_accept": [],
+  "common_wrong": [
+   {
+    "value": "佛牙寺 2026-09-03 至 2026-12-15 因整修关闭（标了“措辞待核验”）",
+    "files": [
+     "D3-K8-r2-rr4ncbnr3f.md"
+    ],
+    "why": "官网通知关闭的只是屋顶花园（Roof Garden），寺院照常开放"
+   }
+  ],
+  "source_url": "https://www.buddhatoothrelictemple.org.sg/",
+  "source_quote": "Opening Hours Monday - Sunday 07:00AM to 05:00PM",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 1,
+   "canonical": 0,
+   "wrong": 1,
+   "hedged_only": 6,
+   "canonical_files": [],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "wrong_but_hedged_files": [
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "hedged_only_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "12 份样本没有一份写出开放时间，6 份标待核验。这个景点几乎每份行程都排了，按“出现 4 份以上的景点”设条。官网通知原文：The Roof Garden will be temporarily closed from 3 September 2026 to 15 December 2026 for layout enhancement works。官网没有明写是否免费，门票不设条。",
+  "coverage_basis": "景点在 4 份以上样本的行程里出现，但写出数值的不足 4 份（多数标了待核验）",
+  "verified_how": "浏览器打开后逐字匹配"
+ },
+ {
+  "id": "F75",
+  "category": "景点开放时间",
+  "question": "苏丹回教堂对游客开放参观的时间是什么？",
+  "canonical": "周六至周四 10:00–12:00、14:00–16:00；周五不开放",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "10:00–12:00",
+    "14:00–16:00",
+    "周五不开放"
+   ],
+   "rule": "两个时段写对、或写出周五不开放，算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.sultanmosque.sg/visitors-info/",
+  "source_quote": "Walk-In Visiting Hours Saturday to Thursday: 10.00 AM to 12.00 PM & 2.00 PM to 4.00 PM Friday: Closed",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 0,
+   "canonical": 0,
+   "wrong": 0,
+   "hedged_only": 7,
+   "canonical_files": [],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "12 份样本没有一份写出参观时间，7 份标待核验。按“出现 4 份以上的景点”设条。行程把入内参观排在周五或 16:00 以后的，是 D1 类的问题。",
+  "coverage_basis": "景点在 4 份以上样本的行程里出现，但写出数值的不足 4 份（多数标了待核验）",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F76",
+  "category": "餐饮与消费规则",
+  "legacy": "B6",
+  "question": "新加坡消费税（GST）税率是多少？",
+  "canonical": "9%（2024-01-01 起）",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "9%"
+   ],
+   "rule": "写出 9% 算对；写了生效日期的，日期要是 2024-01-01。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/basics-of-gst/current-gst-rates",
+  "source_quote": "The current GST rate in Singapore is 9%.",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/gst-rate-change/gst-rate-change-for-consumers1",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 11,
+   "canonical": 11,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "生效日期出处（第二来源）：(ii) 8% to 9% with effect from 1 Jan 2024。4 份样本写了生效日期。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F77",
+  "category": "餐饮与消费规则",
+  "legacy": "B6",
+  "question": "新加坡餐厅、酒店账单上的服务费一般是多少？",
+  "canonical": "通常 10%",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "10%"
+   ],
+   "rule": "写出 10% 算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/specific-business-sectors/hotel-and-food-beverage",
+  "source_quote": "In the hotel or food & beverage (“F&B”) industry, businesses often add a service charge, typically at 10%, to their bills.",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://calc2026.agc.gov.sg/visiting-singapore/practical-information/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 11,
+   "canonical": 11,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "原答案键写“没找到官方页面，不核对数值”。现在有官方出处（IRAS 这一页，另有政府网站的访客须知页），可以核对。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F78",
+  "category": "餐饮与消费规则",
+  "question": "菜单或房价标“++”时，标价 S$100 实际要付多少？",
+  "canonical": "S$119.90（先加 10% 服务费，再按含服务费的金额加 9% GST，合计约 +19.9%）",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$119.90（即 +19.9%，×1.199）",
+   "sgd_tolerance": "写成约 19%–20% 算对",
+   "cny_range": "不适用",
+   "rule": "写出 +19.9%、×1.199、S$119.90 之一，或“约 19%–20%”，算对。写成 +9% 或 +10% 一项的算错。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.iras.gov.sg/taxes/goods-services-tax-(gst)/specific-business-sectors/hotel-and-food-beverage",
+  "source_quote": "Food & beverage $100.00 10% service charge $ 10.00 Sub-total $110.00 9% GST (on $110.00) $ 9.90 Total price with GST $119.90",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 8,
+   "canonical": 8,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "D1-K1-r1 写“合计约 +19%”，是两项直接相加，按对处理。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F79",
+  "category": "餐饮与消费规则",
+  "question": "在新加坡要不要给小费？",
+  "canonical": "不是惯例，不强制；餐厅、酒吧、酒店餐饮账单通常已含 10% 服务费",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "不强制 / 不是惯例"
+   ],
+   "rule": "写出不需要或不强制给小费算对。写“必须给 10%–15% 小费”算错。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://calc2026.agc.gov.sg/visiting-singapore/practical-information/",
+  "source_quote": "While tipping is not customary in Singapore, you may wish to do so if you experience good service. A 10% service charge is usually included in your restaurant, bar, and hotel dining bills.",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 10,
+   "canonical": 10,
+   "wrong": 0,
+   "hedged_only": 1,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "来源是总检察署办的会议网站的访客须知页（政府网站，2026-06-01 更新）。D1-K4-r2、D1-K8-r1、D3-K8-r1 写对了但标“待核验”（没找到官方来源）。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F80",
+  "category": "餐饮与消费规则",
+  "question": "在小贩中心吃完饭要不要自己归还托盘？不还会怎样？",
+  "canonical": "必须自己归还托盘和餐具并清理桌面；2021-09-01 起执法，初犯书面警告，再犯可被罚款",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "必须归还托盘/餐具"
+   ],
+   "rule": "写出必须归还算对；执法日期、初犯警告写了更完整，写错日期算错。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.nea.gov.sg/our-services/public-cleanliness/clean-tables/clean-tables-campaign",
+  "source_quote": "Enforcement will commence on 1 September 2021 at all hawker centres.",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 7,
+   "canonical": 7,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "同页：First-time offenders will be issued with a written warning. Subsequent offenders may face composition or court fines.",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F81",
+  "category": "餐饮与消费规则",
+  "question": "老巴刹（Lau Pa Sat）沙爹街每天几点营业？",
+  "canonical": "平日 19:00–次日 3:00；周末 15:00–次日 3:00",
+  "unit": "",
+  "accept": {
+   "type": "time",
+   "must_have": [
+    "平日 19:00 开",
+    "3:00 收"
+   ],
+   "rule": "写出平日 19:00 开档算对；收档时间写了的要是 3:00。写成“仅平日营业”或收档 1:00 的算错。"
+  },
+  "also_accept": [],
+  "common_wrong": [
+   {
+    "value": "沙爹街仅平日 19:00–01:00",
+    "files": [
+     "D1-K1-r2-or21auukat.md"
+    ],
+    "why": "收档时间是 3:00，周末也营业（15:00 起）"
+   }
+  ],
+  "source_url": "https://www.laupasat.sg/satay-street/",
+  "source_quote": "Operating Hours Weekdays: 7.00pm to 3.00am Weekends: 3.00pm to 3.00am",
+  "source_type": "official",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 6,
+   "canonical": 5,
+   "wrong": 1,
+   "hedged_only": 2,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K1-r1-y2pr6ldjcs.md"
+   ],
+   "wrong_files": [
+    "D1-K1-r2-or21auukat.md"
+   ],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D2-K8-r3-en7lfymdyv.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "D1-K1-r1 写“19:00 后沙爹街出摊”并标待核验，D2-K8-r1 写“约 19:00 开档，19:00–03:00”，都按对。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F82",
+  "category": "餐饮与消费规则",
+  "question": "新加坡的自来水能不能直接喝？",
+  "canonical": "能，可以直接饮用，不用再过滤",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "可以直接饮用"
+   ],
+   "rule": "写出可以直接喝算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.pub.gov.sg/Public/WaterLoop/Water-Quality",
+  "source_quote": "Our tap water is suitable for drinking directly from the tap without any further filtration.",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 6,
+   "canonical": 6,
+   "wrong": 0,
+   "hedged_only": 3,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "D1-K1-r1、D1-K1-r2、D3-K8-r1 写对了但标“待核验”。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F83",
+  "category": "法规与注意事项",
+  "legacy": "B8",
+  "question": "能不能带电子烟入境新加坡？",
+  "canonical": "不能。电子烟是禁止进口的物品，持有、使用也违法",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "电子烟禁止携带入境（或：在新加坡违法）"
+   ],
+   "rule": "写出禁止/违法算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/what-you-can-bring",
+  "source_quote": "Prohibited items are not allowed to be imported into Singapore. These include: Chewing gum Chewing tobacco and imitation tobacco products (for example, electronic cigarettes)",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.gov.sg/stopvaping-penalties/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 8,
+   "canonical": 8,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "外国人被查到持有电子烟：没收并开罚单；短期访问准证持有人再犯，离境后禁止再入境（gov.sg 页，2026-09-01 更新）。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F84",
+  "category": "法规与注意事项",
+  "legacy": "B8",
+  "question": "个人持有、使用电子烟，最高罚多少？",
+  "canonical": "最高罚款 S$10,000（2026-05-01 起，TVCA）；含依托咪酯等成分的，最高罚 S$20,000 或监禁 10 年",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$10,000",
+   "sgd_tolerance": "0",
+   "cny_range": "约 ¥4.7 万–6.2 万",
+   "rule": "写出最高 S$10,000 算对；写成其他金额算错。"
+  },
+  "also_accept": [
+   {
+    "value": "最高 S$20,000 或监禁 10 年",
+    "condition": "注明是含依托咪酯等 SPS 成分的产品"
+   }
+  ],
+  "common_wrong": [],
+  "source_url": "https://www.gov.sg/stopvaping-penalties/",
+  "source_quote": "Individuals: Can be fined up to $10,000",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 4,
+   "canonical": 4,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "这句在 Enhanced Penalties for All Prohibited Products 一段下。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F85",
+  "category": "法规与注意事项",
+  "legacy": "B8",
+  "question": "能不能带口香糖入境新加坡？",
+  "canonical": "不能。口香糖禁止进口（经 HSA 批准的牙科、药用口香糖除外）",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "禁止携带/进口"
+   ],
+   "rule": "写出禁止算对。写“少量自用可以带”算错。"
+  },
+  "also_accept": [],
+  "common_wrong": [
+   {
+    "value": "严禁携带：口香糖（少量自用可）",
+    "files": [
+     "D1-K1-r2-or21auukat.md"
+    ],
+    "why": "官方清单没有“少量自用可带”的例外，例外只有 HSA 批准的牙科、药用口香糖"
+   }
+  ],
+  "source_url": "https://www.customs.gov.sg/doing-business/import-operations/import-procedures/controlled-and-prohibited-goods-for-imports/",
+  "source_quote": "Chewing gum (excluding Health Sciences Authority approved oral dental and medicinal chewing gum)",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.ica.gov.sg/enter-transit-depart/entering-singapore/what-you-can-bring",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 6,
+   "canonical": 5,
+   "wrong": 1,
+   "hedged_only": 1,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [
+    "D1-K1-r2-or21auukat.md"
+   ],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D2-K8-r1-a0k7gt3v95.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "引文在 Prohibited Goods 表里。D2-K8-r1 写“口香糖进口受管制——官方原文待核验”，按待核验。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F86",
+  "category": "法规与注意事项",
+  "legacy": "B8",
+  "question": "带香烟入境新加坡有没有免税额度？",
+  "canonical": "没有。香烟和烟草制品没有免税额度，也没有 GST 进口减免，带入都要缴税",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "没有免税额度"
+   ],
+   "rule": "写出没有免税额度算对。写“烟酒有免税限额”或给出免税支数算错。"
+  },
+  "also_accept": [],
+  "common_wrong": [
+   {
+    "value": "烟酒等有免税限额，超出自用免税额度需申报纳税",
+    "files": [
+     "D1-K1-r1-y2pr6ldjcs.md"
+    ],
+    "why": "酒有免税额度，香烟没有；原标准判定细则 3 举的就是这个例子"
+   }
+  ],
+  "source_url": "https://www.customs.gov.sg/at-customs/arriving-in-singapore/duty-free-concession-gst-relief/",
+  "source_quote": "There is no duty-free concession or GST import relief for cigarettes and tobacco products.",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 6,
+   "canonical": 5,
+   "wrong": 1,
+   "hedged_only": 1,
+   "canonical_files": [
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [
+    "D1-K1-r1-y2pr6ldjcs.md"
+   ],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D3-K8-r1-pk61a2q6pn.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "海关页 2026-03-25 更新。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F87",
+  "category": "法规与注意事项",
+  "question": "带酒入境新加坡，免税的条件和额度是什么？",
+  "canonical": "满 18 岁、入境前在新加坡境外停留至少 48 小时、不是从马来西亚入境；五种组合选一种，合计最多 2 升（如 1 升烈酒 + 1 升葡萄酒）",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "满 18 岁",
+    "境外停留至少 48 小时",
+    "不是从马来西亚入境"
+   ],
+   "rule": "三个条件写出至少两个、且没有写错，算对；额度写了的要是合计 2 升。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.customs.gov.sg/at-customs/arriving-in-singapore/duty-free-concession-gst-relief/",
+  "source_quote": "You are 18 years old or above. You spent at least 48 hours outside Singapore before arrival. You are not arriving from Malaysia.",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 5,
+   "canonical": 5,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "组合：A 烈酒 1L+葡萄酒 1L；B 烈酒 1L+啤酒 1L；C 葡萄酒 1L+啤酒 1L；D 葡萄酒 2L；E 啤酒 2L。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F88",
+  "category": "法规与注意事项",
+  "legacy": "B8",
+  "question": "带新买的物品入境新加坡，GST 进口减免额度是多少？",
+  "canonical": "在新加坡境外停留 48 小时或以上：S$500；不足 48 小时：S$100",
+  "unit": "新加坡元",
+  "accept": {
+   "type": "number",
+   "sgd": "S$500（≥48 小时）/ S$100（<48 小时）",
+   "sgd_tolerance": "0",
+   "cny_range": "S$500≈¥2340–3080；S$100≈¥468–616",
+   "rule": "两档金额和条件写对算对。把它写成“游客购物后带回中国的免税额度”算错（属于归错），这是原标准 B8 点名的易错点。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.customs.gov.sg/at-customs/arriving-in-singapore/duty-free-concession-gst-relief/",
+  "source_quote": "Time Spent Abroad Value of Goods Granted GST Import Relief 48 hours or more Up to S$500 Less than 48 hours Up to S$100",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 5,
+   "canonical": 5,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "这是入境新加坡时的额度。酒、烟草不适用。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F89",
+  "category": "法规与注意事项",
+  "question": "在新加坡地铁站内和车厢里能不能吃东西、喝水？",
+  "canonical": "不能。地铁范围内禁止饮食，最高罚款 S$500",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "禁止饮食"
+   ],
+   "rule": "写出禁止算对；罚款金额写了的要是最高 S$500。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://sso.agc.gov.sg/SL/RTSA1995-RG1?ProvIds=P1IV-#pr14-",
+  "source_quote": "No person shall — (a) consume or attempt to consume any food or drinks while in or upon any part of the railway premises",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://sso.agc.gov.sg/SL/RTSA1995-RG1?ProvIds=Sc-#Sc-",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 9,
+   "canonical": 9,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "出处是《Rapid Transit Systems Regulations》第 14 条；附表：14 Consumption of food or drinks $500。12 份样本没有一份写出罚款金额，都标了待核验。条文要用浏览器打开才显示。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "浏览器打开后逐字匹配"
+ },
+ {
+  "id": "F90",
+  "category": "法规与注意事项",
+  "question": "在新加坡订 Airbnb 这类短租民宿合不合法？",
+  "canonical": "不合法。私人住宅不得用于少于连续 3 个月的短期住宿；游客应住酒店（没有最短住宿限制）或服务式公寓（最短 7 天）",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "私人住宅短租（少于 3 个月）违法"
+   ],
+   "rule": "写出少于 3 个月的短租违法算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.ura.gov.sg/guidelines/property-and-business-owners/property/short-term-accommodation/",
+  "source_quote": "Under the law, they are not allowed to be used for short-term accommodation – defined as stays of less than three consecutive months.",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 4,
+   "canonical": 4,
+   "wrong": 0,
+   "hedged_only": 1,
+   "canonical_files": [
+    "D1-K1-r2-or21auukat.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K1-r2-or21auukat.md"
+   ],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D1-K1-r1-y2pr6ldjcs.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "URA 页 2026-06-15 更新。D1-K1-r2 写对了但标待核验。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F91",
+  "category": "其他",
+  "legacy": "B3",
+  "question": "新加坡用什么插头/插座？",
+  "canonical": "Type G（英标 13A 三脚方插）",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "Type G / 英标三脚方插"
+   ],
+   "rule": "写出 G 型或英标三脚算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.consumerproductsafety.gov.sg/consumers/product-safety-tips/home-appliances-furniture-and-indoor-product-safety/types-of-mains-plugs-suitable-for-use-in-singapore/",
+  "source_quote": "13-ampere (A) 3-pin fused mains plug (or Type G plug) – This is suitable for most electrical appliances in Singapore",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://calc2026.agc.gov.sg/visiting-singapore/practical-information/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 11,
+   "canonical": 11,
+   "wrong": 0,
+   "hedged_only": 1,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K4-r2-vszaqoc7fc.md"
+   ],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "页面 2026-07-10 更新。D0-r1、D1-K4-r2 写对了但标“待核验”。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F92",
+  "category": "其他",
+  "legacy": "B3",
+  "question": "新加坡的电压和频率是多少？",
+  "canonical": "230V、50Hz",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "230V（写 220–240V 也算对）"
+   ],
+   "rule": "写出 230V 或 220–240V 算对；频率 50Hz 写了的要对。"
+  },
+  "also_accept": [
+   {
+    "value": "220–240V",
+    "condition": "SP Group 手册写配电电压 230V，可在 ±6% 内浮动"
+   }
+  ],
+  "common_wrong": [],
+  "source_url": "https://calc2026.agc.gov.sg/visiting-singapore/practical-information/",
+  "source_quote": "The standard voltage is 230 V, and the frequency is 50 Hz. The power plugs and sockets are type G — the same as those in the UK.",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.spgroup.com.sg/dam/jcr:66289889-80d2-4559-a479-a804d5323f19/How%20to%20Apply%20for%20Electricity%20Connection.pdf",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 11,
+   "canonical": 11,
+   "wrong": 0,
+   "hedged_only": 1,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D0-r2-n0zmaz73ba.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r2-nfmiwa5npc.md"
+   ],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": [
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ]
+  },
+  "stability": "stable",
+  "note": "原答案键的出处是 SP Group 的 PDF 手册（10-01 的原文快照里有 230V, single-phase、50 Hz、± 6%，这次没有重新下载）。这次另找到一个政府网站的网页（总检察署会议网站的访客须知，2026-06-01 更新）直接写了 230V/50Hz，作为主来源。5 份样本写对了但标“待核验”。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F93",
+  "category": "其他",
+  "question": "在新加坡报警打什么电话？",
+  "canonical": "999",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "999"
+   ],
+   "rule": "写出全部必备要素、且没有与之矛盾的说法，算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.gov.sg/contact-us/",
+  "source_quote": "Police Emergencies 999 Police Emergency SMS 70999 Police Hotline 1800 255 0000 SCDF Ambulance and Fire Service 995",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://www.police.gov.sg/contact-us",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 11,
+   "canonical": 11,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r1-y2pr6ldjcs.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F94",
+  "category": "其他",
+  "question": "在新加坡叫救护车、报火警打什么电话？",
+  "canonical": "995",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "995"
+   ],
+   "rule": "写出全部必备要素、且没有与之矛盾的说法，算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://www.gov.sg/contact-us/",
+  "source_quote": "Police Emergencies 999 Police Emergency SMS 70999 Police Hotline 1800 255 0000 SCDF Ambulance and Fire Service 995",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://calc2026.agc.gov.sg/visiting-singapore/practical-information/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 5,
+   "canonical": 5,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "D1-K4-r1、D1-K8-r2、D3-K8-r2 写了 995 但标“待核验”。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F95",
+  "category": "其他",
+  "question": "中国驻新加坡大使馆的领事保护与协助电话是多少？",
+  "canonical": "+65 6475 0165（24 小时）",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "+65 6475 0165"
+   ],
+   "rule": "号码一致算对（有没有连字符、空格都行）。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://sg.china-embassy.gov.cn/chn/lxwm/",
+  "source_quote": "领事保护与协助：+65-64750165（24小时）",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 10,
+   "canonical": 10,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D0-r1-v7ro5e48hi.md",
+    "D1-K1-r2-or21auukat.md",
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K4-r2-vszaqoc7fc.md",
+    "D1-K8-r1-ebdcdzqn57.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r1-pk61a2q6pn.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "外交部全球领事保护热线 +86-10-12308。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ },
+ {
+  "id": "F96",
+  "category": "其他",
+  "question": "新加坡和北京有没有时差？",
+  "canonical": "没有。新加坡标准时间是 UTC+8",
+  "unit": "",
+  "accept": {
+   "type": "policy",
+   "must_have": [
+    "没有时差 / UTC+8"
+   ],
+   "rule": "写出全部必备要素、且没有与之矛盾的说法，算对。"
+  },
+  "also_accept": [],
+  "common_wrong": [],
+  "source_url": "https://sso.agc.gov.sg/SL/IA1965-N1",
+  "source_quote": "The standard time in Singapore shall be 8 hours in advance of Greenwich mean time.",
+  "source_type": "government",
+  "checked": "2026-10-04",
+  "second_source_url": "https://calc2026.agc.gov.sg/visiting-singapore/practical-information/",
+  "stated_in_sample": {
+   "of": 12,
+   "state": 5,
+   "canonical": 5,
+   "wrong": 0,
+   "hedged_only": 0,
+   "canonical_files": [
+    "D1-K4-r1-sqss1lrgrp.md",
+    "D1-K8-r2-nfmiwa5npc.md",
+    "D2-K8-r1-a0k7gt3v95.md",
+    "D2-K8-r3-en7lfymdyv.md",
+    "D3-K8-r2-rr4ncbnr3f.md"
+   ],
+   "canonical_but_hedged_files": [
+    "D1-K4-r1-sqss1lrgrp.md"
+   ],
+   "wrong_files": [],
+   "wrong_but_hedged_files": [],
+   "hedged_only_files": []
+  },
+  "stability": "stable",
+  "note": "D1-K4-r1 写对了但标待核验；D3-K8-r2 在机票一节写了“无时差”，实用信息表里又写“时区待核验”。",
+  "coverage_basis": "4 份以上样本写了具体说法",
+  "verified_how": "curl 取正文后逐字匹配"
+ }
+]

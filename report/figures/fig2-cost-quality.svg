@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 520" width="920" height="520" font-family='system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif'>
+<rect width="920" height="520" fill="#ffffff"/>
+<line x1="86.0" y1="450.0" x2="884.0" y2="450.0" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="78.0" y="455.0" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">-6</text>
+<line x1="86.0" y1="380.9" x2="884.0" y2="380.9" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="78.0" y="385.9" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">-4</text>
+<line x1="86.0" y1="311.8" x2="884.0" y2="311.8" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="78.0" y="316.8" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">-2</text>
+<line x1="86.0" y1="242.7" x2="884.0" y2="242.7" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="78.0" y="247.7" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">0</text>
+<line x1="86.0" y1="173.6" x2="884.0" y2="173.6" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="78.0" y="178.6" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">+2</text>
+<line x1="86.0" y1="104.5" x2="884.0" y2="104.5" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="78.0" y="109.5" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">+4</text>
+<line x1="86.0" y1="242.7" x2="884.0" y2="242.7" stroke="#8a8882" stroke-width="1.4"/>
+<line x1="86.0" y1="450.0" x2="86.0" y2="455.0" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="86.0" y="472.0" font-size="13" text-anchor="middle" fill="#8a8882" font-weight="400">×0.25</text>
+<line x1="303.0" y1="450.0" x2="303.0" y2="455.0" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="303.0" y="472.0" font-size="13" text-anchor="middle" fill="#8a8882" font-weight="400">×0.5</text>
+<line x1="519.9" y1="450.0" x2="519.9" y2="455.0" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="519.9" y="472.0" font-size="13" text-anchor="middle" fill="#8a8882" font-weight="400">×1</text>
+<line x1="736.9" y1="450.0" x2="736.9" y2="455.0" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="736.9" y="472.0" font-size="13" text-anchor="middle" fill="#8a8882" font-weight="400">×2</text>
+<line x1="519.9" y1="450.0" x2="519.9" y2="70.0" stroke="#8a8882" stroke-width="1.4"/>
+<line x1="86.0" y1="450.0" x2="884.0" y2="450.0" stroke="#bdbcb2" stroke-width="1.4"/>
+<text x="485.0" y="500.0" font-size="14" text-anchor="middle" fill="#4a4946" font-weight="400">总费用相对默认（深度 1，K=8）的倍数（对数刻度）</text>
+<text x="22.0" y="260.0" font-size="14" text-anchor="middle" fill="#4a4946" font-weight="400" transform="rotate(-90 22.0 260.0)">评分项通过率之差（百分点）</text>
+<line x1="177.1" y1="338.8" x2="258.4" y2="338.8" stroke="#8a8882" stroke-width="1.4"/>
+<line x1="217.8" y1="395.4" x2="217.8" y2="282.2" stroke="#8a8882" stroke-width="1.4"/>
+<line x1="317.5" y1="293.1" x2="394.1" y2="293.1" stroke="#2a78d6" stroke-width="1.4"/>
+<line x1="355.8" y1="348.0" x2="355.8" y2="238.2" stroke="#2a78d6" stroke-width="1.4"/>
+<line x1="411.7" y1="281.3" x2="499.1" y2="281.3" stroke="#2a78d6" stroke-width="1.4"/>
+<line x1="455.4" y1="336.0" x2="455.4" y2="226.6" stroke="#2a78d6" stroke-width="1.4"/>
+<line x1="455.4" y1="266.0" x2="541.2" y2="266.0" stroke="#2a78d6" stroke-width="1.4"/>
+<line x1="498.3" y1="329.8" x2="498.3" y2="202.3" stroke="#2a78d6" stroke-width="1.4"/>
+<line x1="473.8" y1="241.7" x2="559.5" y2="241.7" stroke="#2a78d6" stroke-width="1.4"/>
+<line x1="516.7" y1="297.1" x2="516.7" y2="186.2" stroke="#2a78d6" stroke-width="1.4"/>
+<line x1="432.6" y1="277.6" x2="517.4" y2="277.6" stroke="#eb6834" stroke-width="1.4"/>
+<line x1="475.0" y1="330.3" x2="475.0" y2="224.9" stroke="#eb6834" stroke-width="1.4"/>
+<line x1="569.8" y1="255.9" x2="659.7" y2="255.9" stroke="#eb6834" stroke-width="1.4"/>
+<line x1="614.8" y1="308.9" x2="614.8" y2="203.0" stroke="#eb6834" stroke-width="1.4"/>
+<line x1="612.9" y1="246.1" x2="708.1" y2="246.1" stroke="#eb6834" stroke-width="1.4"/>
+<line x1="660.5" y1="294.4" x2="660.5" y2="197.8" stroke="#eb6834" stroke-width="1.4"/>
+<line x1="607.0" y1="165.2" x2="741.0" y2="165.2" stroke="#eb6834" stroke-width="1.4"/>
+<line x1="674.0" y1="222.4" x2="674.0" y2="108.1" stroke="#eb6834" stroke-width="1.4"/>
+<line x1="440.9" y1="276.5" x2="527.3" y2="276.5" stroke="#2e8f5c" stroke-width="1.4"/>
+<line x1="484.1" y1="331.1" x2="484.1" y2="221.9" stroke="#2e8f5c" stroke-width="1.4"/>
+<line x1="516.8" y1="260.4" x2="611.3" y2="260.4" stroke="#2e8f5c" stroke-width="1.4"/>
+<line x1="564.0" y1="330.5" x2="564.0" y2="190.4" stroke="#2e8f5c" stroke-width="1.4"/>
+<line x1="624.6" y1="269.3" x2="722.4" y2="269.3" stroke="#2e8f5c" stroke-width="1.4"/>
+<line x1="673.5" y1="327.7" x2="673.5" y2="210.9" stroke="#2e8f5c" stroke-width="1.4"/>
+<line x1="625.0" y1="234.9" x2="749.3" y2="234.9" stroke="#2e8f5c" stroke-width="1.4"/>
+<line x1="687.2" y1="290.5" x2="687.2" y2="179.3" stroke="#2e8f5c" stroke-width="1.4"/>
+<line x1="708.4" y1="210.3" x2="852.1" y2="210.3" stroke="#2e8f5c" stroke-width="1.4"/>
+<line x1="780.2" y1="275.6" x2="780.2" y2="145.0" stroke="#2e8f5c" stroke-width="1.4"/>
+<circle cx="217.8" cy="338.8" r="5.5" fill="#8a8882" stroke="#8a8882" stroke-width="2.2"/>
+<circle cx="355.8" cy="293.1" r="5.5" fill="#2a78d6" stroke="#2a78d6" stroke-width="2.2"/>
+<circle cx="455.4" cy="281.3" r="5.5" fill="#2a78d6" stroke="#2a78d6" stroke-width="2.2"/>
+<circle cx="498.3" cy="266.0" r="5.5" fill="#2a78d6" stroke="#2a78d6" stroke-width="2.2"/>
+<circle cx="516.7" cy="241.7" r="5.5" fill="#2a78d6" stroke="#2a78d6" stroke-width="2.2"/>
+<circle cx="475.0" cy="277.6" r="5.5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<circle cx="614.8" cy="255.9" r="5.5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<circle cx="660.5" cy="246.1" r="5.5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<circle cx="674.0" cy="165.2" r="5.5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<circle cx="484.1" cy="276.5" r="5.5" fill="#2e8f5c" stroke="#2e8f5c" stroke-width="2.2"/>
+<circle cx="564.0" cy="260.4" r="5.5" fill="#2e8f5c" stroke="#2e8f5c" stroke-width="2.2"/>
+<circle cx="673.5" cy="269.3" r="5.5" fill="#2e8f5c" stroke="#2e8f5c" stroke-width="2.2"/>
+<circle cx="687.2" cy="234.9" r="5.5" fill="#2e8f5c" stroke="#2e8f5c" stroke-width="2.2"/>
+<circle cx="780.2" cy="210.3" r="5.5" fill="#2e8f5c" stroke="#2e8f5c" stroke-width="2.2"/>
+<circle cx="519.9" cy="242.7" r="6.5" fill="#111111" stroke="#111111" stroke-width="2.2"/>
+<line x1="519.9" y1="242.7" x2="497.9" y2="214.7" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="493.9" y="218.7" font-size="12.5" text-anchor="end" fill="#111111" font-weight="600">默认（深度 1，K=8）</text>
+<text x="225.8" y="329.8" font-size="12.5" text-anchor="start" fill="#4a4946" font-weight="400">不开</text>
+<text x="363.8" y="284.1" font-size="12.5" text-anchor="start" fill="#4a4946" font-weight="400">K=1</text>
+<text x="447.4" y="299.3" font-size="12.5" text-anchor="end" fill="#4a4946" font-weight="400">K=2</text>
+<line x1="475.0" y1="277.6" x2="453.0" y2="249.6" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="449.0" y="253.6" font-size="12.5" text-anchor="end" fill="#4a4946" font-weight="400">深度 2，K=2</text>
+<line x1="484.1" y1="276.5" x2="444.1" y2="230.5" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="440.1" y="234.5" font-size="12.5" text-anchor="end" fill="#4a4946" font-weight="400">深度 3，K=2</text>
+<line x1="498.3" y1="266.0" x2="520.3" y2="294.0" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="524.3" y="298.0" font-size="12.5" text-anchor="start" fill="#4a4946" font-weight="400">K=3</text>
+<text x="524.7" y="232.7" font-size="12.5" text-anchor="start" fill="#4a4946" font-weight="400">K=4</text>
+<text x="572.0" y="278.4" font-size="12.5" text-anchor="start" fill="#4a4946" font-weight="400">深度 3，K=4</text>
+<line x1="614.8" y1="255.9" x2="672.8" y2="319.9" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="676.8" y="323.9" font-size="12.5" text-anchor="start" fill="#4a4946" font-weight="400">深度 2，K=4</text>
+<line x1="660.5" y1="246.1" x2="700.5" y2="292.1" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="704.5" y="296.1" font-size="12.5" text-anchor="start" fill="#4a4946" font-weight="400">深度 2，K=8</text>
+<text x="681.5" y="260.3" font-size="12.5" text-anchor="start" fill="#4a4946" font-weight="400">深度 3，K=8</text>
+<text x="682.0" y="156.2" font-size="12.5" text-anchor="start" fill="#4a4946" font-weight="400">深度 2，K=16</text>
+<line x1="687.2" y1="234.9" x2="727.2" y2="188.9" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="731.2" y="192.9" font-size="12.5" text-anchor="start" fill="#4a4946" font-weight="400">深度 3，K=16</text>
+<text x="788.2" y="228.3" font-size="12.5" text-anchor="start" fill="#4a4946" font-weight="400">深度 3，K=64</text>
+<circle cx="86.0" cy="39.0" r="5" fill="#8a8882" stroke="#8a8882" stroke-width="2.2"/>
+<text x="97.0" y="44.0" font-size="13" text-anchor="start" fill="#4a4946" font-weight="400">不开 subagent</text>
+<circle cx="260.5" cy="39.0" r="5" fill="#2a78d6" stroke="#2a78d6" stroke-width="2.2"/>
+<text x="271.5" y="44.0" font-size="13" text-anchor="start" fill="#4a4946" font-weight="400">深度 1</text>
+<circle cx="340.5" cy="39.0" r="5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<text x="351.5" y="44.0" font-size="13" text-anchor="start" fill="#4a4946" font-weight="400">深度 2</text>
+<circle cx="420.5" cy="39.0" r="5" fill="#2e8f5c" stroke="#2e8f5c" stroke-width="2.2"/>
+<text x="431.5" y="44.0" font-size="13" text-anchor="start" fill="#4a4946" font-weight="400">深度 3</text>
+</svg>

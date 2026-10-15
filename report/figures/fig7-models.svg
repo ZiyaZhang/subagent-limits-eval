@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 440" width="920" height="440" font-family='system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif'>
+<rect width="920" height="440" fill="#ffffff"/>
+<text x="265.0" y="104.0" font-size="15" text-anchor="middle" fill="#111111" font-weight="600">评分项通过率之差（百分点）</text>
+<line x1="80.0" y1="378.0" x2="450.0" y2="378.0" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="72.0" y="383.0" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">-6</text>
+<line x1="80.0" y1="335.3" x2="450.0" y2="335.3" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="72.0" y="340.3" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">-4</text>
+<line x1="80.0" y1="292.7" x2="450.0" y2="292.7" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="72.0" y="297.7" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">-2</text>
+<line x1="80.0" y1="250.0" x2="450.0" y2="250.0" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="72.0" y="255.0" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">0</text>
+<line x1="80.0" y1="207.3" x2="450.0" y2="207.3" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="72.0" y="212.3" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">+2</text>
+<line x1="80.0" y1="164.7" x2="450.0" y2="164.7" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="72.0" y="169.7" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">+4</text>
+<line x1="80.0" y1="122.0" x2="450.0" y2="122.0" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="72.0" y="127.0" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">+6</text>
+<line x1="80.0" y1="250.0" x2="450.0" y2="250.0" stroke="#8a8882" stroke-width="1.4"/>
+<line x1="80.0" y1="378.0" x2="450.0" y2="378.0" stroke="#bdbcb2" stroke-width="1.4"/>
+<line x1="115.2" y1="360.3" x2="115.2" y2="268.2" stroke="#2a78d6" stroke-width="1.8"/>
+<line x1="111.2" y1="360.3" x2="119.2" y2="360.3" stroke="#2a78d6" stroke-width="1.8"/>
+<line x1="111.2" y1="268.2" x2="119.2" y2="268.2" stroke="#2a78d6" stroke-width="1.8"/>
+<circle cx="115.2" cy="314.2" r="5" fill="#2a78d6" stroke="#2a78d6" stroke-width="2.2"/>
+<line x1="137.2" y1="347.1" x2="137.2" y2="232.7" stroke="#eb6834" stroke-width="1.8"/>
+<line x1="133.2" y1="347.1" x2="141.2" y2="347.1" stroke="#eb6834" stroke-width="1.8"/>
+<line x1="133.2" y1="232.7" x2="141.2" y2="232.7" stroke="#eb6834" stroke-width="1.8"/>
+<circle cx="137.2" cy="289.9" r="5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<text x="126.2" y="400.0" font-size="12.5" text-anchor="middle" fill="#4a4946" font-weight="400">不开 subagent</text>
+<line x1="207.8" y1="313.5" x2="207.8" y2="223.7" stroke="#2a78d6" stroke-width="1.8"/>
+<line x1="203.8" y1="313.5" x2="211.8" y2="313.5" stroke="#2a78d6" stroke-width="1.8"/>
+<line x1="203.8" y1="223.7" x2="211.8" y2="223.7" stroke="#2a78d6" stroke-width="1.8"/>
+<circle cx="207.8" cy="268.6" r="5" fill="#2a78d6" stroke="#2a78d6" stroke-width="2.2"/>
+<line x1="229.8" y1="295.0" x2="229.8" y2="207.7" stroke="#eb6834" stroke-width="1.8"/>
+<line x1="225.8" y1="295.0" x2="233.8" y2="295.0" stroke="#eb6834" stroke-width="1.8"/>
+<line x1="225.8" y1="207.7" x2="233.8" y2="207.7" stroke="#eb6834" stroke-width="1.8"/>
+<circle cx="229.8" cy="251.3" r="5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<text x="218.8" y="400.0" font-size="12.5" text-anchor="middle" fill="#4a4946" font-weight="400">K=2</text>
+<line x1="300.2" y1="298.0" x2="300.2" y2="213.9" stroke="#2a78d6" stroke-width="1.8"/>
+<line x1="296.2" y1="298.0" x2="304.2" y2="298.0" stroke="#2a78d6" stroke-width="1.8"/>
+<line x1="296.2" y1="213.9" x2="304.2" y2="213.9" stroke="#2a78d6" stroke-width="1.8"/>
+<circle cx="300.2" cy="256.0" r="5" fill="#2a78d6" stroke="#2a78d6" stroke-width="2.2"/>
+<line x1="322.2" y1="346.4" x2="322.2" y2="235.4" stroke="#eb6834" stroke-width="1.8"/>
+<line x1="318.2" y1="346.4" x2="326.2" y2="346.4" stroke="#eb6834" stroke-width="1.8"/>
+<line x1="318.2" y1="235.4" x2="326.2" y2="235.4" stroke="#eb6834" stroke-width="1.8"/>
+<circle cx="322.2" cy="290.9" r="5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<text x="311.2" y="400.0" font-size="12.5" text-anchor="middle" fill="#4a4946" font-weight="400">深度 2，K=8</text>
+<line x1="392.8" y1="257.9" x2="392.8" y2="146.7" stroke="#2a78d6" stroke-width="1.8"/>
+<line x1="388.8" y1="257.9" x2="396.8" y2="257.9" stroke="#2a78d6" stroke-width="1.8"/>
+<line x1="388.8" y1="146.7" x2="396.8" y2="146.7" stroke="#2a78d6" stroke-width="1.8"/>
+<circle cx="392.8" cy="202.3" r="5" fill="#2a78d6" stroke="#2a78d6" stroke-width="2.2"/>
+<line x1="414.8" y1="309.2" x2="414.8" y2="193.6" stroke="#eb6834" stroke-width="1.8"/>
+<line x1="410.8" y1="309.2" x2="418.8" y2="309.2" stroke="#eb6834" stroke-width="1.8"/>
+<line x1="410.8" y1="193.6" x2="418.8" y2="193.6" stroke="#eb6834" stroke-width="1.8"/>
+<circle cx="414.8" cy="251.4" r="5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<text x="403.8" y="400.0" font-size="12.5" text-anchor="middle" fill="#4a4946" font-weight="400">深度 3，K=64</text>
+<text x="705.0" y="104.0" font-size="15" text-anchor="middle" fill="#111111" font-weight="600">总费用倍数</text>
+<line x1="520.0" y1="364.0" x2="890.0" y2="364.0" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="512.0" y="369.0" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">×0.35</text>
+<line x1="520.0" y1="328.5" x2="890.0" y2="328.5" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="512.0" y="333.5" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">×0.5</text>
+<line x1="520.0" y1="295.0" x2="890.0" y2="295.0" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="512.0" y="300.0" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">×0.7</text>
+<line x1="520.0" y1="259.5" x2="890.0" y2="259.5" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="512.0" y="264.5" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">×1</text>
+<line x1="520.0" y1="226.0" x2="890.0" y2="226.0" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="512.0" y="231.0" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">×1.4</text>
+<line x1="520.0" y1="190.5" x2="890.0" y2="190.5" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="512.0" y="195.5" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">×2</text>
+<line x1="520.0" y1="150.2" x2="890.0" y2="150.2" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="512.0" y="155.2" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">×3</text>
+<line x1="520.0" y1="259.5" x2="890.0" y2="259.5" stroke="#8a8882" stroke-width="1.4"/>
+<line x1="520.0" y1="378.0" x2="890.0" y2="378.0" stroke="#bdbcb2" stroke-width="1.4"/>
+<line x1="555.2" y1="369.7" x2="555.2" y2="335.3" stroke="#2a78d6" stroke-width="1.8"/>
+<line x1="551.2" y1="369.7" x2="559.2" y2="369.7" stroke="#2a78d6" stroke-width="1.8"/>
+<line x1="551.2" y1="335.3" x2="559.2" y2="335.3" stroke="#2a78d6" stroke-width="1.8"/>
+<circle cx="555.2" cy="352.5" r="5" fill="#2a78d6" stroke="#2a78d6" stroke-width="2.2"/>
+<line x1="577.2" y1="342.8" x2="577.2" y2="290.4" stroke="#eb6834" stroke-width="1.8"/>
+<line x1="573.2" y1="342.8" x2="581.2" y2="342.8" stroke="#eb6834" stroke-width="1.8"/>
+<line x1="573.2" y1="290.4" x2="581.2" y2="290.4" stroke="#eb6834" stroke-width="1.8"/>
+<circle cx="577.2" cy="316.6" r="5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<text x="566.2" y="400.0" font-size="12.5" text-anchor="middle" fill="#4a4946" font-weight="400">不开 subagent</text>
+<line x1="647.8" y1="294.5" x2="647.8" y2="258.1" stroke="#2a78d6" stroke-width="1.8"/>
+<line x1="643.8" y1="294.5" x2="651.8" y2="294.5" stroke="#2a78d6" stroke-width="1.8"/>
+<line x1="643.8" y1="258.1" x2="651.8" y2="258.1" stroke="#2a78d6" stroke-width="1.8"/>
+<circle cx="647.8" cy="276.3" r="5" fill="#2a78d6" stroke="#2a78d6" stroke-width="2.2"/>
+<line x1="669.8" y1="307.6" x2="669.8" y2="251.3" stroke="#eb6834" stroke-width="1.8"/>
+<line x1="665.8" y1="307.6" x2="673.8" y2="307.6" stroke="#eb6834" stroke-width="1.8"/>
+<line x1="665.8" y1="251.3" x2="673.8" y2="251.3" stroke="#eb6834" stroke-width="1.8"/>
+<circle cx="669.8" cy="279.4" r="5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<text x="658.8" y="400.0" font-size="12.5" text-anchor="middle" fill="#4a4946" font-weight="400">K=2</text>
+<line x1="740.2" y1="223.2" x2="740.2" y2="185.6" stroke="#2a78d6" stroke-width="1.8"/>
+<line x1="736.2" y1="223.2" x2="744.2" y2="223.2" stroke="#2a78d6" stroke-width="1.8"/>
+<line x1="736.2" y1="185.6" x2="744.2" y2="185.6" stroke="#2a78d6" stroke-width="1.8"/>
+<circle cx="740.2" cy="204.4" r="5" fill="#2a78d6" stroke="#2a78d6" stroke-width="2.2"/>
+<line x1="762.2" y1="287.2" x2="762.2" y2="218.5" stroke="#eb6834" stroke-width="1.8"/>
+<line x1="758.2" y1="287.2" x2="766.2" y2="287.2" stroke="#eb6834" stroke-width="1.8"/>
+<line x1="758.2" y1="218.5" x2="766.2" y2="218.5" stroke="#eb6834" stroke-width="1.8"/>
+<circle cx="762.2" cy="252.9" r="5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<text x="751.2" y="400.0" font-size="12.5" text-anchor="middle" fill="#4a4946" font-weight="400">深度 2，K=8</text>
+<line x1="832.8" y1="179.1" x2="832.8" y2="129.7" stroke="#2a78d6" stroke-width="1.8"/>
+<line x1="828.8" y1="179.1" x2="836.8" y2="179.1" stroke="#2a78d6" stroke-width="1.8"/>
+<line x1="828.8" y1="129.7" x2="836.8" y2="129.7" stroke="#2a78d6" stroke-width="1.8"/>
+<circle cx="832.8" cy="154.4" r="5" fill="#2a78d6" stroke="#2a78d6" stroke-width="2.2"/>
+<line x1="854.8" y1="311.4" x2="854.8" y2="219.4" stroke="#eb6834" stroke-width="1.8"/>
+<line x1="850.8" y1="311.4" x2="858.8" y2="311.4" stroke="#eb6834" stroke-width="1.8"/>
+<line x1="850.8" y1="219.4" x2="858.8" y2="219.4" stroke="#eb6834" stroke-width="1.8"/>
+<circle cx="854.8" cy="265.4" r="5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<text x="843.8" y="400.0" font-size="12.5" text-anchor="middle" fill="#4a4946" font-weight="400">深度 3，K=64</text>
+<circle cx="80.0" cy="45.0" r="5" fill="#2a78d6" stroke="#2a78d6" stroke-width="2.2"/>
+<text x="91.0" y="50.0" font-size="13" text-anchor="start" fill="#4a4946" font-weight="400">deepseek-flash</text>
+<circle cx="295.0" cy="45.0" r="5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<text x="306.0" y="50.0" font-size="13" text-anchor="start" fill="#4a4946" font-weight="400">deepseek-v4-pro</text>
+<text x="80.0" y="74.0" font-size="12.5" text-anchor="start" fill="#8a8882" font-weight="400">同一批题上，各格对各自模型的默认（深度 1，K=8）的差或倍数，竖线是 95% 区间</text>
+</svg>

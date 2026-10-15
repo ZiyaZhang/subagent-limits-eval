@@ -1,0 +1,9 @@
+# Depth 0: no delegation tools at all (maxDepth 0 would keep the tools and return errors).
+- id: tool-subagent
+  disabled: true
+- id: tool-subagent-fork
+  disabled: true
+- id: tool-subagent-control
+  disabled: true
+- id: tool-subagent-list-agents
+  disabled: true

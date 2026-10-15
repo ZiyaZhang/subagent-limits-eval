@@ -55,7 +55,7 @@ DSH 通过递归深度上限 D 和同时存活上限 K 限制 subagent，默认 
 
 ### K×D 网格
 
-![](results/analysis-phase2/figs/fig2-cost-quality.png)
+![](figures/fig2-cost-quality.png)
 
 调研题 62 道（剔除泄漏后），每个设置和默认（D=1、K=8）比。横轴是费用倍数（对数刻度），纵轴是分数差，线是 95% CI。
 
@@ -75,11 +75,11 @@ DSH 通过递归深度上限 D 和同时存活上限 K 限制 subagent，默认 
 
 ### K
 
-![](results/analysis-phase2/figs/fig1-demand.png)
+![](figures/fig1-demand.png)
 
 每个设置下，同时存活的 subagent 峰值超过 k 的运行比例。默认设置下中位数 3 个，90% 的运行不超过 4 个，最多 6 个，K=8 一次都没碰到；K=4 时只有 9% 的运行有调用被拒。
 
-![](results/analysis-phase2/figs/fig3-k-curves.png)
+![](figures/fig3-k-curves.png)
 
 质量、费用、时间随 K 的变化。蓝：原题面；橙：题面要求拆 8 份；绿：大型编码题。
 
@@ -102,7 +102,7 @@ DSH 通过递归深度上限 D 和同时存活上限 K 限制 subagent，默认 
 
 ### 对照：多搜索、分段、合并
 
-![](results/analysis-phase2/figs/fig6-mechanism.png)
+![](figures/fig6-mechanism.png)
 
 同一批 40 道题（剔除泄漏后 38 道），都和不开 subagent 比。
 
@@ -122,7 +122,7 @@ DSH 通过递归深度上限 D 和同时存活上限 K 限制 subagent，默认 
 
 ### 编码题
 
-![](results/analysis-phase2/figs/fig8-coding-time.png)
+![](figures/fig8-coding-time.png)
 
 大型编码题，深色是文件全部写完的时间，浅色是写完以后到主 agent 给出最终回答的时间。
 
@@ -133,7 +133,7 @@ DSH 通过递归深度上限 D 和同时存活上限 K 限制 subagent，默认 
 
 ### v4-pro
 
-![](results/analysis-phase2/figs/fig7-models.png)
+![](figures/fig7-models.png)
 
 同一批题上，flash 和 v4-pro 各自和自己的默认比。
 
@@ -165,7 +165,7 @@ DSH 通过递归深度上限 D 和同时存活上限 K 限制 subagent，默认 
 - 交回：第一阶段办公报告题，subagent 交回的写对的事实只有 3%–5% 没进最终报告。
 - 回答时还有 subagent 在跑：默认 5%，D≥2 和 K=2 时 7%–11%。headless 下这些 subagent 会被中止，D≥2 时还会让进程崩溃。
 
-![](results/analysis-phase2/figs/fig9b-delegation.png)
+![](figures/fig9b-delegation.png)
 
 再派活分类：每一格里试图再往下派活的 subagent，按它派出去的任务分类（GPT-5.5 标注，Opus 5.5 抽 30 条盲核）。
 
@@ -173,7 +173,7 @@ DSH 通过递归深度上限 D 和同时存活上限 K 限制 subagent，默认 
 - 派出去的任务 96% 是把自己的任务继续拆开（分片 71%、收窄 25%），原样转包 2%，新子题 1%，复核 1%。
 - 核对：Opus 5.5 在看不到标注的情况下，对每类 6 条、共 30 条重新分类，和 GPT-5.5 一致 67%（kappa 0.58）。分片 6/6、复核 6/6、原样转包 4/6 一致；GPT-5.5 判为收窄的 6 条里 Opus 只同意 1 条，另外 5 条判为分片，判为新子题的 6 条里 3 条判为分片。所以分片和收窄只合起来报，“原样转包很少”这一条站得住。
 
-![](results/analysis-phase2/figs/fig9-behaviors.png)
+![](figures/fig9-behaviors.png)
 
 行为清单：十项行为在每一格里被标"是"的运行比例（GPT-5.5 标注，Opus 5.5 抽 58 条盲核）。
 

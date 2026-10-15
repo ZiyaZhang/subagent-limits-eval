@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 430" width="920" height="430" font-family='system-ui, -apple-system, "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Microsoft YaHei", sans-serif'>
+<rect width="920" height="430" fill="#ffffff"/>
+<line x1="86.0" y1="360.0" x2="880.0" y2="360.0" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="78.0" y="365.0" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">-8</text>
+<line x1="86.0" y1="310.0" x2="880.0" y2="310.0" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="78.0" y="315.0" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">-6</text>
+<line x1="86.0" y1="260.0" x2="880.0" y2="260.0" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="78.0" y="265.0" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">-4</text>
+<line x1="86.0" y1="210.0" x2="880.0" y2="210.0" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="78.0" y="215.0" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">-2</text>
+<line x1="86.0" y1="160.0" x2="880.0" y2="160.0" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="78.0" y="165.0" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">0</text>
+<line x1="86.0" y1="110.0" x2="880.0" y2="110.0" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="78.0" y="115.0" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">+2</text>
+<line x1="86.0" y1="60.0" x2="880.0" y2="60.0" stroke="#e4e3dc" stroke-width="1.0"/>
+<text x="78.0" y="65.0" font-size="13" text-anchor="end" fill="#8a8882" font-weight="400">+4</text>
+<line x1="86.0" y1="160.0" x2="880.0" y2="160.0" stroke="#8a8882" stroke-width="1.4"/>
+<line x1="86.0" y1="360.0" x2="86.0" y2="365.0" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="86.0" y="382.0" font-size="13" text-anchor="middle" fill="#8a8882" font-weight="400">0</text>
+<line x1="244.8" y1="360.0" x2="244.8" y2="365.0" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="244.8" y="382.0" font-size="13" text-anchor="middle" fill="#8a8882" font-weight="400">2</text>
+<line x1="403.6" y1="360.0" x2="403.6" y2="365.0" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="403.6" y="382.0" font-size="13" text-anchor="middle" fill="#8a8882" font-weight="400">4</text>
+<line x1="562.4" y1="360.0" x2="562.4" y2="365.0" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="562.4" y="382.0" font-size="13" text-anchor="middle" fill="#8a8882" font-weight="400">6</text>
+<line x1="721.2" y1="360.0" x2="721.2" y2="365.0" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="721.2" y="382.0" font-size="13" text-anchor="middle" fill="#8a8882" font-weight="400">8</text>
+<line x1="880.0" y1="360.0" x2="880.0" y2="365.0" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="880.0" y="382.0" font-size="13" text-anchor="middle" fill="#8a8882" font-weight="400">10</text>
+<line x1="86.0" y1="360.0" x2="880.0" y2="360.0" stroke="#bdbcb2" stroke-width="1.4"/>
+<text x="483.0" y="410.0" font-size="14" text-anchor="middle" fill="#4a4946" font-weight="400">每次运行实际开成的 subagent 数（各格平均）</text>
+<text x="22.0" y="210.0" font-size="14" text-anchor="middle" fill="#4a4946" font-weight="400" transform="rotate(-90 22.0 210.0)">评分项通过率对原题面默认之差（百分点）</text>
+<circle cx="302.5" cy="160.0" r="5.5" fill="#111111" stroke="#111111" stroke-width="2.2"/>
+<line x1="331.4" y1="220.8" x2="331.4" y2="138.9" stroke="#2a78d6" stroke-width="1.6"/>
+<line x1="327.4" y1="220.8" x2="335.4" y2="220.8" stroke="#2a78d6" stroke-width="1.6"/>
+<line x1="327.4" y1="138.9" x2="335.4" y2="138.9" stroke="#2a78d6" stroke-width="1.6"/>
+<circle cx="331.4" cy="179.9" r="5.5" fill="#2a78d6" stroke="#2a78d6" stroke-width="2.2"/>
+<line x1="704.4" y1="347.2" x2="704.4" y2="180.2" stroke="#eb6834" stroke-width="1.6"/>
+<line x1="700.4" y1="347.2" x2="708.4" y2="347.2" stroke="#eb6834" stroke-width="1.6"/>
+<line x1="700.4" y1="180.2" x2="708.4" y2="180.2" stroke="#eb6834" stroke-width="1.6"/>
+<circle cx="704.4" cy="263.7" r="5.5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<line x1="738.0" y1="228.2" x2="738.0" y2="144.8" stroke="#eb6834" stroke-width="1.6"/>
+<line x1="734.0" y1="228.2" x2="742.0" y2="228.2" stroke="#eb6834" stroke-width="1.6"/>
+<line x1="734.0" y1="144.8" x2="742.0" y2="144.8" stroke="#eb6834" stroke-width="1.6"/>
+<circle cx="738.0" cy="186.5" r="5.5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<line x1="745.3" y1="208.9" x2="745.3" y2="128.3" stroke="#eb6834" stroke-width="1.6"/>
+<line x1="741.3" y1="208.9" x2="749.3" y2="208.9" stroke="#eb6834" stroke-width="1.6"/>
+<line x1="741.3" y1="128.3" x2="749.3" y2="128.3" stroke="#eb6834" stroke-width="1.6"/>
+<circle cx="745.3" cy="168.6" r="5.5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<line x1="727.2" y1="216.4" x2="727.2" y2="149.2" stroke="#eb6834" stroke-width="1.6"/>
+<line x1="723.2" y1="216.4" x2="731.2" y2="216.4" stroke="#eb6834" stroke-width="1.6"/>
+<line x1="723.2" y1="149.2" x2="731.2" y2="149.2" stroke="#eb6834" stroke-width="1.6"/>
+<circle cx="727.2" cy="182.8" r="5.5" fill="#eb6834" stroke="#eb6834" stroke-width="2.2"/>
+<text x="294.5" y="151.0" font-size="12.5" text-anchor="end" fill="#4a4946" font-weight="400">原题面</text>
+<text x="339.4" y="170.9" font-size="12.5" text-anchor="start" fill="#4a4946" font-weight="400">指令拆 3 份</text>
+<text x="712.4" y="254.7" font-size="12.5" text-anchor="start" fill="#4a4946" font-weight="400">指令拆 8 份，K=2</text>
+<text x="719.2" y="173.8" font-size="12.5" text-anchor="end" fill="#4a4946" font-weight="400">指令拆 8 份，K=8</text>
+<line x1="738.0" y1="186.5" x2="760.0" y2="158.5" stroke="#bdbcb2" stroke-width="1.0"/>
+<text x="764.0" y="162.5" font-size="12.5" text-anchor="start" fill="#4a4946" font-weight="400">指令拆 8 份，K=4</text>
+<text x="753.3" y="186.6" font-size="12.5" text-anchor="start" fill="#4a4946" font-weight="400">指令拆 8 份，K=6</text>
+</svg>

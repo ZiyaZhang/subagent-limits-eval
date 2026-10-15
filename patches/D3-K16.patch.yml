@@ -1,0 +1,4 @@
+- id: subagent
+  config:
+    maxDepth: 3
+    maxActiveSubagents: 16

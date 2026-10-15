@@ -1,5 +1,42 @@
-# How many subagents, how deep?
+# Subagent 深度与并发上限评测
 
-Measuring the concurrency limit (K) and the depth limit (D) for subagents in an open-source agent harness (DSH).
+DSH（开源 agent 框架 deepseek-harness）用两个上限限制 subagent：递归深度 D（maxDepth，默认 1）和同时存活数 K（maxActiveSubagents，默认 8）。起因是用户反馈 DSH 爱开 subagent、token 烧得快。这个仓库放两阶段评测的方案、数据、脚本和报告。
 
-`preregistration/` holds the experiment protocol and the paper outline as frozen before any run of the second phase; each commit's server timestamp is the pre-registration timestamp. Data, scripts and results are added after the runs.
+两阶段共 5,073 次运行，模型 DeepSeek V4.1 Flash（推理强度 max），命令行一次性运行，每次一个容器。
+
+| | 第一阶段（10/1–10/7） | 第二阶段（10/8–10/10） |
+|---|---|---|
+| 运行数 | 2,873 | 2,200 |
+| 任务 | 办公报告题 2 道、WideSearch 子集、DeepResearch Bench II 子集、代码类 6 种 | DRB II 全部 66 道中文调研题、编码题 3 道 |
+| 判分 | 事实清单、隐藏测试、官方脚本 | 评测集官方 GPT-5.5 + Opus 复判 + 人工核对 |
+| 分析 | 探索性 | 预注册（9 个确认性对比，分层模型 + Holm 校正） |
+
+## 主要结果
+
+- 开 subagent：调研题 +2.8 分（95% CI [1.1, 4.4]，百分制），费用 ×2.6，时间不变；办公报告题多写对 9 个百分点；61 个文件的编码题隐藏测试全过 8/8，不开 1/8。
+- K：调研题上模型同时只开 3–4 个，K≥4 之后没有区别（K=4 对 K=8：+0.0，[−1.6, +1.6]）。题面要求拆成 8 份时 K 才起作用，每翻一倍 +1.7（显著）。
+- D：主要影响费用。D=2 费用 ×1.57、分数 −0.1（[−1.5, +1.3]）；D=3 对 D=2 −0.6（[−2.5, +1.2]）。
+- 四个单 agent 各写一份再合并：对默认 +6.4（[4.2, 8.5]），费用 ×1.9，时间 ×2.3，是所有设置里分数最高的。
+- 默认设置下开 subagent 的调用 57% 被深度上限拒绝，全是第一层 subagent 想再往下开；被拒后 59% 换个说法再开。
+- 建议：保留默认 K=8、D=1。两个工程问题：模型不知道上限；headless 下主 agent 答完即退出，D≥2 时会崩溃。
+
+完整报告见 `report/final-report.md`（两阶段汇总）和 `report/phase1-report.md`（第一阶段）。
+
+## 目录
+
+| 目录 | 内容 |
+|---|---|
+| `preregistration/` | 第二阶段方案和论文大纲，开跑前冻结；每个提交的服务器时间就是预注册时间。`protocol-v5.1.md` 是现行版本，`frozen-2026-10-08/` 是开跑时的快照，后面两个目录是运行中的两处改动及理由 |
+| `report/` | 两阶段汇总报告、第一阶段报告、全部图（png + svg） |
+| `data/` | 运行级总表和标注表，见 `data/README.md` |
+| `analysis/phase2/` | 预注册分析的官方输出：确认性对比、各格汇总、推荐规则判定、两阶段合并 |
+| `tasks/` | 题目、每格的运行清单、评分细则 |
+| `patches/` | 每个设置对应的 DSH 配置补丁（D、K 的取值由这些文件设定） |
+| `code/` | 跑批、读日志、判分、分析、画图、标注的脚本，见 `code/README.md` |
+| `notes/` | 运行中发现的 DSH 异常行为记录（8 条，附源码位置）、方法附录 |
+
+## 不在仓库里的东西
+
+- 原始会话日志：约 10 GB，含内部端点地址和外部用户的 session 片段，没有放。总表和标注表里的每一列都能从日志算出来，脚本在 `code/`。
+- 公开评测集的原始题库和评分细则：`tasks/` 里只放我们实际用到的题面、运行清单和自己写的事实清单；DeepResearch Bench II、WideSearch 的完整数据请从各自的来源取。
+- API key、公司内部地址。脚本里仍有开发机路径和内部端点域名（不含密钥），公开前要替换。

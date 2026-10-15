@@ -1,0 +1,2230 @@
+{
+ "drb2_zh_001": {
+  "idx": 1,
+  "theme": "Finance & Business",
+  "description": "A Research Report on the Transformation of China's Local 'Land Finance' Model",
+  "license": "CC BY 4.0",
+  "order": 29,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 26,
+   "analysis": 26,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "The Local Land Finance Transformation with the Synergy of Increment and Inventory: A Case Study in China",
+   "authors": [
+    "Yuzhe Wu",
+    "Huiqiong Zhu",
+    "Sheng Zheng"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2073-445X/11/9/1529",
+    "https://ideas.repec.org/a/gam/jlands/v11y2022i9p1529-d911573.html",
+    "https://www.researchgate.net/publication/363532173_The_Local_Land_Finance_Transformation_with_the_Synergy_of_Increment_and_Inventory_A_Case_Study_in_China"
+   ]
+  },
+  "prompt_sha256": "ea405912a837b66035d69ac14fa1f8df1c1dc414d137a195a1aae37b39d4a5b1",
+  "full_prompt_sha256": "787304944b553c63804d411298973ac2d165fc1f134860ea807460d7dc8002fc"
+ },
+ "drb2_zh_003": {
+  "idx": 3,
+  "theme": "Finance & Business",
+  "description": "The issues of social digitalization and population aging in some Asian countries",
+  "license": "CC BY 4.0",
+  "order": 46,
+  "sets": [],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 69,
+   "analysis": 8,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "Digital-Based Policy and Health Promotion Policy in Japan, the Republic of Korea, Singapore, and Thailand: A Scoping Review of Policy Paths to Healthy Aging",
+   "authors": [
+    "Nadila Mulati",
+    "Myo Nyein Aung",
+    "Malcolm Field",
+    "Eun Woo Nam",
+    "Carol Ma Hok Ka",
+    "Saiyud Moolphate",
+    "Hocheol Lee",
+    "Yuki Goto",
+    "Nam Hae Kweun",
+    "Takumi Suda",
+    "Yuka Koyanagi",
+    "Yuiko Nagamine",
+    "Motoyuki Yuasa"
+   ],
+   "urls": [
+    "https://www.mdpi.com/1660-4601/19/24/16995",
+    "https://pubmed.ncbi.nlm.nih.gov/36554873/",
+    "https://www.researchgate.net/publication/366401399_Digital-Based_Policy_and_Health_Promotion_Policy_in_Japan_the_Republic_of_Korea_Singapore_and_Thailand_A_Scoping_Review_of_Policy_Paths_to_Healthy_Aging"
+   ]
+  },
+  "prompt_sha256": "b039ab1315d1695bbe11ce9d78bd3976e001e6ecec21b9f8748641c7f645ee7a",
+  "full_prompt_sha256": "1b21256d631deda655acb5517ef9e2063973ada4ccdb97a32ad2305cdef7ca68"
+ },
+ "drb2_zh_005": {
+  "idx": 5,
+  "theme": "Finance & Business",
+  "description": "How many stocks are needed to build an effectively diversified portfolio?",
+  "license": "CC BY 4.0",
+  "order": 26,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 23,
+   "analysis": 20,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "How Many Stocks Are Sufficient for Equity Portfolio Diversification? A Review of the Literature",
+   "authors": [
+    "Azra Zaimovic",
+    "Adna Omanovic",
+    "Almira Arnaut-Berilo"
+   ],
+   "urls": [
+    "https://www.mdpi.com/1911-8074/14/11/551",
+    "https://ideas.repec.org/a/gam/jjrfmx/v14y2021i11p551-d679488.html",
+    "https://www.researchgate.net/publication/356217672_How_Many_Stocks_Are_Sufficient_for_Equity_Portfolio_Diversification_A_Review_of_the_Literature"
+   ]
+  },
+  "prompt_sha256": "e30e423af057f8ad08bfcfc6890f969ce88fa700b49c9a8fa59006cfe3f59983",
+  "full_prompt_sha256": "b734e12c7e2968ada8b2315865892f75349d48b4574b815bd2296209da9cf5ee"
+ },
+ "drb2_zh_007": {
+  "idx": 7,
+  "theme": "Finance & Business",
+  "description": "Sovereign Wealth Fund Case Study",
+  "license": "CC BY 4.0",
+  "order": 39,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 60,
+   "analysis": 10,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "Sovereign wealth funds and corporate social responsibility: a comparison of Norway's Government Pension Fund Global and Abu Dhabi Fund for Development",
+   "authors": [
+    "Sivakumar Velayutham",
+    "Rashedul Hasan"
+   ],
+   "urls": [
+    "https://doi.org/10.1108/PAP-08-2020-0037",
+    "https://pureportal.coventry.ac.uk/en/publications/sovereign-wealth-funds-and-corporate-social-responsibility-a-comp",
+    "https://www.researchgate.net/publication/353481812_Sovereign_wealth_funds_and_corporate_social_responsibility_a_comparison_of_Norway's_Government_Pension_Fund_Global_and_Abu_Dhabi_Fund_for_Development",
+    "https://www.emerald.com/pap/article-split/24/2/139/516480/Sovereign-wealth-funds-and-corporate-social"
+   ]
+  },
+  "prompt_sha256": "cb68eba4260dd38f61985c94e69411712d205ea90f3223dcac422c358fc86a22",
+  "full_prompt_sha256": "0aea1acf0f0a7c1fa0f4056c0ac726de9f720dff613cef6b8d5dd122e11e4243"
+ },
+ "drb2_zh_009": {
+  "idx": 9,
+  "theme": "Finance & Business",
+  "description": "Quantitative analysis of the relationship between US stocks, gold, and crude oil within a 10-year period.",
+  "license": "CC BY 4.0",
+  "order": 16,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 13,
+   "analysis": 41,
+   "presentation": 9
+  },
+  "blocked": {
+   "title": "Is this time really different? Flight-to-safety and the COVID-19 crisis",
+   "authors": [
+    "Celina Löwen",
+    "Bilal Kchouri",
+    "Thorsten Lehnert"
+   ],
+   "urls": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0251752",
+    "https://pubmed.ncbi.nlm.nih.gov/34038444/",
+    "https://scienceon.kisti.re.kr/srch/selectPORSrchArticle.do?cn=NART113997358"
+   ]
+  },
+  "prompt_sha256": "9de47eed2f81ed73307378ac75a1845acac335a33748a7c0943422e18cd8c9d1",
+  "full_prompt_sha256": "d93ab1aa05100c256f6ebe47d18a1995464fa38e855cf990d6bfaf7c44592ef6"
+ },
+ "drb2_zh_011": {
+  "idx": 11,
+  "theme": "Finance & Business",
+  "description": "A Literature Review of Systemic Financial Risk",
+  "license": "CC BY 4.0",
+  "order": 64,
+  "sets": [
+   "calib"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 46,
+   "analysis": 8,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "A Review of Micro-Based Systemic Risk Research from Multiple Perspectives",
+   "authors": [
+    "Xiao Bai",
+    "Huaping Sun",
+    "Shibao Lu",
+    "Farhad Taghizadeh-Hesary"
+   ],
+   "urls": [
+    "https://www.mdpi.com/1099-4300/22/7/711",
+    "https://pubmed.ncbi.nlm.nih.gov/33286483/",
+    "https://www.researchgate.net/publication/342524950_A_Review_of_Micro-Based_Systemic_Risk_Research_from_Multiple_Perspectives",
+    "https://ui.adsabs.harvard.edu/abs/2020Entrp..22..711B/abstract",
+    "https://www.mdpi.com/1099-4300/22/7/711/reprints",
+    "https://researchportal.u-tokai.ac.jp/ja/publications/a-review-of-micro-based-systemic-risk-research-from-multiple-pers"
+   ]
+  },
+  "prompt_sha256": "29da943ef4875383da5ddf747f2d6adec8332b1ed4c4c263ce2ce3c0ce391419",
+  "full_prompt_sha256": "72ed40cdbed8719b839167d9cbd3ffe4b367db9f72102694425d9e04da787072"
+ },
+ "drb2_zh_013": {
+  "idx": 13,
+  "theme": "Finance & Business",
+  "description": "Tabular Analysis of Automated Forklift Technology and Related Products",
+  "license": "CC BY 4.0",
+  "order": 6,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 115,
+   "analysis": 6,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "Autonomous Forklifts: State of the Art—Exploring Perception, Scanning Technologies and Functional Systems—A Comprehensive Review",
+   "authors": [
+    "Muftah A Fraifer",
+    "Joseph Coleman",
+    "James Maguire",
+    "Petar Trslić",
+    "Gerard Dooly",
+    "Daniel Toal"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2079-9292/14/1/153",
+    "https://www.researchgate.net/publication/387727647_Autonomous_Forklifts_State_of_the_Art-Exploring_Perception_Scanning_Technologies_and_Functional_Systems-A_Comprehensive_Review",
+    "https://pure.ul.ie/en/publications/autonomous-forklifts-state-of-the-artexploring-perception-scannin",
+    "https://ouci.dntb.gov.ua/en/works/7WjZgQxX/",
+    "https://lero.ie/content/autonomous-forklifts-state-art%E2%80%94exploring-perception-scanning-technologies-and-functional"
+   ]
+  },
+  "prompt_sha256": "37614f4c8c55899d91d45913d44b70342a6f4dc7e76c6cb26ed0fe5f00c1044a",
+  "full_prompt_sha256": "aaf74b9c1d8b5d1f3aa82198b364961bab7d667e5b3df57229deb133f00961a4"
+ },
+ "drb2_zh_015": {
+  "idx": 15,
+  "theme": "Finance & Business",
+  "description": "A Review of the Application of Artificial Intelligence (AI) in Government Decision-Making",
+  "license": "CC BY 4.0",
+  "order": 50,
+  "sets": [],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 35,
+   "analysis": 15,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "Navigating Governmental Choices: A Comprehensive Review of Artificial Intelligence's Impact on Decision-Making",
+   "authors": [
+    "Gustavo Caiza",
+    "Verónica Sanguña",
+    "Natalia Tusa",
+    "Violeta Masaquiza",
+    "Alexandra Ortiz",
+    "Marcelo V. Garcia"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2227-9709/11/3/64",
+    "https://doi.org/10.3390/informatics11030064",
+    "https://text2fa.ir/wp-content/uploads/Text2fa.ir-Navigating-Governmental-Choices-A-Comprehensive-R.pdf",
+    "https://pure.ups.edu.ec/en/publications/navigating-governmental-choices-a-comprehensive-review-of-artific",
+    "https://www.semanticscholar.org/paper/Navigating-Governmental-Choices%3A-A-Comprehensive-of-Caiza-Sangu%C3%B1a/ef838c9723caeba6042168ec17c02358b5a50721",
+    "https://ouci.dntb.gov.ua/en/works/lxdPJKEl/",
+    "https://www.researchgate.net/publication/348933222_Artificial_Intelligence_in_Public_Governance"
+   ]
+  },
+  "prompt_sha256": "f51897cc624053c307cc5abe241f70d76f5761076998a2a16c9831cd65856ded",
+  "full_prompt_sha256": "024db4e61f034374d2cc70e6217ea5dbaf5e14ed940e84d8a17e6c61ad8b6f40"
+ },
+ "drb2_zh_017": {
+  "idx": 17,
+  "theme": "Science & Technology",
+  "description": "A Survey of Atomic Structure-Based Deep Learning Models and Databases",
+  "license": "CC BY 4.0",
+  "order": 1,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 77,
+   "analysis": 8,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "Recent advances and applications of deep learning methods in materials science",
+   "authors": [
+    "Kamal Choudhary",
+    "Brian DeCost",
+    "Chi Chen",
+    "Anubhav Jain",
+    "Francesca Tavazza",
+    "Ryan Cohn",
+    "Cheol Woo Park",
+    "Alok Choudhary",
+    "Ankit Agrawal",
+    "Simon J. L. Billinge",
+    "Elizabeth Holm",
+    "Shyue Ping Ong",
+    "Chris Wolverton"
+   ],
+   "urls": [
+    "https://www.nature.com/articles/s41524-022-00734-6",
+    "https://arxiv.org/abs/2110.14820",
+    "https://www.researchgate.net/publication/359735864_Recent_advances_and_applications_of_deep_learning_methods_in_materials_science",
+    "https://www.semanticscholar.org/paper/Recent-advances-and-applications-of-deep-learning-Choudhary-DeCost/5aaeb50d8051890e9fbb9b9b8f34d9f3f2d85c1a",
+    "https://www.scholars.northwestern.edu/en/publications/recent-advances-and-applications-of-deep-learning-methods-in-mate",
+    "https://www.osti.gov/pages/biblio/1869676"
+   ]
+  },
+  "prompt_sha256": "b66f0151ac9eb8ed0fda54051efe3d9700411e149fb39ef9d4e84a5deaaa3352",
+  "full_prompt_sha256": "ca5c5e21c7c8ecae9c0369c0cc714e26bb6dfa2a7b659cb19b5c9d098cb94349"
+ },
+ "drb2_zh_019": {
+  "idx": 19,
+  "theme": "Science & Technology",
+  "description": "Investigation of the Effect of an External Electric Field (EEF) on Tautomeric Molecules",
+  "license": "CC BY 4.0",
+  "order": 61,
+  "sets": [],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 31,
+   "analysis": 11,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "Effects and Influence of External Electric Fields on the Equilibrium Properties of Tautomeric Molecules",
+   "authors": [
+    "Ivan Angelov",
+    "Lidia Zaharieva",
+    "Liudmil Antonov"
+   ],
+   "urls": [
+    "https://www.mdpi.com/1420-3049/28/2/695",
+    "https://pubmed.ncbi.nlm.nih.gov/36677753/",
+    "https://www.researchgate.net/publication/366990085_Effects_and_Influence_of_External_Electric_Fields_on_the_Equilibrium_Properties_of_Tautomeric_Molecules",
+    "https://www.semanticscholar.org/paper/Effects-and-Influence-of-External-Electric-Fields-Angelov-Zaharieva/43c1aac1034705b4d9a55653be60a11d10faad5f",
+    "https://academindex.com/articles/zNpT4QhDEOMagM4DVv_fkQ==",
+    "https://www.bohrium.com/paper-details/effects-and-influence-of-external-electric-fields-on-the-equilibrium-properties-of-tautomeric-molecules/820687459988799488-3450",
+    "https://ouci.dntb.gov.ua/en/works/7XGqVeZ9/"
+   ]
+  },
+  "prompt_sha256": "25ebcdf04cf8a2f43958a9c55f98a529238bb945d301c0095a3d1bf0cd84e52d",
+  "full_prompt_sha256": "7abd2876709adee88dae12a40c7d67b3735534c706da67bbc1116d40e2df673c"
+ },
+ "drb2_zh_021": {
+  "idx": 21,
+  "theme": "Science & Technology",
+  "description": "A review of how animals use environmental factors for orientation.",
+  "license": "CC BY 4.0",
+  "order": 22,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 39,
+   "analysis": 10,
+   "presentation": 4
+  },
+  "blocked": {
+   "title": "Animal navigation: how animals use environmental factors to find their way",
+   "authors": [
+    "Roswitha Wiltschko",
+    "Wolfgang Wiltschko"
+   ],
+   "urls": [
+    "https://link.springer.com/article/10.1140/epjs/s11734-022-00610-w",
+    "https://epjst.epj.org/articles/epjst/abs/2023/02/11734_2022_Article_610/11734_2022_Article_610.html",
+    "https://mycoordinates.org/animal-navigation-how-animals-use-environmental-factors-to-find-their-way/",
+    "https://mycoordinates.org/animal-navigation-how-animals-use-environmental-factors-to-find-their-way-2/"
+   ]
+  },
+  "prompt_sha256": "02201d4fbf8411c6fe00578b07d907e078cb219c54ceda6aa4d28ba5ace73d8f",
+  "full_prompt_sha256": "d64be186fbba09d9b1739534068210bc12d3e14e35d60b7f812c747e05208f7a"
+ },
+ "drb2_zh_023": {
+  "idx": 23,
+  "theme": "Science & Technology",
+  "description": "Solid-State Battery Market Landscape Analysis and Forecast",
+  "license": "CC BY 4.0",
+  "order": 27,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 60,
+   "analysis": 10,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "Technological Advances and Market Developments of Solid-State Batteries: A Review",
+   "authors": [
+    "Felix Thomas",
+    "Lauren Mahdi",
+    "Julien Lemaire",
+    "Diogo M. F. Santos"
+   ],
+   "urls": [
+    "https://www.mdpi.com/1996-1944/17/1/239",
+    "https://www.researchgate.net/publication/377061990_Technological_Advances_and_Market_Developments_of_Solid-State_Batteries_A_Review",
+    "https://pubmed.ncbi.nlm.nih.gov/38204092/",
+    "https://go.gale.com/ps/i.do?id=GALE%7CA779345996&sid=sitemap&v=2.1&it=r&p=AONE&sw=w",
+    "https://ouci.dntb.gov.ua/en/works/735KRGXl/",
+    "https://www.ablesci.com/scholar/paper?id=3912kgvx3",
+    "https://www.mdpi.com/1996-1944/17/1/239/reprints"
+   ]
+  },
+  "prompt_sha256": "74068869b6ad2c54df5985654513f765e8c7de43cb3d26989d750e5f70dc90f6",
+  "full_prompt_sha256": "9fbf695a7ca238b3da67226bc1bceccf46f232016ee479fac5ca83b0927af134"
+ },
+ "drb2_zh_025": {
+  "idx": 25,
+  "theme": "Science & Technology",
+  "description": "Performance Investigation of Organic Corrosion Inhibitors for Carbon Steel",
+  "license": "CC BY 4.0",
+  "order": 38,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 79,
+   "analysis": 16,
+   "presentation": 7
+  },
+  "blocked": {
+   "title": "Organic Compounds as Corrosion Inhibitors for Carbon Steel in HCl Solution: A Comprehensive Review",
+   "authors": [
+    "Liangyuan Chen",
+    "Dongzhu Lu",
+    "Yanhu Zhang"
+   ],
+   "urls": [
+    "https://www.mdpi.com/1996-1944/15/6/2023",
+    "https://pubmed.ncbi.nlm.nih.gov/35329474/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC8954067/",
+    "https://www.mdpi.com/1996-1944/15/6/2023/review_report"
+   ]
+  },
+  "prompt_sha256": "8ce8a6df5acc6c7264b6a8ad36b5f31e8a934a270be56c90537bcfc7c0ab8802",
+  "full_prompt_sha256": "e8059505496d254a6b32d283b8b67bbb3abd52647629b970f687fbd2e1e52e19"
+ },
+ "drb2_zh_027": {
+  "idx": 27,
+  "theme": "Science & Technology",
+  "description": "A Review of Stock Assessment Models for the Fishery Resource Status of Chub Mackerel in the Northwest Pacific Ocean.",
+  "license": "CC BY 4.0",
+  "order": 57,
+  "sets": [],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 49,
+   "analysis": 24,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "Stock Assessment of Chub Mackerel (Scomber japonicus) in the Northwest Pacific Using a Multi-Model Approach",
+   "authors": [
+    "Kai Cai",
+    "Richard Kindong",
+    "Qiuyun Ma",
+    "Siquan Tian"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2410-3888/8/2/80",
+    "https://www.researchgate.net/publication/367552057_Stock_Assessment_of_Chub_Mackerel_Scomber_japonicus_in_the_Northwest_Pacific_Using_a_Multi-Model_Approach",
+    "https://www.bohrium.com/paper-details/stock-assessment-of-chub-mackerel-scomber-japonicus-in-the-northwest-pacific-using-a-multi-model-approach/864961439570329938-1699"
+   ]
+  },
+  "prompt_sha256": "91182479ba32b9f2df9bd918cc2042d4f6edcd8fd05ec984bd3e1d766d200c16",
+  "full_prompt_sha256": "886a700317eaa439a8aeeeefb90c281d316053469080e668a6e2f8c3bd1cd445"
+ },
+ "drb2_zh_029": {
+  "idx": 29,
+  "theme": "Science & Technology",
+  "description": "An Overview of Integrated Photonic Platforms for the Field of Quantum Technology",
+  "license": "CC BY 4.0",
+  "order": 43,
+  "sets": [],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 53,
+   "analysis": 12,
+   "presentation": 2
+  },
+  "blocked": {
+   "title": "Integrated Photonic Platforms for Quantum Technology: A Review",
+   "authors": [
+    "Rohit K Ramakrishnan",
+    "Aravinth Balaji Ravichandran",
+    "Arpita Mishra",
+    "Archana Kaushalram",
+    "Gopalkrishna Hegde",
+    "Srinivas Talabattula",
+    "Peter P Rohde"
+   ],
+   "urls": [
+    "https://arxiv.org/abs/2206.15383",
+    "https://ar5iv.labs.arxiv.org/html/2206.15383",
+    "https://doi.org/10.1007/s41683-023-00115-1",
+    "https://scispace.com/papers/integrated-photonic-platforms-for-quantum-technology-a-2xr9w8hg",
+    "https://www.semanticscholar.org/paper/f97cdd3f689f997a745297762cb68a3be11f1c8b"
+   ]
+  },
+  "prompt_sha256": "bf6f9ef441b2e96693582849857c0373bee1dd8a1e09b1ab2482d6fdc1827b15",
+  "full_prompt_sha256": "d649938a9bf28db4e4af84a96a22c9a248e95f2f52cdab56ca7ec3a3a8c70d1a"
+ },
+ "drb2_zh_031": {
+  "idx": 31,
+  "theme": "Science & Technology",
+  "description": "Comparative Analysis of Different Mobile Radiation Monitoring Platforms",
+  "license": "CC BY 4.0",
+  "order": 62,
+  "sets": [
+   "calib"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 85,
+   "analysis": 12,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "State-of-the-Art Mobile Radiation Detection Systems for Different Scenarios",
+   "authors": [
+    "Luís Marques",
+    "Alberto Vale",
+    "Pedro Vaz"
+   ],
+   "urls": [
+    "https://www.mdpi.com/1424-8220/21/4/1051",
+    "https://pubmed.ncbi.nlm.nih.gov/33557104/",
+    "https://www.semanticscholar.org/paper/State-of-the-Art-Mobile-Radiation-Detection-Systems-Marques-Vale/a58cb088ce5eec1c17fa689a9ce487e99fcd96ac",
+    "https://researchportal.ulisboa.pt/en/publications/state-of-the-art-mobile-radiation-detection-systems-for-different/fingerprints/",
+    "https://ouci.dntb.gov.ua/en/works/loov60Wl/",
+    "https://pdfs.semanticscholar.org/74fa/49a6a6ab86790632da06fb128291fdd5495a.pdf"
+   ]
+  },
+  "prompt_sha256": "8fde1cece7545b42666ac7d3b61eecbbe84c79cfd96b69b298342e15359a3cb1",
+  "full_prompt_sha256": "41514a0a313bb59db9832a8ac574e044e0a0e9e7ad1f2157b4fbd6e406d713dc"
+ },
+ "drb2_zh_033": {
+  "idx": 33,
+  "theme": "Science & Technology",
+  "description": "A Survey of Quantum Simulator Technology",
+  "license": "CC BY 4.0",
+  "order": 20,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 57,
+   "analysis": 10,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "Quantum Simulators: Architectures and Opportunities",
+   "authors": [
+    "Ehud Altman",
+    "Kenneth R. Brown",
+    "Giuseppe Carleo",
+    "Lincoln D. Carr",
+    "Eugene Demler",
+    "Cheng Chin",
+    "Brian DeMarco",
+    "Sophia E. Economou",
+    "Mark A. Eriksson",
+    "Kai-Mei C. Fu",
+    "Markus Greiner",
+    "Kaden R. A. Hazzard",
+    "Randall G. Hulet",
+    "Alicia J. Kollar",
+    "Benjamin L. Lev",
+    "Mikhail D. Lukin",
+    "Ruichao Ma",
+    "Xiao Mi",
+    "Shashank Misra",
+    "Christopher Monroe",
+    "Kater Murch",
+    "Zaira Nazario",
+    "Kang-Kuen Ni",
+    "Andrew C. Potter",
+    "Pedram Roushan",
+    "Mark Saffman",
+    "Monika Schleier-Smith",
+    "Irfan Siddiqi",
+    "Raymond Simmonds",
+    "Meenakshi Singh",
+    "I. B. Spielman",
+    "Kristan Temme",
+    "David S. Weiss",
+    "Jelena Vuckovic",
+    "Vladan Vuletic",
+    "Jun Ye",
+    "Martin Zwierlein"
+   ],
+   "urls": [
+    "https://arxiv.org/abs/1912.06938",
+    "https://link.aps.org/doi/10.1103/PRXQuantum.2.017003",
+    "https://www.researchgate.net/publication/360393483_Quantum_Simulators_Architectures_and_Opportunities",
+    "https://profiles.wustl.edu/en/publications/quantum-simulators-architectures-and-opportunities",
+    "https://knowledge.uchicago.edu/record/13089",
+    "https://inspirehep.net/literature/1771054",
+    "https://scispace.com/papers/quantum-simulators-architectures-and-opportunities-39u96xcyhs",
+    "https://par.nsf.gov/biblio/10249179"
+   ]
+  },
+  "prompt_sha256": "2dd44ee85620c840f5f7cc1c08635f507027cb10dfc94a6d7da47c1e18d969e6",
+  "full_prompt_sha256": "a5ea47fc947fcd298363f86f22fb3386e623f07a0bc6390decdb0fa6b70d2cb9"
+ },
+ "drb2_zh_035": {
+  "idx": 35,
+  "theme": "Science & Technology",
+  "description": "Survey of Quadrotor UAV Control Methods",
+  "license": "CC BY 4.0",
+  "order": 60,
+  "sets": [],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 158,
+   "analysis": 12,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "A Review on Comparative Remarks, Performance Evaluation and Improvement Strategies of Quadrotor Controllers",
+   "authors": [
+    "Rupal Roy",
+    "Maidul Islam",
+    "Nafiz Sadman",
+    "M. A. Parvez Mahmud",
+    "Kishor Datta Gupta",
+    "Md Manjurul Ahsan"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2227-7080/9/2/37",
+    "https://scispace.com/papers/a-review-on-comparative-remarks-performance-evaluation-and-42w5jk652t",
+    "https://www.researchgate.net/publication/351649063_A_Review_on_Comparative_Remarks_Performance_Evaluation_and_Improvement_Strategies_of_Quadrotor_Controllers",
+    "https://dro.deakin.edu.au/articles/journal_contribution/A_review_on_comparative_remarks_performance_evaluation_and_improvement_strategies_of_quadrotor_controllers/20665578/1",
+    "https://ouci.dntb.gov.ua/en/works/4Yp2ryQ7/",
+    "https://doi.org/10.3390/TECHNOLOGIES9020037"
+   ]
+  },
+  "prompt_sha256": "98f7071c78f988f87f948ee593bdbeaeb451243465978756b227e0f7a84f3b75",
+  "full_prompt_sha256": "d5c14d1e1ea9b3752549f13bd9aff2a5a4262b2759d6a8564164882596202dc1"
+ },
+ "drb2_zh_037": {
+  "idx": 37,
+  "theme": "Science & Technology",
+  "description": "A Review of Self-Testing Methods for Many-Body Quantum States",
+  "license": "CC BY 4.0",
+  "order": 41,
+  "sets": [],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 31,
+   "analysis": 9,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "Self-testing of quantum systems: a review",
+   "authors": [
+    "Ivan Šupić",
+    "Joseph Bowles"
+   ],
+   "urls": [
+    "https://arxiv.org/abs/1904.10042",
+    "https://quantum-journal.org/papers/q-2020-09-30-337/",
+    "https://www.researchgate.net/publication/350646502_Self-testing_of_quantum_systems_a_review",
+    "https://ui.adsabs.harvard.edu/abs/2020Quant...4..337S/abstract",
+    "https://inspirehep.net/literature/1730930",
+    "https://ar5iv.labs.arxiv.org/html/1904.10042",
+    "https://ouci.dntb.gov.ua/en/works/7ALqvWP9/"
+   ]
+  },
+  "prompt_sha256": "8d6f7dc1f260f15d2603b34901818b78bd8f936717e936648011ca49061caed9",
+  "full_prompt_sha256": "8d2cb27bbe61d000cca8fece7062588f767268e35712a24593a678b210bc2e7c"
+ },
+ "drb2_zh_039": {
+  "idx": 39,
+  "theme": "Software Development",
+  "description": "A Survey of Vision-Based Contactless Vital Signs Monitoring Technology",
+  "license": "CC BY 4.0",
+  "order": 56,
+  "sets": [],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 97,
+   "analysis": 9,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "Non-Contact Vision-Based Techniques of Vital Sign Monitoring: Systematic Review",
+   "authors": [
+    "Linas Saikevičius",
+    "Vidas Raudonis",
+    "Gintaras Dervinis",
+    "Virginijus Baranauskas"
+   ],
+   "urls": [
+    "https://www.mdpi.com/1424-8220/24/12/3963",
+    "https://pubmed.ncbi.nlm.nih.gov/38931747/",
+    "https://www.researchgate.net/publication/381572565_Non-Contact_Vision-Based_Techniques_of_Vital_Sign_Monitoring_Systematic_Review"
+   ]
+  },
+  "prompt_sha256": "7e01273fa46e01600d311fddbae7860d35e21c1e998c784aa838f02dd2acdae9",
+  "full_prompt_sha256": "0f40e350340151703da43946a13bad752fce0f50993cc8dd2eb7b13c318876aa"
+ },
+ "drb2_zh_041": {
+  "idx": 41,
+  "theme": "Software Development",
+  "description": "Low-code Development Market and Technology Research (Pre-2021)",
+  "license": "CC BY 4.0",
+  "order": 9,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 44,
+   "analysis": 9,
+   "presentation": 4
+  },
+  "blocked": {
+   "title": "Modelling in low-code development: a multi-vocal systematic review",
+   "authors": [
+    "Alessio Bucaioni",
+    "Antonio Cicchetti",
+    "Federico Ciccozzi"
+   ],
+   "urls": [
+    "https://link.springer.com/article/10.1007/s10270-021-00964-0",
+    "https://www.researchgate.net/publication/357937892_Modelling_in_low-code_development_a_multi-vocal_systematic_review",
+    "https://www.semanticscholar.org/paper/Modelling-in-low-code-development%3A-a-multi-vocal-Bucaioni-Cicchetti/2f25601fa5db68904a5bfbcebc7247610b4a84f5",
+    "https://www.es.mdu.se/publications/6377-Modelling_in_low_code_development__a_multi_vocal_systematic_review",
+    "https://conf.researchr.org/details/models-2022/models-2022-journal-first/72/Modelling-in-low-code-development-a-multi-vocal-systematic-review"
+   ]
+  },
+  "prompt_sha256": "a4ac5c57f65076797635c315f19f68e66638d10668ff0f81a1b3210c0b714f9c",
+  "full_prompt_sha256": "1c1c045c4987c03cbd8f14f55d4f4b35375fc0560f0533fe73f1f4cdc2a41de0"
+ },
+ "drb2_zh_043": {
+  "idx": 43,
+  "theme": "Software Development",
+  "description": "A Survey of Population-Based Deep Reinforcement Learning",
+  "license": "CC BY 4.0",
+  "order": 0,
+  "sets": [
+   "d40",
+   "g40",
+   "smoke"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 76,
+   "analysis": 11,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "A Survey on Population-Based Deep Reinforcement Learning",
+   "authors": [
+    "Weifan Long",
+    "Taixian Hou",
+    "Xiaoyi Wei",
+    "Shichao Yan",
+    "Peng Zhai",
+    "Lihua Zhang"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2227-7390/11/10/2234",
+    "https://ideas.repec.org/a/gam/jmathe/v11y2023i10p2234-d1143662.html",
+    "https://encyclopedia.pub/entry/44828",
+    "https://www.mdpi.com/2227-7390/11/10/2234/reprints"
+   ]
+  },
+  "prompt_sha256": "003755d92274c13e5fd172f59165dfbe5be5fb3112473fafe44e34ff8e49944f",
+  "full_prompt_sha256": "4b0b7733d3d1101c5d22f86a56ea417a712dd789f3fa4208482e1cff14fbfb2b"
+ },
+ "drb2_zh_045": {
+  "idx": 45,
+  "theme": "Software Development",
+  "description": "A Survey of AI-focused Kubernetes Scheduling Algorithms",
+  "license": "CC BY 4.0",
+  "order": 17,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 32,
+   "analysis": 10,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "A survey of Kubernetes scheduling algorithms",
+   "authors": [
+    "Khaldoun Senjab",
+    "Sohail Abbas",
+    "Naveed Ahmed",
+    "Atta ur Rehman Khan"
+   ],
+   "urls": [
+    "https://journalofcloudcomputing.springeropen.com/articles/10.1186/s13677-023-00471-1",
+    "https://nchr.elsevierpure.com/en/publications/a-survey-of-kubernetes-scheduling-algorithms",
+    "https://scispace.com/papers/a-survey-of-kubernetes-scheduling-algorithms-4bpdjhy6",
+    "https://www.researchgate.net/publication/371536479_A_survey_of_Kubernetes_scheduling_algorithms",
+    "https://www.scribd.com/document/921622606/A-Survey-of-Kubernetes-Scheduling-Algorithms"
+   ]
+  },
+  "prompt_sha256": "a8b00620b72765e5ad173ea8958023e9d3bb8172b4b29ec718362dfd733e5402",
+  "full_prompt_sha256": "fdfe1679727dcfc00e1b7edc9b2298fbbb34b0686956acfd06f570a04f2c03ca"
+ },
+ "drb2_zh_047": {
+  "idx": 47,
+  "theme": "Software Development",
+  "description": "Observability in Modern Distributed Management Systems and Its Solutions",
+  "license": "CC BY 4.0",
+  "order": 44,
+  "sets": [],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 111,
+   "analysis": 12,
+   "presentation": 7
+  },
+  "blocked": {
+   "title": "A Survey on Observability of Distributed Edge & Container-Based Microservices",
+   "authors": [
+    "Usman, M.",
+    "Ferlin, S.",
+    "Brunstrom, A.",
+    "Taheri, J."
+   ],
+   "urls": [
+    "https://ieeexplore.ieee.org/document/9837035/",
+    "https://pureadmin.qub.ac.uk/ws/portalfiles/portal/577257166/A_Survey_on_Observability_of_Distributed_Edge_amp_Container-Based_Microservices.pdf",
+    "https://doi.org/10.1109/ACCESS.2022.3193102"
+   ]
+  },
+  "prompt_sha256": "ee034a2be451e06d55100c00be4678ec8aa0099a8ce97912ccf27a4c8cb62cc5",
+  "full_prompt_sha256": "e38a689734f1f8fe07fc8f4f9b68b5eb658d321dc1e51e6c9c82762b0c38a75f"
+ },
+ "drb2_zh_049": {
+  "idx": 49,
+  "theme": "Software Development",
+  "description": "A Technical Survey of HTTP Adaptive Streaming Video Encoding and Consumption-side Algorithms",
+  "license": "CC BY 4.0",
+  "order": 25,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 59,
+   "analysis": 13,
+   "presentation": 7
+  },
+  "blocked": {
+   "title": "HTTP Adaptive Streaming: A Review on Current Advances and Future Challenges",
+   "authors": [
+    "Christian Timmerer",
+    "Hadi Amirpour",
+    "Farzad Tashtarian",
+    "Samira Afzal",
+    "Amr Rizk",
+    "Michael Zink",
+    "Hermann Hellwagner"
+   ],
+   "urls": [
+    "https://dl.acm.org/doi/10.1145/3736306",
+    "https://dl.acm.org/doi/pdf/10.1145/3736306",
+    "https://www.researchgate.net/publication/391881093_HTTP_Adaptive_Streaming_A_Review_on_Current_Advances_and_Future_Challenges",
+    "https://athena.itec.aau.at/2025/03/acm-tomm-http-adaptive-streaming-a-review-on-current-advances-and-future-challenges/",
+    "https://campus.aau.at/cris/publication/0f4de0c497a4e3960197a6555c000040",
+    "https://www.semanticscholar.org/paper/HTTP-Adaptive-Streaming%3A-A-Review-on-Current-and-Timmerer-Amirpour/70c551c1d30ffa85ef6b288436868999c5aa6b27",
+    "https://doi.org/10.1145/3736306"
+   ]
+  },
+  "prompt_sha256": "aa55bb2550558bb78633aeb1bec841778d7b5f9f3df2efd93fa1338959a5c6d6",
+  "full_prompt_sha256": "8fed49e309fe0e1ac5a097b0453bda60737138cc24fc83aa49a4fc9bcbeefb35"
+ },
+ "drb2_zh_051": {
+  "idx": 51,
+  "theme": "Software Development",
+  "description": "A Detailed Comparison Report of Current Mainstream Web Development Frameworks",
+  "license": "CC BY 4.0",
+  "order": 45,
+  "sets": [],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 111,
+   "analysis": 8,
+   "presentation": 7
+  },
+  "blocked": {
+   "title": "Evolution of Popularity and Multiaspectual Comparison of Widely Used Web Development Frameworks",
+   "authors": [
+    "Jakub Swacha",
+    "Artur Kulpa"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2079-9292/12/17/3563",
+    "https://www.researchgate.net/publication/373352416_Evolution_of_Popularity_and_Multiaspectual_Comparison_of_Widely_Used_Web_Development_Frameworks",
+    "https://www.semanticscholar.org/paper/5164dbe2bbe317008ebf00ac46e32a8022a7e380",
+    "https://ouci.dntb.gov.ua/en/works/4gwroPE4/"
+   ]
+  },
+  "prompt_sha256": "a288a777ae0e4d84e31c9b6e9f0df5c4060967417f3e507f3a392fc9b8a03736",
+  "full_prompt_sha256": "bea755b49e8a2326e39e6c3f0b931574544f465966084f18d16801dba5cb7fea"
+ },
+ "drb2_zh_053": {
+  "idx": 53,
+  "theme": "Education & Jobs",
+  "description": "",
+  "license": "CC BY 4.0",
+  "order": 51,
+  "sets": [],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 59,
+   "analysis": 8,
+   "presentation": 7
+  },
+  "blocked": {
+   "title": "The Evolving Classroom: How Learning Analytics Is Shaping the Future of Education and Feedback Mechanisms",
+   "authors": [
+    "Hanan Sharif",
+    "Amara Atif"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2227-7102/14/2/176",
+    "https://www.researchgate.net/publication/378088586_The_Evolving_Classroom_How_Learning_Analytics_Is_Shaping_the_Future_of_Education_and_Feedback_Mechanisms",
+    "https://discovery.researcher.life/article/the-evolving-classroom-how-learning-analytics-is-shaping-the-future-of-education-and-feedback-mechanisms/ed3a6830c974344fbad1f27544208ff5",
+    "https://www.citedrive.com/en/discovery/the-evolving-classroom-how-learning-analytics-is-shaping-the-future-of-education-and-feedback-mechanisms/",
+    "https://colab.ws/articles/10.3390%2Feducsci14020176"
+   ]
+  },
+  "prompt_sha256": "a97b21056c612c861a8201c264cdfabbcd9e1c52382b8df5e04b4b3e1037132a",
+  "full_prompt_sha256": "6e441d5c2f73fa2f8b6d08f9d3cc48c95a4468a0fdcbf22179e125b3b69bc670"
+ },
+ "drb2_zh_055": {
+  "idx": 55,
+  "theme": "Education & Jobs",
+  "description": "The social security situation of cultural and creative practitioners in atypical employment relationships in different countries",
+  "license": "CC BY 4.0",
+  "order": 15,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 36,
+   "analysis": 10,
+   "presentation": 3
+  },
+  "blocked": {
+   "title": "Social Protection in the Cultural and Creative Sector: Country Practices and Innovations",
+   "authors": [
+    "Carlos Galian",
+    "Margherita Licata",
+    "Maya Stern-Plaza"
+   ],
+   "urls": [
+    "https://socialprotection-humanrights.org/resource/social-protection-in-the-cultural-and-creative-sectorcountry-practices-and-innovations/",
+    "https://ideas.repec.org/p/ilo/ilowps/995124793402676.html",
+    "https://www.fim-musicians.org/wp-content/uploads/wcms_781638.pdf",
+    "https://www.ilo.org/sites/default/files/2025-01/wp28.pdf",
+    "https://www.researchgate.net/publication/351023964_Social_Protection_in_the_Cultural_and_Creative_Sector_Country_Practices_and_Innovations",
+    "https://www.ilo.org/publications/social-protection-cultural-and-creative-sector-country-practices-and-1",
+    "https://socialprotection-humanrights.org/wp-content/uploads/2021/10/wcms_781638.pdf"
+   ]
+  },
+  "prompt_sha256": "e032e3eb0b6fef952198fc45bae6f0a4ce6d3fd368a916004a7987416080f481",
+  "full_prompt_sha256": "45b0b2855271453e41d244f49fd2822d50f89fc0d693dc89c4e78cf432f13832"
+ },
+ "drb2_zh_057": {
+  "idx": 57,
+  "theme": "Education & Jobs",
+  "description": "Research on the Impact of Industry 4.0 on the Labor Market in South Asia",
+  "license": "CC BY 4.0",
+  "order": 40,
+  "sets": [],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 39,
+   "analysis": 10,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "A Systematic Review of Industry 4.0 Technology on Workforce Employability and Skills: Driving Success Factors and Challenges in South Asia",
+   "authors": [
+    "Md. Tota Miah",
+    "Szilvia Erdei-Gally",
+    "Anita Dancs",
+    "Mária Fekete-Farkas"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2227-7099/12/2/35",
+    "https://www.semanticscholar.org/paper/2ff2c7d4bb8041cfa16772101b3523b97b3885a8",
+    "https://ideas.repec.org/a/gam/jecomi/v12y2024i2p35-d1330807.html",
+    "https://www.researchgate.net/publication/377858559_A_Systematic_Review_of_Industry_40_Technology_on_Workforce_Employability_and_Skills_Driving_Success_Factors_and_Challenges_in_South_Asia",
+    "https://scispace.com/papers/a-systematic-review-of-industry-4-0-technology-on-workforce-1kw9pqia6c"
+   ]
+  },
+  "prompt_sha256": "a4259719743ccbea27a83fb68695942a84e9bfdf4fa582c45e9406060041636f",
+  "full_prompt_sha256": "3528b23ec9cff1d30c088eb0086b7bc3c89b864191f07e2f01135b2ab2965058"
+ },
+ "drb2_zh_059": {
+  "idx": 59,
+  "theme": "Education & Jobs",
+  "description": "The Current State of Research on the Application of ChatGPT in Education (2023)",
+  "license": "CC BY 4.0",
+  "order": 47,
+  "sets": [],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 50,
+   "analysis": 11,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "ChatGPT in Teaching and Learning: A Systematic Review",
+   "authors": [
+    "Duha Ali",
+    "Yasin Fatemi",
+    "Elahe Boskabadi",
+    "Mohsen Nikfar",
+    "Jude Ugwuoke",
+    "Haneen Ali"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2227-7102/14/6/643",
+    "https://www.researchgate.net/publication/381430312_ChatGPT_in_Teaching_and_Learning_A_Systematic_Review",
+    "https://www.semanticscholar.org/paper/ChatGPT-in-Teaching-and-Learning%3A-A-Systematic-Ali-Fatemi/f9309822fcaef96a587db4dd629dba6cbfb128fb",
+    "https://www.ivysci.com/articles/2833865__ChatGPT_in_Teaching_and_Learning_A_Systematic_Review",
+    "https://ouci.dntb.gov.ua/en/works/4NKXvnKl/"
+   ]
+  },
+  "prompt_sha256": "7b294b7a2c7a153825547e80ec9e79de9a161a7be9754e29524c9bb1b606109e",
+  "full_prompt_sha256": "6503b485d5757ab61bd237494d4a71ca9d84be70402669028e3f6f34aea5389e"
+ },
+ "drb2_zh_061": {
+  "idx": 61,
+  "theme": "Education & Jobs",
+  "description": "Artificial Intelligence Tutoring Systems for K-12 Education",
+  "license": "CC BY 4.0",
+  "order": 12,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 34,
+   "analysis": 11,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "A systematic review of AI-driven intelligent tutoring systems (ITS) in K-12 education",
+   "authors": [
+    "Angélique Létourneau",
+    "Marion Deslandes Martineau",
+    "Patrick Charland",
+    "John Alexander Karran",
+    "Jared Boasen",
+    "Pierre Majorique Léger"
+   ],
+   "urls": [
+    "https://www.nature.com/articles/s41539-025-00320-7",
+    "https://www.researchgate.net/publication/391755170_A_systematic_review_of_AI-driven_intelligent_tutoring_systems_ITS_in_K-12_education"
+   ]
+  },
+  "prompt_sha256": "3ffa2622672dd2e51a64fd871518c8cf2f5e54fe971acb2c0d822a2cdf455290",
+  "full_prompt_sha256": "34545b5c9dc653bf79b30feb21bdd505399d4c2e45aeb4d380ffa7f8d0b69d35"
+ },
+ "drb2_zh_063": {
+  "idx": 63,
+  "theme": "Health",
+  "description": "An Investigation of Potential Therapeutic Strategies to Reverse T-Cell Exhaustion by Regulating Mitochondrial Metabolism",
+  "license": "CC BY 4.0",
+  "order": 33,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 39,
+   "analysis": 19,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "Mitochondrial Metabolism in T-Cell Exhaustion",
+   "authors": [
+    "Fei Li",
+    "Yu Feng",
+    "Zesheng Yin",
+    "Yahong Wang"
+   ],
+   "urls": [
+    "https://www.mdpi.com/1422-0067/26/15/7400",
+    "https://pubmed.ncbi.nlm.nih.gov/40806529/",
+    "https://www.mdpi.com/1422-0067/26/15/7400/review_report",
+    "https://scite.ai/reports/mitochondrial-metabolism-in-t-cell-exhaustion-n6ZMjglD"
+   ]
+  },
+  "prompt_sha256": "12f3134c97bcc165e87f776655dc44e73e25d10e20e8455b4485931d77dae5a0",
+  "full_prompt_sha256": "0e9a96affcad3e0b9236d2d6ba9e99709afe1276d33f03d92804b9c6b146dde5"
+ },
+ "drb2_zh_065": {
+  "idx": 65,
+  "theme": "Health",
+  "description": "The Relationship Between Zinc Homeostasis and Cardiovascular Disease (CVD)",
+  "license": "CC BY 4.0",
+  "order": 31,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 41,
+   "analysis": 11,
+   "presentation": 3
+  },
+  "blocked": {
+   "title": "Zinc in Cardiovascular Functions and Diseases: Epidemiology and Molecular Mechanisms for Therapeutic Development",
+   "authors": [
+    "Takafumi Hara",
+    "Emi Yoshigai",
+    "Takuto Ohashi",
+    "Toshiyuki Fukada"
+   ],
+   "urls": [
+    "https://pubmed.ncbi.nlm.nih.gov/37108314/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10139119/",
+    "https://www.researchgate.net/publication/370022442_Zinc_in_Cardiovascular_Functions_and_Diseases_Epidemiology_and_Molecular_Mechanisms_for_Therapeutic_Development",
+    "https://www.semanticscholar.org/paper/Zinc-in-Cardiovascular-Functions-and-Diseases%3A-and-Hara-Yoshigai/2f47af089cd40ba69a6cef7f1502d55e3d815dc8",
+    "https://www.mdpi.com/1422-0067/24/8/7152"
+   ]
+  },
+  "prompt_sha256": "c64e865a68d100c77ea9c4c66857c27c8581eb59fbf1ad66b92ff109a24347a8",
+  "full_prompt_sha256": "3efd9c3279359342164d48d5c29d23423810629cb48620379083da2451c8d404"
+ },
+ "drb2_zh_067": {
+  "idx": 67,
+  "theme": "Health",
+  "description": "Investigation of the effects of m⁶A on the immune system",
+  "license": "CC BY 4.0",
+  "order": 13,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 45,
+   "analysis": 13,
+   "presentation": 7
+  },
+  "blocked": {
+   "title": "Impact of N6-methyladenosine (m⁶A) modification on immunity",
+   "authors": [
+    "Raghda A. Elsabbagh",
+    "Mona Rady",
+    "Carsten Watzl",
+    "Khaled Abou-Aisha",
+    "Mohamed Z. Gad"
+   ],
+   "urls": [
+    "https://www.researchgate.net/publication/363416511_Impact_of_N6-methyladenosine_m6A_modification_on_immunity",
+    "https://www.researchgate.net/publication/363481920_Impact_of_N6-methyladenosine_m_6_A_modification_on_immunity",
+    "https://biosignaling.biomedcentral.com/articles/10.1186/s12964-022-00939-8",
+    "https://pubmed.ncbi.nlm.nih.gov/36085064/",
+    "https://www.unboundmedicine.com/medline/citation/36085064/Impact_of_N6_methyladenosine__m6A__modification_on_immunity_"
+   ]
+  },
+  "prompt_sha256": "19c15f585a748fcb4a9b90ddc9e24c6bbf2f3130270bfe90fdf32a5c6efef4b2",
+  "full_prompt_sha256": "54070aca0b75dcf35e524424ab6694a6d637a48b531a970de28796edc4cc3d10"
+ },
+ "drb2_zh_069": {
+  "idx": 69,
+  "theme": "Health",
+  "description": "Research on Artificial Intelligence in the Field of Mental Health",
+  "license": "CC BY 4.0",
+  "order": 28,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 45,
+   "analysis": 12,
+   "presentation": 9
+  },
+  "blocked": {
+   "title": "A Scoping Review of AI-Driven Digital Interventions in Mental Health Care: Mapping Applications Across Screening, Support, Monitoring, Prevention, and Clinical Education",
+   "authors": [
+    "Yang Ni",
+    "Fanli Jia"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2227-9032/13/10/1205",
+    "https://www.researchgate.net/publication/391928298_A_Scoping_Review_of_AI-Driven_Digital_Interventions_in_Mental_Health_Care_Mapping_Applications_Across_Screening_Support_Monitoring_Prevention_and_Clinical_Education",
+    "https://www.semanticscholar.org/paper/A-Scoping-Review-of-AI-Driven-Digital-Interventions-Ni-Jia/5fdca75da86e4332257bb1067bc3eabb3d06bb34",
+    "https://colab.ws/articles/10.3390/healthcare13101205"
+   ]
+  },
+  "prompt_sha256": "82054d7217f3b02ef1e8fb70da1cb99f417bcb9f1a8e1c764cdfdc4e5b75aab2",
+  "full_prompt_sha256": "c500fe5b987ce9991788c291ec4cabab602f2af77be68ff38e0010cb07bad203"
+ },
+ "drb2_zh_071": {
+  "idx": 71,
+  "theme": "Health",
+  "description": "The psychology of conspiracy theories",
+  "license": "CC BY 4.0",
+  "order": 36,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 40,
+   "analysis": 9,
+   "presentation": 4
+  },
+  "blocked": {
+   "title": "The Psychology of Conspiracy Theories",
+   "authors": [
+    "Karen M. Douglas",
+    "Robbie M. Sutton",
+    "Aleksandra Cichocka"
+   ],
+   "urls": [
+    "https://www.researchgate.net/publication/317401748_The_Psychology_of_Conspiracy_Theories",
+    "https://pubmed.ncbi.nlm.nih.gov/29276345/",
+    "https://www.semanticscholar.org/paper/The-Psychology-of-Conspiracy-Theories-Douglas-Sutton/4e1797aa41ad9d61c0178fb3d6c16131e661369a",
+    "https://journals.sagepub.com/doi/10.1177/0963721417718261",
+    "https://journals.sagepub.com/doi/abs/10.1177/0963721417718261",
+    "https://www.goodreads.com/book/show/44547044-the-psychology-of-conspiracy-theories"
+   ]
+  },
+  "prompt_sha256": "cf17e1d4171d71a5bf1a17a3a79c091acf0bc760f4b842881f36e721e8cb9348",
+  "full_prompt_sha256": "af7c88646929c50bcb72c717aa255fc29d8ec6fa94b2bcebae4451611cf2c43f"
+ },
+ "drb2_zh_073": {
+  "idx": 73,
+  "theme": "Health",
+  "description": "A Survey of Knowledge Graphs for Drug Repurposing",
+  "license": "CC BY 4.0",
+  "order": 49,
+  "sets": [],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 78,
+   "analysis": 8,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "Knowledge Graphs for drug repurposing: a review of databases and methods",
+   "authors": [
+    "Pablo Perdomo-Quinteiro",
+    "Alberto Belmonte-Hernández"
+   ],
+   "urls": [
+    "https://doi.org/10.1093/bib/bbae461",
+    "https://academic.oup.com/bib/article/25/6/bbae461/7774899",
+    "https://pubmed.ncbi.nlm.nih.gov/39325460/",
+    "https://www.semanticscholar.org/paper/Knowledge-Graphs-for-drug-repurposing%3A-a-review-of-Perdomo-Quinteiro-Belmonte-Hern%C3%A1ndez/a5502aae6dcedee1723b3fb98ad153b0c9ac7a61",
+    "https://pdfs.semanticscholar.org/484e/4790059a3dc9265bc03f5c6598d71a6f4fde.pdf",
+    "https://academic.oup.com/bib/article-pdf/25/6/bbae461/59344032/bbae461.pdf",
+    "https://discovery.researcher.life/article/knowledge-graphs-for-drug-repurposing-a-review-of-databases-and-methods/7a16a75bdb7c39f1a2d1c118ef0b1b05",
+    "https://ouci.dntb.gov.ua/en/works/4OgWxkb4/",
+    "https://portalcientifico.upm.es/cat/ipublic/item/10250906"
+   ]
+  },
+  "prompt_sha256": "e2508214466a589fd036923542a69a9edf3b69a43d8cf78f4170a8d045ae1424",
+  "full_prompt_sha256": "db2dcb32db81ea2d300c62fe5f00c2bc802693d296abfe07c992470a8cbfe03d"
+ },
+ "drb2_zh_075": {
+  "idx": 75,
+  "theme": "Literature",
+  "description": "An Analysis of the Theoretical Innovations Represented by *The Cambridge History of Chinese Literature*",
+  "license": "CC BY 4.0",
+  "order": 65,
+  "sets": [
+   "calib"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 35,
+   "analysis": 8,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "Is a New Chinese Literary History Possible? A Critical Investigation of The Cambridge History of Chinese Literature",
+   "authors": [
+    "Shen Yifan 沈一帆"
+   ],
+   "urls": [
+    "https://www.sciencedirect.com/org/science/article/pii/S2352133324000104",
+    "https://www.researchgate.net/publication/379985497_Is_a_New_Chinese_Literary_History_Possible_A_Critical_Investigation_of_The_Cambridge_History_of_Chinese_Literature",
+    "https://www.lhp.sdu.edu.cn/info/1372/4096.htm",
+    "https://brill.com/view/journals/joch/10/1/article-p1_1.xml?srsltid=AfmBOooiR3fZq9ocrbvSKNnNcNhPKktubNY8k358F6uOjI1Nwe7XhhrQ"
+   ]
+  },
+  "prompt_sha256": "358deb2515a97f8a67b58b5da16f9ebefb678db578ba8e93ab212820b811a14a",
+  "full_prompt_sha256": "75936e8050189e00f6bbb74be89f0655d31b685bbd60f41afa93b49efccad7e6"
+ },
+ "drb2_zh_077": {
+  "idx": 77,
+  "theme": "Literature",
+  "description": "Transgender rights and legal status in Egypt",
+  "license": "CC BY 4.0",
+  "order": 10,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 43,
+   "analysis": 12,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "Transsexual Surgery in Egypt or the Suspicion of Homosexuality",
+   "authors": [
+    "Corinne Fortier"
+   ],
+   "urls": [
+    "https://hal.science/hal-05097583v1/document",
+    "https://hal.science/hal-05097583v1",
+    "https://www.berghahnjournals.com/view/journals/ame/20/1/ame200108.xml"
+   ]
+  },
+  "prompt_sha256": "5a4da2aded85b46321166148f0ee0a03c62ba65914efc24615a7bbe2d50c37d0",
+  "full_prompt_sha256": "2068bbcb21a11fca9ce9ec13a10285d80ba382ff1d362575eca47499d7681798"
+ },
+ "drb2_zh_079": {
+  "idx": 79,
+  "theme": "Literature",
+  "description": "A Study on LGBTQ+ Inclusivity in Japanese Textbooks and Teaching Methods",
+  "license": "CC BY 4.0",
+  "order": 8,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 30,
+   "analysis": 14,
+   "presentation": 4
+  },
+  "blocked": {
+   "title": "Toward More Inclusive Japanese Language Education: Incorporating an Awareness of Gender and Sexual Diversity among Students",
+   "authors": [
+    "Jotaro Arimori"
+   ],
+   "urls": [
+    "https://jll.pitt.edu/ojs/JLL/article/view/129",
+    "https://www.researchgate.net/publication/345454410_Toward_More_Inclusive_Japanese_Language_Education_Incorporating_an_Awareness_of_Gender_and_Sexual_Diversity_among_Students",
+    "https://doaj.org/article/c78fd6a300a34214beae90b10da5e355",
+    "https://doi.org/10.5195/jll.2020.129",
+    "https://www.jstor.org/stable/e27013670"
+   ]
+  },
+  "prompt_sha256": "044310a2514d4ddecc2d1811ab87ca166519106e9d74122f3c7719149e09a448",
+  "full_prompt_sha256": "9dd88e12cd81d937a50e2687b9ec41bf6d0978f76d95e40f5782c1a9f78cb7b4"
+ },
+ "drb2_zh_081": {
+  "idx": 81,
+  "theme": "History",
+  "description": "Applications of Augmented Reality Technology in History Education and Cultural Heritage Visualization",
+  "license": "CC BY 4.0",
+  "order": 11,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 18,
+   "analysis": 19,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "A Review of Augmented Reality Applications for History Education and Heritage Visualisation",
+   "authors": [
+    "Jennifer Challenor",
+    "Minhua Ma"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2414-4088/3/2/39",
+    "https://doaj.org/article/e1537f41ad544db0aa2fd93fe828582b",
+    "https://openresearch.surrey.ac.uk/esploro/outputs/journalArticle/A-Review-of-Augmented-Reality-Applications/99924461902346",
+    "https://scispace.com/papers/a-review-of-augmented-reality-applications-for-history-5c5sabpx50?references_page=6"
+   ]
+  },
+  "prompt_sha256": "27003a437f9a28fe828696c43ffa45fffd585989d767c4037ef4fd29283f5fd4",
+  "full_prompt_sha256": "783664c5c11882b9a8132baf100879bcd03fe4ca6ef5e2dc9f9f656f2dfdc483"
+ },
+ "drb2_zh_083": {
+  "idx": 83,
+  "theme": "History",
+  "description": "Research and review of the concepts of collective memory and social memory",
+  "license": "CC BY 4.0",
+  "order": 35,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 31,
+   "analysis": 10,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "Collective memory: between individual systems of consciousness and social systems",
+   "authors": [
+    "Jean-François Orianne",
+    "Francis Eustache"
+   ],
+   "urls": [
+    "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1238272/full",
+    "https://pubmed.ncbi.nlm.nih.gov/37901083/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10603192/",
+    "https://www.semanticscholar.org/paper/Collective-memory%3A-between-individual-systems-of-Orianne-Eustache/dfde43d9346be3ea6b6cef5a404a6af60bfb96b0"
+   ]
+  },
+  "prompt_sha256": "207af400fe65e770446ded29236ffb6abf7f185d6363bb3c939846635f312e25",
+  "full_prompt_sha256": "043a9ef4df04dc6119a86e612c2d9d11d0fde45a4811753798b2ee320bbe12d9"
+ },
+ "drb2_zh_085": {
+  "idx": 85,
+  "theme": "History",
+  "description": "A Study of Three East Asian Films on the Theme of Post-World War II Trials",
+  "license": "CC BY 4.0",
+  "order": 24,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 35,
+   "analysis": 18,
+   "presentation": 3
+  },
+  "blocked": {
+   "title": "'A Continuous Retrial': Trans/national Memory in Chinese and Japanese Tribunal Films",
+   "authors": [
+    "Amanda Weiss"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2076-0752/9/1/2",
+    "https://www.academia.edu/104149591/A_Continuous_Retrial_Trans_national_Memory_in_Chinese_and_Japanese_Tribunal_Films_Arts_New_Media_2019_"
+   ]
+  },
+  "prompt_sha256": "266f8509450528f6e9de0fe651676aea32d9110a6bd38f12e2530f2bfbfb9f80",
+  "full_prompt_sha256": "2f12767ad0221624b7d60ebc870bcaf8e20d75269f608dd60f984085981e347a"
+ },
+ "drb2_zh_087": {
+  "idx": 87,
+  "theme": "Hardware",
+  "description": "New Advances in Interconnect Technology for Semiconductor Chips",
+  "license": "CC BY 4.0",
+  "order": 54,
+  "sets": [],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 41,
+   "analysis": 12,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "Materials Quest for Advanced Interconnect Metallization in Integrated Circuits",
+   "authors": [
+    "Jun Hwan Moon",
+    "Eunjin Jeong",
+    "Seunghyun Kim",
+    "Taesoon Kim",
+    "Eunsoo Oh",
+    "Keun Lee",
+    "Hauk Han",
+    "Young Keun Kim"
+   ],
+   "urls": [
+    "https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202207321",
+    "https://onlinelibrary.wiley.com/doi/abs/10.1002/advs.202207321",
+    "https://pubmed.ncbi.nlm.nih.gov/37318187/",
+    "https://www.semanticscholar.org/paper/Materials-Quest-for-Advanced-Interconnect-in-Moon-Jeong/3f3d004db9e11591b32821c78c4869808e144e9a",
+    "https://cn.aminer.org/pub/64a390c8d68f896efa1f5b77"
+   ]
+  },
+  "prompt_sha256": "f765881fca1c328a07e460db12559d62ab54f8088f928a746de5c5e270ff66b7",
+  "full_prompt_sha256": "220d26a151da24f2476c3423bb45d3c3500a1c928925a6b06986be9d3a6f0fea"
+ },
+ "drb2_zh_089": {
+  "idx": 89,
+  "theme": "Hardware",
+  "description": "Detailed Research Report on BLIK in Poland",
+  "license": "CC BY 4.0",
+  "order": 18,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 44,
+   "analysis": 24,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "The Determinants of PayTech's Success in the Mobile Payment Market—The Case of BLIK",
+   "authors": [
+    "Joanna Błach",
+    "Monika Klimontowicz"
+   ],
+   "urls": [
+    "https://www.mdpi.com/1911-8074/14/9/422",
+    "https://www.researchgate.net/publication/354380925_The_Determinants_of_PayTech's_Success_in_the_Mobile_Payment_Market-The_Case_of_BLIK",
+    "https://ideas.repec.org/a/gam/jjrfmx/v14y2021i9p422-d628924.html",
+    "https://ouci.dntb.gov.ua/en/works/4YxQBXM7/"
+   ]
+  },
+  "prompt_sha256": "2afedcb818b54f0dfe1c0e37e2f7738174d7e6c0edc7ac1de951f52ee8bbd6f1",
+  "full_prompt_sha256": "122fe768ebf9fdb8087da7113ba7b98f574afeca11fc585f5188d3f475f47fca"
+ },
+ "drb2_zh_091": {
+  "idx": 91,
+  "theme": "Hardware",
+  "description": "A Survey of SRAM Sensing Circuits for Offset Reduction",
+  "license": "CC BY 4.0",
+  "order": 58,
+  "sets": [],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 78,
+   "analysis": 9,
+   "presentation": 4
+  },
+  "blocked": {
+   "title": "Design of High-Speed, Low-Power Sensing Circuits for Nano-Scale Embedded Memory",
+   "authors": [
+    "Sangheon Lee",
+    "Gwanwoo Park",
+    "Hanwool Jeong"
+   ],
+   "urls": [
+    "https://www.mdpi.com/1424-8220/24/1/16",
+    "https://www.researchgate.net/publication/376677596_Design_of_High-Speed_Low-Power_Sensing_Circuits_for_Nano-Scale_Embedded_Memory",
+    "https://pubmed.ncbi.nlm.nih.gov/38202877/",
+    "https://www.semanticscholar.org/paper/81702ee0195dcdb2dd2e3ec57884efbc6fe0d52c",
+    "https://yonsei.elsevierpure.com/en/publications/design-of-high-speed-low-power-sensing-circuits-for-nano-scale-em/fingerprints/",
+    "https://www.mdpi.com/1424-8220/24/1/16/reprints"
+   ]
+  },
+  "prompt_sha256": "94234ed068e1332e7ce535e9750781b72c90dbb2b6f413569668a773a586ba8b",
+  "full_prompt_sha256": "5bc54935e6277157901f4d3680a36629782f69b3c1e33e115b7b1f59d9dcd64c"
+ },
+ "drb2_zh_093": {
+  "idx": 93,
+  "theme": "Industrial",
+  "description": "Research on Vibration-Based Condition Monitoring of Heavy Machinery",
+  "license": "CC BY 4.0",
+  "order": 30,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 54,
+   "analysis": 14,
+   "presentation": 8
+  },
+  "blocked": {
+   "title": "An In-Depth Study of Vibration Sensors for Condition Monitoring",
+   "authors": [
+    "Ietezaz Ul Hassan",
+    "Krishna Panduru",
+    "Joseph Walsh"
+   ],
+   "urls": [
+    "https://www.mdpi.com/1424-8220/24/3/740",
+    "https://pubmed.ncbi.nlm.nih.gov/38339457/",
+    "https://scispace.com/papers/an-in-depth-study-of-vibration-sensors-for-condition-2a2dzfcj7x",
+    "https://ouci.dntb.gov.ua/en/works/4ONBkWN7/",
+    "https://doi.org/10.3390/s24030740"
+   ]
+  },
+  "prompt_sha256": "7d2392b214752fd4181a3929b2922e48c5389a0e9b53304257e0f92bbcf5bb02",
+  "full_prompt_sha256": "dd31b4ae845b6ba94a749049919338054298e8056af5e9493df08af02f7f5b11"
+ },
+ "drb2_zh_095": {
+  "idx": 95,
+  "theme": "Industrial",
+  "description": "Investigation of Hydroforming Technology",
+  "license": "CC BY 4.0",
+  "order": 48,
+  "sets": [],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 58,
+   "analysis": 10,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "A review of emerging hydroforming technologies: design considerations, parametric studies, and recent innovations",
+   "authors": [
+    "Satish Chinchanikar",
+    "Harsh Mulik",
+    "Param Varude",
+    "Sameer Atole",
+    "Neha Mundada"
+   ],
+   "urls": [
+    "https://jeas.springeropen.com/articles/10.1186/s44147-024-00546-z",
+    "https://www.researchgate.net/publication/385401108_A_review_of_emerging_hydroforming_technologies_design_considerations_parametric_studies_and_recent_innovations",
+    "https://ui.adsabs.harvard.edu/abs/2024JEAS...71..205C/abstract"
+   ]
+  },
+  "prompt_sha256": "14e0c6a5a374b475307758a9401cb292f309aa92920a11aa6649f0b2c7ccc557",
+  "full_prompt_sha256": "86788386b5b651b8c107564fb72db6aff91a9d1c87c34ae505818172dfe574a9"
+ },
+ "drb2_zh_097": {
+  "idx": 97,
+  "theme": "Art & Design",
+  "description": "Immersive Van Gogh Art Exhibition Research",
+  "license": "CC BY 4.0",
+  "order": 32,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 40,
+   "analysis": 16,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "The Influencers: Van Gogh Immersive Experiences and the Attention-Experience Economy",
+   "authors": [
+    "Kate Mondloch"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2076-0752/11/5/90",
+    "https://www.researchgate.net/publication/363712184_The_Influencers_Van_Gogh_Immersive_Experiences_and_the_Attention-Experience_Economy",
+    "https://www.semanticscholar.org/paper/2412794ee1f3960f50cdd717199b0e8524a90f13",
+    "https://scispace.com/papers/the-influencers-van-gogh-immersive-experiences-and-the-12hjy9kh"
+   ]
+  },
+  "prompt_sha256": "4aac166167896e38274a97fa8678a38fea64f14065d74573888c2da05c814971",
+  "full_prompt_sha256": "763e0e1bd8383761f64a9da8f475942f2b175e10d567614ef583a0efa1de7dd7"
+ },
+ "drb2_zh_099": {
+  "idx": 99,
+  "theme": "Art & Design",
+  "description": "An In-depth Study of Netflix's Global Content Production Strategy",
+  "license": "CC BY 4.0",
+  "order": 21,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 43,
+   "analysis": 17,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "Televisuality on a Global Scale: Netflix's Local-Language Strategy",
+   "authors": [
+    "Frédérique Khazoom"
+   ],
+   "urls": [
+    "https://www.cogitatiopress.com/mediaandcommunication/article/view/9356",
+    "https://www.cogitatiopress.com/mediaandcommunication/article/download/9356/4210",
+    "https://www.researchgate.net/publication/388745310_Televisuality_on_a_Global_Scale_Netflix's_Local-Language_Strategy",
+    "https://doi.org/10.17645/mac.9356"
+   ]
+  },
+  "prompt_sha256": "a03f23cb35a6d1070a5211d40f3eb103b07c3e9d979d66afc4f9d134be3d2683",
+  "full_prompt_sha256": "3dc4d44965093313b68dac31344cfc58c717a53595e5b03b75cb844414ee132c"
+ },
+ "drb2_zh_101": {
+  "idx": 101,
+  "theme": "Games",
+  "description": "Game Design Methodology Research",
+  "license": "CC BY 4.0",
+  "order": 55,
+  "sets": [],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 22,
+   "analysis": 12,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "Game Design as an Autonomous Research Subject",
+   "authors": [
+    "Pedro Pinto Neves",
+    "Nelson Zagalo"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2078-2489/12/9/367",
+    "https://research.ulusofona.pt/en/publications/game-design-as-an-autonomous-research-subject-8",
+    "https://ouci.dntb.gov.ua/en/works/9GaYneK4/",
+    "http://hdl.handle.net/10437/12451",
+    "https://www.researchgate.net/publication/354026384_Game_Design_as_an_Autonomous_Research_Subject"
+   ]
+  },
+  "prompt_sha256": "a4f33623db99f1d7b3ca28ab715a084b93c010dc738dfa07e9e319d86eb41b13",
+  "full_prompt_sha256": "f9302fc4d546ba9d01a86f178b67a90b53372c4f2108769c6cf1661a6f25853a"
+ },
+ "drb2_zh_103": {
+  "idx": 103,
+  "theme": "Crime & Law",
+  "description": "Legal Research on Traffic Accident Liability for German Autonomous Vehicles",
+  "license": "CC BY 4.0",
+  "order": 23,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 33,
+   "analysis": 9,
+   "presentation": 3
+  },
+  "blocked": {
+   "title": "Distribution of the Burden of Proof in Autonomous Driving Tort Cases: Implications of the German Legislation for China",
+   "authors": [
+    "Zhihua Chen",
+    "Qianyi Cai",
+    "Hanbing Wei"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2032-6653/15/7/305",
+    "https://www.mdpi.com/2032-6653/15/7/305/pdf",
+    "https://www.mdpi.com/2032-6653/15/7/305/html",
+    "https://www.mdpi.com/2032-6653/15/7/305/xml",
+    "https://www.researchgate.net/publication/382225455_Distribution_of_the_Burden_of_Proof_in_Autonomous_Driving_Tort_Cases_Implications_of_the_German_Legislation_for_China",
+    "https://www.researchgate.net/publication/382400472_Distribution_of_the_Burden_of_Proof_in_Autonomous_Driving_Tort_Cases_Implications_from_the_German_Legislation_for_China/download"
+   ]
+  },
+  "prompt_sha256": "ded17ecf9581f1dad3145955774d31b73c1ed8093daddd3fa90947364c6bf27e",
+  "full_prompt_sha256": "9ef334eb4279722d4c8645d57d5403c57344c0973bf03146bdc02565127f0054"
+ },
+ "drb2_zh_105": {
+  "idx": 105,
+  "theme": "Entertainment",
+  "description": "Plot Analysis of Japanese Isekai Manga",
+  "license": "CC BY 4.0",
+  "order": 14,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 47,
+   "analysis": 4,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "A Survey of the Story Elements of Isekai Manga",
+   "authors": [
+    "Dr. Paul S. Price"
+   ],
+   "urls": [
+    "https://iopn.library.illinois.edu/journals/jams/article/view/808",
+    "https://www.researchgate.net/publication/356628820_A_Survey_of_the_Story_Elements_of_Isekai_Manga",
+    "https://iopn.library.illinois.edu/journals/jams/article/download/808/732/2974",
+    "https://doaj.org/article/c28fb4960607433ab5636f5ce813240c",
+    "https://www.semanticscholar.org/paper/Survey-of-the-Story-Elements-of-Isekai-Manga-Price/e1333e503a499c5c8189a60661fd85fd3787dd70"
+   ]
+  },
+  "prompt_sha256": "b5758e3d319c9881597d5d30ed12990a308012ee76564ab6ae14ad7b880d796d",
+  "full_prompt_sha256": "4a4bb552a8c2c1deca5b9923bec05d5bfb264daaab5ffd15b9e6cd591d72a368"
+ },
+ "drb2_zh_107": {
+  "idx": 107,
+  "theme": "Transportation",
+  "description": "The development of urban rail transit in mainland China from 2015 to 2023",
+  "license": "CC BY 4.0",
+  "order": 34,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 109,
+   "analysis": 8,
+   "presentation": 7
+  },
+  "blocked": {
+   "title": "Urban Rail Transit in China: Progress Report and Analysis (2015–2023)",
+   "authors": [
+    "Kai Lu",
+    "Lei Zhang",
+    "Shen Li",
+    "Yunping Huang",
+    "Xiang Ding",
+    "Jingnan Hao",
+    "Siqi Huang",
+    "Xiaojuan Li",
+    "Fang Lu",
+    "Hongwei Zhang"
+   ],
+   "urls": [
+    "https://link.springer.com/article/10.1007/s40864-024-00231-7",
+    "https://journal.hep.com.cn/urt/EN/10.1007/s40864-024-00231-7",
+    "https://www.researchgate.net/publication/386163277_Urban_Rail_Transit_in_China_Progress_Report_and_Analysis_2015-2023",
+    "https://ira.lib.polyu.edu.hk/bitstream/10397/112952/1/s40864-024-00231-7.pdf",
+    "https://www.scilit.com/publications/e905a6e69bebdba754a750664efa88c1",
+    "https://trid.trb.org/View/2521815"
+   ]
+  },
+  "prompt_sha256": "a3459cf910adb178c6f3f95344bf111f9512e67762e1e4784ee69894bab3b672",
+  "full_prompt_sha256": "ade23cbe10bfbefb0eddeba00ce6409bfa59692455451aeddb2d465ead192836"
+ },
+ "drb2_zh_109": {
+  "idx": 109,
+  "theme": "Transportation",
+  "description": "Survey of Communication Systems in Smart Railways",
+  "license": "CC BY 4.0",
+  "order": 3,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 50,
+   "analysis": 10,
+   "presentation": 7
+  },
+  "blocked": {
+   "title": "Towards the Internet of Smart Trains: A Review on Industrial IoT-Connected Railways",
+   "authors": [
+    "Paula Fraga-Lamas",
+    "Tiago M. Fernández-Caramés",
+    "Luis Castedo"
+   ],
+   "urls": [
+    "https://www.mdpi.com/1424-8220/17/6/1457",
+    "https://pubmed.ncbi.nlm.nih.gov/28635672/",
+    "https://www.semanticscholar.org/paper/Towards-the-Internet-of-Smart-Trains%3A-A-Review-on-Fraga-Lamas-Fern%C3%A1ndez-Caram%C3%A9s/6d073bdd39984a857d2562e04a43345953949a75",
+    "https://scispace.com/papers/towards-the-internet-of-smart-trains-a-review-on-industrial-4nl5r9w0jh",
+    "https://www.researchgate.net/figure/Overview-of-the-topics-related-to-the-Internet-of-Smart-Trains-that-are-covered-in-this_fig1_317959976"
+   ]
+  },
+  "prompt_sha256": "f338040ff4bae0d6ecbaf0dc12a43fffde54ef5cc06f03d97536c110469fa1fc",
+  "full_prompt_sha256": "2119c07c27a9019ecca98e01efeeada967021adfeb8f749eed477316737f8c38"
+ },
+ "drb2_zh_111": {
+  "idx": 111,
+  "theme": "Sports & Fitness",
+  "description": "A Review of Physical Activity and Sedentary Behavior among In-School Adolescents in Low- and Middle-Income Countries",
+  "license": "CC BY 4.0",
+  "order": 2,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 40,
+   "analysis": 18,
+   "presentation": 9
+  },
+  "blocked": {
+   "title": "Physical activity and sedentary behavior among school-going adolescents in low- and middle-income countries: insights from the global school-based health survey",
+   "authors": [
+    "Hui Li",
+    "Wenyu Zhang",
+    "Jin Yan"
+   ],
+   "urls": [
+    "https://peerj.com/articles/17097/",
+    "https://pubmed.ncbi.nlm.nih.gov/38680891/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11055511/",
+    "https://www.researchgate.net/publication/380090694_Physical_activity_and_sedentary_behavior_among_school-going_adolescents_in_low-_and_middle-income_countries_insights_from_the_global_school-based_health_survey"
+   ]
+  },
+  "prompt_sha256": "b2e4776b9979ddc2a65f01af54b0242797e7c6eecd13493a3c80477a5a24b5fa",
+  "full_prompt_sha256": "72b81cdbc3e63610a7199022fce3d8fd12d0e421f1d0e8775a747af2ca0bfcd5"
+ },
+ "drb2_zh_113": {
+  "idx": 113,
+  "theme": "Software",
+  "description": "A Survey on the Practical Applications of Artificial Intelligence (AI) in Software Engineering",
+  "license": "CC BY 4.0",
+  "order": 63,
+  "sets": [
+   "calib"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 38,
+   "analysis": 17,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "AI-Driven Innovations in Software Engineering: A Review of Current Practices and Future Directions",
+   "authors": [
+    "Mamdouh Alenezi",
+    "Mohammed Akour"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2076-3417/15/3/1344",
+    "https://www.researchgate.net/publication/388448566_AI-Driven_Innovations_in_Software_Engineering_A_Review_of_Current_Practices_and_Future_Directions",
+    "https://www.scilit.com/publications/0935b8c8e11f82b26ee6890d4d841dd4",
+    "https://www.semanticscholar.org/paper/ff8c9fdd9d5a1d63a10abfd114c9f47b1a9d6160",
+    "https://ouci.dntb.gov.ua/en/works/4grdqmOr/"
+   ]
+  },
+  "prompt_sha256": "137cfd1b7b975a6bf1506d66df32796e35a15f50c6cc7287e95283f7b18c2187",
+  "full_prompt_sha256": "46194824d31d1ccf7940f1fd5c2568ce81f7d79dc436b63080e111b1792efed3"
+ },
+ "drb2_zh_115": {
+  "idx": 115,
+  "theme": "Religion",
+  "description": "A Study of the Taoist Thought on Longevity and Immortality",
+  "license": "CC BY 4.0",
+  "order": 52,
+  "sets": [],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 32,
+   "analysis": 9,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "In Search of Qi Immortality: A Study of Heshanggong's Commentary on the Daodejing",
+   "authors": [
+    "Jenny Hung"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2077-1444/16/3/383",
+    "https://doi.org/10.3390/rel16030383",
+    "https://researchportal.hkust.edu.hk/en/publications/in-search-of-qi-immortality-a-study-of-heshanggongs-commentary-on",
+    "https://philarchive.org/rec/HUNISO-2"
+   ]
+  },
+  "prompt_sha256": "c39a6bf1842cfd40912bc27d37cb2cba5e954c74298e1ec5299bb91a5d5d887c",
+  "full_prompt_sha256": "1cf45b6851dfe16ee58e0963f5befbd20cd97a292fb838b316c771557115211b"
+ },
+ "drb2_zh_117": {
+  "idx": 117,
+  "theme": "Religion",
+  "description": "The views of the eminent Sui Dynasty monk Jizang on 'Buddha-nature'.",
+  "license": "CC BY 4.0",
+  "order": 53,
+  "sets": [],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 44,
+   "analysis": 13,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "Is Emptiness Non-Empty? Jizang's Conception of Buddha-Nature",
+   "authors": [
+    "Jenny Hung"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2077-1444/16/2/184",
+    "https://philarchive.org/rec/HUNIEN",
+    "https://researchportal.hkust.edu.hk/en/publications/is-emptiness-non-empty-jizangs-conception-of-buddha-nature",
+    "https://www.academia.edu/127515451/Is_Emptiness_Non_Empty_Jizang_s_Conception_of_Buddha_Nature"
+   ]
+  },
+  "prompt_sha256": "bf61a4f626abede5e466afd8e7bbd52cb1c8ff86c02649a215e8817c3128b91c",
+  "full_prompt_sha256": "fa6bc785c012f90d734dc5635556143ac55fc7ccf20f75bb765b7c88db7f4f96"
+ },
+ "drb2_zh_119": {
+  "idx": 119,
+  "theme": "Travel",
+  "description": "The Impact of Temperature and Precipitation on Major Outdoor Recreational Activities in the United States",
+  "license": "CC0",
+  "order": 37,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 45,
+   "analysis": 8,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "Effects and perceptions of weather, climate, and climate change on outdoor recreation and nature-based tourism in the United States: A systematic review",
+   "authors": [
+    "Emily J. Wilkins",
+    "Lydia Horne"
+   ],
+   "urls": [
+    "https://journals.plos.org/climate/article?id=10.1371/journal.pclm.0000266",
+    "https://www.researchgate.net/publication/379537818_Effects_and_perceptions_of_weather_climate_and_climate_change_on_outdoor_recreation_and_nature-based_tourism_in_the_United_States_A_systematic_review",
+    "https://pubs.usgs.gov/publication/70253056",
+    "https://aithor.com/paper-summary/effects-and-perceptions-of-weather-climate-and-climate-change-on-outdoor-recreation-and-nature-based-tourism-in-the-united-states-a-systematic-review"
+   ]
+  },
+  "prompt_sha256": "c06cc0be698cb4e4fd9708ca93dbe5c08a4151a003312a98a32bb7c26f96cdde",
+  "full_prompt_sha256": "d9db78bb36d43b80e4999b67b5f2e40b649eff24dd1d471813c3439eeb086855"
+ },
+ "drb2_zh_121": {
+  "idx": 121,
+  "theme": "Travel",
+  "description": "The relationship between airport construction and regional economic development",
+  "license": "CC BY 4.0",
+  "order": 4,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 16,
+   "analysis": 18,
+   "presentation": 4
+  },
+  "blocked": {
+   "title": "The Causality Analysis of Airports and Regional Economy: Empirical Evidence from Jiangsu Province in China",
+   "authors": [
+    "Yang Bai",
+    "Cheng-Lung Wu"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2071-1050/14/7/4295",
+    "https://ideas.repec.org/a/gam/jsusta/v14y2022i7p4295-d786976.html",
+    "https://econpapers.repec.org/RePEc:gam:jsusta:v:14:y:2022:i:7:p:4295-:d:786976",
+    "https://www.mdpi.com/2071-1050/14/7/4295/review_report"
+   ]
+  },
+  "prompt_sha256": "96f55129a2afc0c170f42335853edfab8f2bbb89300b744fa8fa2d7327924299",
+  "full_prompt_sha256": "40106f5016ad5015d675cc26a95c37d4ae437534b1320fc879fafcd49570845c"
+ },
+ "drb2_zh_123": {
+  "idx": 123,
+  "theme": "Home & Hobbies",
+  "description": "A Study of Housing Informality",
+  "license": "CC BY 4.0",
+  "order": 7,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 40,
+   "analysis": 12,
+   "presentation": 5
+  },
+  "blocked": {
+   "title": "Trends, Methods, Drivers, and Impacts of Housing Informalities (HI): A Systematic Literature Review",
+   "authors": [
+    "Rim Mrani",
+    "Hassan Radoine",
+    "Jérôme Chenal",
+    "Alanda Kamana"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2413-8851/9/4/101",
+    "https://www.researchgate.net/publication/390268719_Trends_Methods_Drivers_and_Impacts_of_Housing_Informalities_HI_A_Systematic_Literature_Review",
+    "https://doaj.org/article/0bc6b503b324459f8cb11b523e1b8f00",
+    "https://ouci.dntb.gov.ua/en/works/lmbQjr5E/"
+   ]
+  },
+  "prompt_sha256": "3fb0c4d5931251af7954501daa0218d3dac66545bb8196c9ee141b3dbfc73bd2",
+  "full_prompt_sha256": "b6d82618b61bd93552f3f4e80c64ff81a26e24c3458c6112a1f4adb07820e026"
+ },
+ "drb2_zh_125": {
+  "idx": 125,
+  "theme": "Social Life",
+  "description": "The Impact of Recess on the Educational Outcomes of Elementary School Students",
+  "license": "CC BY 4.0",
+  "order": 42,
+  "sets": [],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 45,
+   "analysis": 15,
+   "presentation": 7
+  },
+  "blocked": {
+   "title": "Educational outcomes of recess in elementary school children: A mixed-methods systematic review",
+   "authors": [
+    "Erin K. Howie",
+    "Kristi L. Perryman",
+    "Joseph Moretta",
+    "Laura Cameron"
+   ],
+   "urls": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0294340",
+    "https://pubmed.ncbi.nlm.nih.gov/37992031/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10664954/",
+    "https://www.semanticscholar.org/paper/Educational-outcomes-of-recess-in-elementary-school-Howie-Perryman/643c3fb96cda4edab1466bfaaac362e6db710214"
+   ]
+  },
+  "prompt_sha256": "6df2a5be972f411ab60d07d236f8829384cf85b9e491bfe5f353152501782f43",
+  "full_prompt_sha256": "49786401cd426d2491d53b24ae11d64c6367edab985d04e046c95005c6cf4297"
+ },
+ "drb2_zh_127": {
+  "idx": 127,
+  "theme": "Social Life",
+  "description": "\"Pseudo-Intimate Relationships\" in the Context of Human-Computer Interaction",
+  "license": "CC BY 4.0",
+  "order": 19,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": true,
+  "rubric_items": {
+   "info_recall": 42,
+   "analysis": 14,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "Social and ethical impact of emotional AI advancement: the rise of pseudo-intimacy relationships and challenges in human interactions",
+   "authors": [
+    "Jie Wu"
+   ],
+   "urls": [
+    "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1410462/full",
+    "https://www.researchgate.net/publication/385922288_Social_and_ethical_impact_of_emotional_AI_advancement_the_rise_of_pseudo-intimacy_relationships_and_challenges_in_human_interactions",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11573535/",
+    "https://pubmed.ncbi.nlm.nih.gov/39564589/",
+    "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2024.1410462/text"
+   ]
+  },
+  "prompt_sha256": "c4b77df74e799edc4f06b19a1304bf697f3cb65e9bf3a3811f1ea86256dbd88e",
+  "full_prompt_sha256": "1a815777fed30bbf0f546d163ec61432dd1729f9fd682003a100d7cd0ed271e0"
+ },
+ "drb2_zh_129": {
+  "idx": 129,
+  "theme": "Food & Dining",
+  "description": "Technical Research on Lowering the Alcohol Content of Wine",
+  "license": "CC BY 4.0",
+  "order": 59,
+  "sets": [],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 44,
+   "analysis": 12,
+   "presentation": 3
+  },
+  "blocked": {
+   "title": "Low-Alcohol and Nonalcoholic Wines: From Production to Cardiovascular Health, along with Their Economic Effects",
+   "authors": [
+    "Paula Silva"
+   ],
+   "urls": [
+    "https://www.mdpi.com/2306-5710/10/3/49",
+    "https://www.researchgate.net/publication/381766531_Low-Alcohol_and_Nonalcoholic_Wines_From_Production_to_Cardiovascular_Health_along_with_Their_Economic_Effects",
+    "https://www.ciencia-e-vinho.com/2024/07/07/low-alcohol-and-nonalcoholic-wines-from-production-to-cardiovascular-health-along-with-their-economic-effects/",
+    "https://novaresearch.unl.pt/en/publications/low-alcohol-and-nonalcoholic-wines-from-production-to-cardiovascu",
+    "https://news.sciencenet.cn/htmlpaper/2025/8/2025822154821467138669.shtm",
+    "https://ouci.dntb.gov.ua/works/7AJqKPJ4/"
+   ]
+  },
+  "prompt_sha256": "f98d7f04321170324856842c84cd492a6d39f0da50d60290d30870381454c3c1",
+  "full_prompt_sha256": "bebb9edcdaf64355bc28c9d50ae0113b487b17e3f7721976705a068c94e873c3"
+ },
+ "drb2_zh_131": {
+  "idx": 131,
+  "theme": "Fashion & Beauty",
+  "description": "Statistical Analysis of the Demographic Profile of the U.S. Orthodontic Population",
+  "license": "CC BY 4.0",
+  "order": 5,
+  "sets": [
+   "d40",
+   "g40"
+  ],
+  "phase1": false,
+  "rubric_items": {
+   "info_recall": 63,
+   "analysis": 16,
+   "presentation": 6
+  },
+  "blocked": {
+   "title": "Profile of Orthodontic Use across Demographics",
+   "authors": [
+    "Man Hung",
+    "Golnoush Zakeri",
+    "Sharon Su",
+    "Amir Mohajeri"
+   ],
+   "urls": [
+    "https://pubmed.ncbi.nlm.nih.gov/38132429/",
+    "https://www.mdpi.com/2304-6767/11/12/291"
+   ]
+  },
+  "prompt_sha256": "197baeeef1b61aec077ef7aeeb8d816052c5d8811cdbfd69caf7af4ab4fad71d",
+  "full_prompt_sha256": "64cb40379913239ab5b306bca184b11c0c18410aa476f902134b59ee2865b005"
+ }
+}

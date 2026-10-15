@@ -1,0 +1,3001 @@
+[
+ {
+  "id": "ws_zh_001",
+  "rows": 50,
+  "cols": 6,
+  "cells": 300,
+  "unique": [
+   "国家",
+   "电影名"
+  ],
+  "metrics": {
+   "国家": [
+    "exact_match"
+   ],
+   "年份": [
+    "exact_match"
+   ],
+   "本国累计票房收益": [
+    "number_near"
+   ],
+   "导演": [
+    "llm_judge"
+   ],
+   "电影类型": [
+    "llm_judge"
+   ],
+   "电影名": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_002",
+  "rows": 32,
+  "cols": 4,
+  "cells": 128,
+  "unique": [
+   "学校名称",
+   "专业"
+  ],
+  "metrics": {
+   "学校名称": [
+    "exact_match"
+   ],
+   "入学要求": [
+    "llm_judge"
+   ],
+   "学费": [
+    "llm_judge"
+   ],
+   "专业": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_003",
+  "rows": 60,
+  "cols": 3,
+  "cells": 180,
+  "unique": [
+   "学校"
+  ],
+  "metrics": {
+   "学校": [
+    "exact_match"
+   ],
+   "a区地区": [
+    "llm_judge"
+   ],
+   "2025年复试分数线": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_004",
+  "rows": 60,
+  "cols": 6,
+  "cells": 360,
+  "unique": [
+   "年度",
+   "排名"
+  ],
+  "metrics": {
+   "年度": [
+    "exact_match"
+   ],
+   "排名": [
+    "exact_match"
+   ],
+   "财富值（亿美元）": [
+    "number_near"
+   ],
+   "姓名（中文）": [
+    "llm_judge"
+   ],
+   "姓名（英文）": [
+    "llm_judge"
+   ],
+   "财富来源": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_005",
+  "rows": 60,
+  "cols": 5,
+  "cells": 300,
+  "unique": [
+   "年份",
+   "姓名"
+  ],
+  "metrics": {
+   "年份": [
+    "exact_match"
+   ],
+   "党派": [
+    "exact_match"
+   ],
+   "团票数": [
+    "exact_match"
+   ],
+   "民众票数": [
+    "number_near"
+   ],
+   "姓名": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_006",
+  "rows": 285,
+  "cols": 6,
+  "cells": 1710,
+  "unique": [
+   "产品名称"
+  ],
+  "metrics": {
+   "品牌": [
+    "exact_match"
+   ],
+   "香型": [
+    "exact_match"
+   ],
+   "产品系列": [
+    "llm_judge"
+   ],
+   "产品名称": [
+    "llm_judge"
+   ],
+   "规格(/瓶)": [
+    "llm_judge"
+   ],
+   "酒精度": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_007",
+  "rows": 515,
+  "cols": 10,
+  "cells": 5150,
+  "unique": [
+   "产品名称",
+   "芯片名称",
+   "显存容量",
+   "显存位宽"
+  ],
+  "metrics": {
+   "产品系列": [
+    "llm_judge"
+   ],
+   "发布日期": [
+    "llm_judge"
+   ],
+   "总线接口": [
+    "llm_judge"
+   ],
+   "显存类型": [
+    "llm_judge"
+   ],
+   "核心频率(基础频率)": [
+    "llm_judge"
+   ],
+   "显存频率": [
+    "llm_judge"
+   ],
+   "产品名称": [
+    "exact_match"
+   ],
+   "芯片名称": [
+    "exact_match"
+   ],
+   "显存容量": [
+    "exact_match"
+   ],
+   "显存位宽": [
+    "exact_match"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_008",
+  "rows": 1458,
+  "cols": 6,
+  "cells": 8748,
+  "unique": [
+   "年份",
+   "院校",
+   "专业组",
+   "投档线总分"
+  ],
+  "metrics": {
+   "年份": [
+    "exact_match"
+   ],
+   "院校": [
+    "exact_match"
+   ],
+   "投档线总分": [
+    "exact_match"
+   ],
+   "本段人数": [
+    "number_near"
+   ],
+   "累计人数": [
+    "number_near"
+   ],
+   "专业组": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_009",
+  "rows": 31,
+  "cols": 4,
+  "cells": 124,
+  "unique": [
+   "时间(年份)",
+   "赛事地点",
+   "组别结果",
+   "赛事名称"
+  ],
+  "metrics": {
+   "时间(年份)": [
+    "exact_match"
+   ],
+   "赛事地点": [
+    "exact_match"
+   ],
+   "赛事名称": [
+    "exact_match"
+   ],
+   "组别结果": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_010",
+  "rows": 132,
+  "cols": 20,
+  "cells": 2640,
+  "unique": [
+   "赛事名称"
+  ],
+  "metrics": {
+   "时间": [
+    "exact_match"
+   ],
+   "赛事成绩": [
+    "llm_judge"
+   ],
+   "级别": [
+    "llm_judge"
+   ],
+   "项目": [
+    "llm_judge"
+   ],
+   "赛事名称": [
+    "llm_judge"
+   ],
+   "1/16赛-对手": [
+    "llm_judge"
+   ],
+   "1/16赛-比分": [
+    "llm_judge"
+   ],
+   "1/16赛-胜负": [
+    "llm_judge"
+   ],
+   "1/8赛-对手": [
+    "llm_judge"
+   ],
+   "1/8赛-比分": [
+    "llm_judge"
+   ],
+   "1/8赛-胜负": [
+    "llm_judge"
+   ],
+   "1/4赛-对手": [
+    "llm_judge"
+   ],
+   "1/4赛-比分": [
+    "llm_judge"
+   ],
+   "1/4赛-胜负": [
+    "llm_judge"
+   ],
+   "半决赛-对手": [
+    "llm_judge"
+   ],
+   "半决赛-比分": [
+    "llm_judge"
+   ],
+   "半决赛-胜负": [
+    "llm_judge"
+   ],
+   "决赛-对手": [
+    "llm_judge"
+   ],
+   "决赛-比分": [
+    "llm_judge"
+   ],
+   "决赛-胜负": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_011",
+  "rows": 31,
+  "cols": 10,
+  "cells": 310,
+  "unique": [
+   "地区"
+  ],
+  "metrics": {
+   "2022年转移支付决算数": [
+    "number_near"
+   ],
+   "2022年一般性转移支付决算数": [
+    "number_near"
+   ],
+   "2022年专项转移支付决算数": [
+    "number_near"
+   ],
+   "2021年转移支付决算数": [
+    "number_near"
+   ],
+   "2021年一般性转移支付决算数": [
+    "number_near"
+   ],
+   "2021年专项转移支付决算数": [
+    "number_near"
+   ],
+   "2020年转移支付决算数": [
+    "number_near"
+   ],
+   "2020年一般性转移支付决算数": [
+    "number_near"
+   ],
+   "2020年专项转移支付决算数": [
+    "number_near"
+   ],
+   "地区": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_012",
+  "rows": 133,
+  "cols": 5,
+  "cells": 665,
+  "unique": [
+   "企业名称"
+  ],
+  "metrics": {
+   "排名": [
+    "exact_match"
+   ],
+   "营业收入（百万美元）": [
+    "number_near"
+   ],
+   "利润（百万美元）": [
+    "number_near"
+   ],
+   "总部所在城市": [
+    "llm_judge"
+   ],
+   "企业名称": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_013",
+  "rows": 125,
+  "cols": 4,
+  "cells": 500,
+  "unique": [
+   "届数",
+   "奖项名称"
+  ],
+  "metrics": {
+   "奖项名称": [
+    "exact_match"
+   ],
+   "届数": [
+    "llm_judge"
+   ],
+   "获奖歌曲/专辑": [
+    "llm_judge"
+   ],
+   "演唱者": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_014",
+  "rows": 224,
+  "cols": 6,
+  "cells": 1344,
+  "unique": [
+   "具体日期"
+  ],
+  "metrics": {
+   "具体日期": [
+    "exact_match"
+   ],
+   "举办国家": [
+    "exact_match"
+   ],
+   "演唱会中文名": [
+    "llm_judge"
+   ],
+   "演唱会英文名": [
+    "llm_judge"
+   ],
+   "举办城市": [
+    "llm_judge"
+   ],
+   "举办场馆": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_015",
+  "rows": 15,
+  "cols": 7,
+  "cells": 105,
+  "unique": [
+   "任务名称"
+  ],
+  "metrics": {
+   "任务名称": [
+    "exact_match"
+   ],
+   "航天员姓名": [
+    "llm_judge"
+   ],
+   "发射时间": [
+    "llm_judge"
+   ],
+   "着陆时间": [
+    "llm_judge"
+   ],
+   "任务时长": [
+    "llm_judge"
+   ],
+   "着陆地点": [
+    "llm_judge"
+   ],
+   "发射地点": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_016",
+  "rows": 53,
+  "cols": 4,
+  "cells": 212,
+  "unique": [
+   "景区名称"
+  ],
+  "metrics": {
+   "景区名称": [
+    "llm_judge"
+   ],
+   "门票价格": [
+    "llm_judge"
+   ],
+   "所属地区": [
+    "llm_judge"
+   ],
+   "评定年份": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_017",
+  "rows": 37,
+  "cols": 9,
+  "cells": 333,
+  "unique": [
+   "时间"
+  ],
+  "metrics": {
+   "时间": [
+    "exact_match"
+   ],
+   "全国旅客总发送量/万人": [
+    "number_near"
+   ],
+   "全国旅客总发送量相比上年同期增长%": [
+    "number_near"
+   ],
+   "全国旅客总周转量/亿人公里": [
+    "number_near"
+   ],
+   "全国旅客总周转量相比上年同期增长%": [
+    "number_near"
+   ],
+   "全国货运总发送量/万吨": [
+    "number_near"
+   ],
+   "全国货运总发送量相比上年同期增长%": [
+    "number_near"
+   ],
+   "全国货运总周转量/亿吨公里": [
+    "number_near"
+   ],
+   "全国货运总周转量相比上年同期增长%": [
+    "number_near"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_018",
+  "rows": 58,
+  "cols": 5,
+  "cells": 290,
+  "unique": [
+   "医疗机构名称",
+   "准入技术"
+  ],
+  "metrics": {
+   "医疗机构名称": [
+    "exact_match"
+   ],
+   "准入技术": [
+    "exact_match"
+   ],
+   "联系电话": [
+    "llm_judge"
+   ],
+   "机构地址": [
+    "llm_judge"
+   ],
+   "医疗机构等级": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_019",
+  "rows": 86,
+  "cols": 9,
+  "cells": 774,
+  "unique": [
+   "版本"
+  ],
+  "metrics": {
+   "排名": [
+    "exact_match"
+   ],
+   "厂商": [
+    "exact_match"
+   ],
+   "纯电续航里程(km)工信部": [
+    "exact_match"
+   ],
+   "（电动机）最大功率(kw)": [
+    "exact_match"
+   ],
+   "（电动机）最大扭矩(n·m)": [
+    "exact_match"
+   ],
+   "百公里耗电量(kwh/100km)": [
+    "exact_match"
+   ],
+   "官方指导价(万)(人民币)": [
+    "number_near"
+   ],
+   "车型": [
+    "llm_judge"
+   ],
+   "版本": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_020",
+  "rows": 223,
+  "cols": 3,
+  "cells": 669,
+  "unique": [
+   "年度",
+   "感动中国年度人物"
+  ],
+  "metrics": {
+   "年度": [
+    "exact_match"
+   ],
+   "感动中国年度人物": [
+    "llm_judge"
+   ],
+   "颁奖辞": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_021",
+  "rows": 30,
+  "cols": 7,
+  "cells": 210,
+  "unique": [
+   "年份",
+   "国家"
+  ],
+  "metrics": {
+   "年份": [
+    "exact_match"
+   ],
+   "国家": [
+    "exact_match"
+   ],
+   "全球排名": [
+    "exact_match"
+   ],
+   "军费支出": [
+    "number_near"
+   ],
+   "当年gdp": [
+    "number_near"
+   ],
+   "总统": [
+    "llm_judge"
+   ],
+   "国防部长": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_022",
+  "rows": 25,
+  "cols": 5,
+  "cells": 125,
+  "unique": [
+   "官员名字",
+   "职位"
+  ],
+  "metrics": {
+   "职位": [
+    "exact_match"
+   ],
+   "上任日期": [
+    "date_near"
+   ],
+   "离任日期": [
+    "date_near"
+   ],
+   "官员名字": [
+    "llm_judge"
+   ],
+   "继任者": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_023",
+  "rows": 54,
+  "cols": 4,
+  "cells": 216,
+  "unique": [
+   "出版作品名称"
+  ],
+  "metrics": {
+   "获奖年份": [
+    "exact_match"
+   ],
+   "姓名": [
+    "exact_match"
+   ],
+   "首次出版年份": [
+    "exact_match"
+   ],
+   "出版作品名称": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_024",
+  "rows": 10,
+  "cols": 9,
+  "cells": 90,
+  "unique": [
+   "博彩企业",
+   "豪华五星级酒店"
+  ],
+  "metrics": {
+   "博彩净收益（百万）": [
+    "number_near"
+   ],
+   "其他非博彩收益（百万）": [
+    "number_near"
+   ],
+   "房间数（个）": [
+    "number_near"
+   ],
+   "入住率": [
+    "number_near"
+   ],
+   "平均房租": [
+    "number_near"
+   ],
+   "可入住客房收益": [
+    "number_near"
+   ],
+   "博彩企业": [
+    "llm_judge"
+   ],
+   "豪华五星级酒店": [
+    "llm_judge"
+   ],
+   "年份": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_025",
+  "rows": 19,
+  "cols": 14,
+  "cells": 266,
+  "unique": [
+   "发布日期"
+  ],
+  "metrics": {
+   "发布日期": [
+    "exact_match"
+   ],
+   "cpu制造工艺": [
+    "exact_match"
+   ],
+   "cpu核心数": [
+    "exact_match"
+   ],
+   "运行内存大小": [
+    "exact_match"
+   ],
+   "存储空间大小": [
+    "exact_match"
+   ],
+   "发布时的售价": [
+    "exact_match"
+   ],
+   "手机型号": [
+    "llm_judge"
+   ],
+   "出厂搭载系统": [
+    "llm_judge"
+   ],
+   "手机处理器品牌": [
+    "llm_judge"
+   ],
+   "手机cpu型号": [
+    "llm_judge"
+   ],
+   "屏幕尺寸": [
+    "llm_judge"
+   ],
+   "电池容量": [
+    "llm_judge"
+   ],
+   "分辨率": [
+    "llm_judge"
+   ],
+   "最高像素": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_026",
+  "rows": 165,
+  "cols": 4,
+  "cells": 660,
+  "unique": [
+   "软科世界一流学科",
+   "软科学科2024排名",
+   "学校名称"
+  ],
+  "metrics": {
+   "软科世界一流学科": [
+    "exact_match"
+   ],
+   "软科学科2024排名": [
+    "exact_match"
+   ],
+   "学校名称": [
+    "exact_match"
+   ],
+   "qs学校2025排名": [
+    "exact_match"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_027",
+  "rows": 25,
+  "cols": 5,
+  "cells": 125,
+  "unique": [
+   "交易所名称",
+   "统计月份"
+  ],
+  "metrics": {
+   "交易所名称": [
+    "exact_match"
+   ],
+   "总成交量（手）": [
+    "number_near"
+   ],
+   "总成交额（万元）": [
+    "number_near"
+   ],
+   "总持仓量（手）": [
+    "number_near"
+   ],
+   "统计月份": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_028",
+  "rows": 50,
+  "cols": 4,
+  "cells": 200,
+  "unique": [
+   "景区名称"
+  ],
+  "metrics": {
+   "景区名称": [
+    "exact_match"
+   ],
+   "所在省份": [
+    "exact_match"
+   ],
+   "所在省份旅游接待人次（亿）": [
+    "number_near"
+   ],
+   "所在的省份的旅游综合收入（亿）": [
+    "number_near"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_029",
+  "rows": 50,
+  "cols": 3,
+  "cells": 150,
+  "unique": [
+   "书名"
+  ],
+  "metrics": {
+   "出版时间": [
+    "date_near"
+   ],
+   "书名": [
+    "llm_judge"
+   ],
+   "作者": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_030",
+  "rows": 64,
+  "cols": 6,
+  "cells": 384,
+  "unique": [
+   "歌曲名称"
+  ],
+  "metrics": {
+   "发行时间": [
+    "exact_match"
+   ],
+   "歌曲名称": [
+    "llm_judge"
+   ],
+   "所属专辑": [
+    "llm_judge"
+   ],
+   "填词人": [
+    "llm_judge"
+   ],
+   "编曲人": [
+    "llm_judge"
+   ],
+   "歌曲时长": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_031",
+  "rows": 18,
+  "cols": 4,
+  "cells": 72,
+  "unique": [
+   "奥运会名称",
+   "国家"
+  ],
+  "metrics": {
+   "奥运会名称": [
+    "exact_match"
+   ],
+   "国家": [
+    "exact_match"
+   ],
+   "金牌数量": [
+    "exact_match"
+   ],
+   "夺冠项目": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_032",
+  "rows": 240,
+  "cols": 5,
+  "cells": 1200,
+  "unique": [
+   "年月",
+   "排名",
+   "地区"
+  ],
+  "metrics": {
+   "年月": [
+    "exact_match"
+   ],
+   "排名": [
+    "exact_match"
+   ],
+   "地区": [
+    "exact_match"
+   ],
+   "旅客吞吐量": [
+    "number_near"
+   ],
+   "机场名": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_033",
+  "rows": 12,
+  "cols": 3,
+  "cells": 36,
+  "unique": [
+   "2024年steam年度最畅销游戏"
+  ],
+  "metrics": {
+   "2024年steam年度最畅销游戏": [
+    "llm_judge"
+   ],
+   "发行公司": [
+    "llm_judge"
+   ],
+   "获奖游戏": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_034",
+  "rows": 5,
+  "cols": 11,
+  "cells": 55,
+  "unique": [
+   "公司名称"
+  ],
+  "metrics": {
+   "公司名称": [
+    "exact_match"
+   ],
+   "股票代码": [
+    "exact_match"
+   ],
+   "首发价格（元/股）": [
+    "exact_match"
+   ],
+   "上市日期": [
+    "exact_match"
+   ],
+   "募集资金总额（元）": [
+    "number_near"
+   ],
+   "2024营业收入（元）": [
+    "number_near"
+   ],
+   "2024归母净利润（元）": [
+    "number_near"
+   ],
+   "2024毛利率": [
+    "number_near"
+   ],
+   "2024研发费用（元）": [
+    "number_near"
+   ],
+   "主营业务": [
+    "llm_judge"
+   ],
+   "上市板块": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_035",
+  "rows": 87,
+  "cols": 7,
+  "cells": 609,
+  "unique": [
+   "姓名",
+   "赛事名称",
+   "参赛年份",
+   "参赛成绩"
+  ],
+  "metrics": {
+   "姓名": [
+    "exact_match"
+   ],
+   "国籍": [
+    "exact_match"
+   ],
+   "出生年份": [
+    "exact_match"
+   ],
+   "定段年份": [
+    "exact_match"
+   ],
+   "参赛年份": [
+    "exact_match"
+   ],
+   "赛事名称": [
+    "llm_judge"
+   ],
+   "参赛成绩": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_036",
+  "rows": 25,
+  "cols": 6,
+  "cells": 150,
+  "unique": [
+   "赛季",
+   "所属联赛"
+  ],
+  "metrics": {
+   "所属联赛": [
+    "exact_match"
+   ],
+   "评分": [
+    "number_near"
+   ],
+   "赛季": [
+    "llm_judge"
+   ],
+   "冠军俱乐部名称": [
+    "llm_judge"
+   ],
+   "所属俱乐部": [
+    "llm_judge"
+   ],
+   "mvp球员": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_037",
+  "rows": 50,
+  "cols": 5,
+  "cells": 250,
+  "unique": [
+   "排名"
+  ],
+  "metrics": {
+   "排名": [
+    "exact_match"
+   ],
+   "物业公司名称": [
+    "exact_match"
+   ],
+   "物业公司成立年份": [
+    "exact_match"
+   ],
+   "阅读量": [
+    "number_near"
+   ],
+   "微信公众号名称": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_038",
+  "rows": 85,
+  "cols": 3,
+  "cells": 255,
+  "unique": [
+   "景区名称"
+  ],
+  "metrics": {
+   "景区名称": [
+    "exact_match"
+   ],
+   "认定年份": [
+    "number_near"
+   ],
+   "省份": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_039",
+  "rows": 57,
+  "cols": 4,
+  "cells": 228,
+  "unique": [
+   "饭店名称"
+  ],
+  "metrics": {
+   "饭店名称": [
+    "exact_match"
+   ],
+   "市区": [
+    "exact_match"
+   ],
+   "星级标牌号": [
+    "exact_match"
+   ],
+   "具体地址": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_040",
+  "rows": 59,
+  "cols": 8,
+  "cells": 472,
+  "unique": [
+   "案件发生日期",
+   "发生场所(学校)"
+  ],
+  "metrics": {
+   "案件发生日期": [
+    "exact_match"
+   ],
+   "死亡人数": [
+    "number_near"
+   ],
+   "发生场所(学校)": [
+    "llm_judge"
+   ],
+   "凶手姓名": [
+    "llm_judge"
+   ],
+   "凶手身份": [
+    "llm_judge"
+   ],
+   "凶手年龄(行凶时)": [
+    "llm_judge"
+   ],
+   "凶手结局": [
+    "llm_judge"
+   ],
+   "所在州": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_041",
+  "rows": 28,
+  "cols": 6,
+  "cells": 168,
+  "unique": [
+   "招聘单位"
+  ],
+  "metrics": {
+   "招聘人数": [
+    "exact_match"
+   ],
+   "招聘单位": [
+    "llm_judge"
+   ],
+   "招聘岗位": [
+    "llm_judge"
+   ],
+   "报考年龄": [
+    "llm_judge"
+   ],
+   "进面比例": [
+    "llm_judge"
+   ],
+   "报名时间": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_042",
+  "rows": 21,
+  "cols": 5,
+  "cells": 105,
+  "unique": [
+   "作品名称"
+  ],
+  "metrics": {
+   "片长": [
+    "number_near"
+   ],
+   "作品名称": [
+    "llm_judge"
+   ],
+   "类型": [
+    "llm_judge"
+   ],
+   "制片国家/地区": [
+    "llm_judge"
+   ],
+   "导演": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_043",
+  "rows": 15,
+  "cols": 8,
+  "cells": 120,
+  "unique": [
+   "排名"
+  ],
+  "metrics": {
+   "榜单名称": [
+    "exact_match"
+   ],
+   "排名": [
+    "exact_match"
+   ],
+   "发行日期": [
+    "exact_match"
+   ],
+   "歌曲时长": [
+    "exact_match"
+   ],
+   "演唱者": [
+    "llm_judge"
+   ],
+   "作词人": [
+    "llm_judge"
+   ],
+   "作曲人": [
+    "llm_judge"
+   ],
+   "歌曲名称": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_044",
+  "rows": 38,
+  "cols": 6,
+  "cells": 228,
+  "unique": [
+   "展会全称"
+  ],
+  "metrics": {
+   "展会全称": [
+    "llm_judge"
+   ],
+   "举办时期": [
+    "llm_judge"
+   ],
+   "展馆名称": [
+    "llm_judge"
+   ],
+   "展馆详细地址": [
+    "llm_judge"
+   ],
+   "主办单位": [
+    "llm_judge"
+   ],
+   "承办单位": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_045",
+  "rows": 19,
+  "cols": 6,
+  "cells": 114,
+  "unique": [
+   "专辑名"
+  ],
+  "metrics": {
+   "出道日期": [
+    "exact_match"
+   ],
+   "发行时间": [
+    "exact_match"
+   ],
+   "娱乐公司": [
+    "llm_judge"
+   ],
+   "专辑名": [
+    "llm_judge"
+   ],
+   "包含歌曲": [
+    "llm_judge"
+   ],
+   "女团名": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_046",
+  "rows": 30,
+  "cols": 6,
+  "cells": 180,
+  "unique": [
+   "自治州名称"
+  ],
+  "metrics": {
+   "自治州名称": [
+    "exact_match"
+   ],
+   "2024年州长姓名": [
+    "exact_match"
+   ],
+   "州长所属民族": [
+    "exact_match"
+   ],
+   "总面积": [
+    "number_near"
+   ],
+   "下辖地区": [
+    "llm_judge"
+   ],
+   "设立时间": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_047",
+  "rows": 52,
+  "cols": 6,
+  "cells": 312,
+  "unique": [
+   "国家"
+  ],
+  "metrics": {
+   "面积（平方公里）": [
+    "number_near"
+   ],
+   "人口密度（人/平方公里）": [
+    "number_near"
+   ],
+   "总人口（万）": [
+    "number_near"
+   ],
+   "商品贸易（gdp的百分比）": [
+    "number_near"
+   ],
+   "国家": [
+    "llm_judge"
+   ],
+   "首都": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_048",
+  "rows": 35,
+  "cols": 6,
+  "cells": 210,
+  "unique": [
+   "演员名称",
+   "影视名称"
+  ],
+  "metrics": {
+   "演员名称": [
+    "exact_match"
+   ],
+   "播出年份": [
+    "exact_match"
+   ],
+   "播放平台": [
+    "llm_judge"
+   ],
+   "影视名称": [
+    "llm_judge"
+   ],
+   "角色名": [
+    "llm_judge"
+   ],
+   "搭档演员": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_049",
+  "rows": 90,
+  "cols": 5,
+  "cells": 450,
+  "unique": [
+   "年份",
+   "种类",
+   "排名"
+  ],
+  "metrics": {
+   "年份": [
+    "exact_match"
+   ],
+   "种类": [
+    "exact_match"
+   ],
+   "排名": [
+    "exact_match"
+   ],
+   "书籍": [
+    "llm_judge"
+   ],
+   "作者": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_050",
+  "rows": 100,
+  "cols": 4,
+  "cells": 400,
+  "unique": [
+   "年份",
+   "排名"
+  ],
+  "metrics": {
+   "排名": [
+    "exact_match"
+   ],
+   "年份": [
+    "exact_match"
+   ],
+   "歌曲名称": [
+    "llm_judge"
+   ],
+   "歌手": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_051",
+  "rows": 35,
+  "cols": 4,
+  "cells": 140,
+  "unique": [
+   "中文名称"
+  ],
+  "metrics": {
+   "中国上映时间": [
+    "exact_match"
+   ],
+   "中国大陆票房（单位：人民币）": [
+    "number_near"
+   ],
+   "中文名称": [
+    "llm_judge"
+   ],
+   "英文名称": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_052",
+  "rows": 87,
+  "cols": 5,
+  "cells": 435,
+  "unique": [
+   "具体地址"
+  ],
+  "metrics": {
+   "成立年份": [
+    "number_near"
+   ],
+   "具体地址": [
+    "llm_judge"
+   ],
+   "医院名称": [
+    "llm_judge"
+   ],
+   "区域": [
+    "llm_judge"
+   ],
+   "医疗等级": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_053",
+  "rows": 152,
+  "cols": 7,
+  "cells": 1064,
+  "unique": [
+   "第x次人口普查",
+   "普查地区"
+  ],
+  "metrics": {
+   "第x次人口普查": [
+    "exact_match"
+   ],
+   "人口数量": [
+    "number_near"
+   ],
+   "儿童人口数量": [
+    "number_near"
+   ],
+   "青中年人口数量": [
+    "number_near"
+   ],
+   "老年人口数量": [
+    "number_near"
+   ],
+   "大学人口数量": [
+    "number_near"
+   ],
+   "普查地区": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_054",
+  "rows": 35,
+  "cols": 6,
+  "cells": 210,
+  "unique": [
+   "公司",
+   "年度"
+  ],
+  "metrics": {
+   "年度": [
+    "exact_match"
+   ],
+   "总收入（亿元）": [
+    "number_near"
+   ],
+   "经营盈利（亿元）": [
+    "number_near"
+   ],
+   "经营利润率": [
+    "number_near"
+   ],
+   "每股基本盈利（元）": [
+    "number_near"
+   ],
+   "公司": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_055",
+  "rows": 51,
+  "cols": 6,
+  "cells": 306,
+  "unique": [
+   "年份",
+   "教育阶段"
+  ],
+  "metrics": {
+   "院校数量(万所)": [
+    "number_near"
+   ],
+   "专任教师数量(万人)": [
+    "number_near"
+   ],
+   "招生数量(万人)": [
+    "number_near"
+   ],
+   "毕业生数量(万人)": [
+    "number_near"
+   ],
+   "年份": [
+    "exact_match"
+   ],
+   "教育阶段": [
+    "exact_match"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_056",
+  "rows": 16,
+  "cols": 4,
+  "cells": 64,
+  "unique": [
+   "院士姓名"
+  ],
+  "metrics": {
+   "院士姓名": [
+    "exact_match"
+   ],
+   "出生年份": [
+    "number_near"
+   ],
+   "获得奖项": [
+    "llm_judge"
+   ],
+   "学校名称": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_057",
+  "rows": 27,
+  "cols": 5,
+  "cells": 135,
+  "unique": [
+   "法规名称"
+  ],
+  "metrics": {
+   "时效性": [
+    "exact_match"
+   ],
+   "共几章几条": [
+    "llm_judge"
+   ],
+   "制定机关": [
+    "llm_judge"
+   ],
+   "公布日期": [
+    "llm_judge"
+   ],
+   "法规名称": [
+    "exact_match"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_058",
+  "rows": 21,
+  "cols": 4,
+  "cells": 84,
+  "unique": [
+   "列入年份",
+   "世界遗产名称"
+  ],
+  "metrics": {
+   "所在省份（直辖市/自治区）": [
+    "llm_judge"
+   ],
+   "世界遗产名称": [
+    "llm_judge"
+   ],
+   "列入年份": [
+    "llm_judge"
+   ],
+   "遗产类别": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_059",
+  "rows": 40,
+  "cols": 5,
+  "cells": 200,
+  "unique": [
+   "产品名称"
+  ],
+  "metrics": {
+   "首发年份": [
+    "exact_match"
+   ],
+   "容量": [
+    "llm_judge"
+   ],
+   "容量对应售价（美元）": [
+    "llm_judge"
+   ],
+   "核心新增技术/功能": [
+    "llm_judge"
+   ],
+   "产品名称": [
+    "exact_match"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_060",
+  "rows": 17,
+  "cols": 7,
+  "cells": 119,
+  "unique": [
+   "模型名称"
+  ],
+  "metrics": {
+   "aime2025": [
+    "number_near"
+   ],
+   "swe-benchverified": [
+    "number_near"
+   ],
+   "tau-bench-airline": [
+    "number_near"
+   ],
+   "tau-bench-retail": [
+    "number_near"
+   ],
+   "模型名称": [
+    "llm_judge"
+   ],
+   "公司": [
+    "llm_judge"
+   ],
+   "上下文窗口": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_061",
+  "rows": 331,
+  "cols": 12,
+  "cells": 3972,
+  "unique": [
+   "处理器型号"
+  ],
+  "metrics": {
+   "核心": [
+    "exact_match"
+   ],
+   "线程": [
+    "exact_match"
+   ],
+   "二级缓存(mb)": [
+    "exact_match"
+   ],
+   "三级缓存(mb)": [
+    "number_near"
+   ],
+   "显卡核心数": [
+    "number_near"
+   ],
+   "时间": [
+    "date_near"
+   ],
+   "核心架构": [
+    "llm_judge"
+   ],
+   "产品系列": [
+    "llm_judge"
+   ],
+   "制造工艺": [
+    "llm_judge"
+   ],
+   "显卡型号": [
+    "llm_judge"
+   ],
+   "处理器型号": [
+    "llm_judge"
+   ],
+   "核心频率(ghz)": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_062",
+  "rows": 129,
+  "cols": 6,
+  "cells": 774,
+  "unique": [
+   "具体事项"
+  ],
+  "metrics": {
+   "实施方式": [
+    "exact_match"
+   ],
+   "牵头部门": [
+    "exact_match"
+   ],
+   "完成时限": [
+    "exact_match"
+   ],
+   "场景名称": [
+    "llm_judge"
+   ],
+   "配合部门": [
+    "llm_judge"
+   ],
+   "具体事项": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_063",
+  "rows": 36,
+  "cols": 5,
+  "cells": 180,
+  "unique": [
+   "团体英文名"
+  ],
+  "metrics": {
+   "出道年份": [
+    "exact_match"
+   ],
+   "团体英文名": [
+    "exact_match"
+   ],
+   "初一位时间": [
+    "llm_judge"
+   ],
+   "初一位歌曲名称": [
+    "llm_judge"
+   ],
+   "公司名称": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_064",
+  "rows": 235,
+  "cols": 6,
+  "cells": 1410,
+  "unique": [
+   "作品名称"
+  ],
+  "metrics": {
+   "发表年份": [
+    "number_near"
+   ],
+   "作者名称": [
+    "llm_judge"
+   ],
+   "刊登期刊/出版社": [
+    "llm_judge"
+   ],
+   "所获奖项": [
+    "llm_judge"
+   ],
+   "作品体裁": [
+    "llm_judge"
+   ],
+   "作品名称": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_065",
+  "rows": 13,
+  "cols": 14,
+  "cells": 182,
+  "unique": [
+   "车型名称"
+  ],
+  "metrics": {
+   "排量[l]": [
+    "exact_match"
+   ],
+   "发动机最大功率[kw]": [
+    "exact_match"
+   ],
+   "发动机最大扭矩[n·m]": [
+    "exact_match"
+   ],
+   "发动机最大马力[ps]": [
+    "exact_match"
+   ],
+   "发动机进气方式": [
+    "exact_match"
+   ],
+   "发动机气缸数": [
+    "exact_match"
+   ],
+   "电芯品牌": [
+    "exact_match"
+   ],
+   "电动机总功率[kw]": [
+    "exact_match"
+   ],
+   "电动机总马力[ps]": [
+    "exact_match"
+   ],
+   "电动机总扭矩[n·m]": [
+    "exact_match"
+   ],
+   "电池容量": [
+    "number_near"
+   ],
+   "车型名称": [
+    "llm_judge"
+   ],
+   "供油方式": [
+    "llm_judge"
+   ],
+   "电池类型": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_066",
+  "rows": 15,
+  "cols": 6,
+  "cells": 90,
+  "unique": [
+   "电商平台",
+   "年份"
+  ],
+  "metrics": {
+   "电商平台": [
+    "exact_match"
+   ],
+   "年份": [
+    "exact_match"
+   ],
+   "618gmv": [
+    "number_near"
+   ],
+   "618成交破亿的品牌数量": [
+    "number_near"
+   ],
+   "双11gmv": [
+    "number_near"
+   ],
+   "双11成交破亿的品牌数量": [
+    "number_near"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_067",
+  "rows": 16,
+  "cols": 42,
+  "cells": 672,
+  "unique": [
+   "区域"
+  ],
+  "metrics": {
+   "2022/01房价": [
+    "number_near"
+   ],
+   "2022/02房价": [
+    "number_near"
+   ],
+   "2022/03房价": [
+    "number_near"
+   ],
+   "2022/04房价": [
+    "number_near"
+   ],
+   "2022/05房价": [
+    "number_near"
+   ],
+   "2022/06房价": [
+    "number_near"
+   ],
+   "2022/07房价": [
+    "number_near"
+   ],
+   "2022/08房价": [
+    "number_near"
+   ],
+   "2022/09房价": [
+    "number_near"
+   ],
+   "2022/10房价": [
+    "number_near"
+   ],
+   "2022/11房价": [
+    "number_near"
+   ],
+   "2022/12房价": [
+    "number_near"
+   ],
+   "2023/01房价": [
+    "number_near"
+   ],
+   "2023/02房价": [
+    "number_near"
+   ],
+   "2023/03房价": [
+    "number_near"
+   ],
+   "2023/04房价": [
+    "number_near"
+   ],
+   "2023/05房价": [
+    "number_near"
+   ],
+   "2023/06房价": [
+    "number_near"
+   ],
+   "2023/07房价": [
+    "number_near"
+   ],
+   "2023/08房价": [
+    "number_near"
+   ],
+   "2023/09房价": [
+    "number_near"
+   ],
+   "2023/10房价": [
+    "number_near"
+   ],
+   "2023/11房价": [
+    "number_near"
+   ],
+   "2023/12房价": [
+    "number_near"
+   ],
+   "2024/01房价": [
+    "number_near"
+   ],
+   "2024/02房价": [
+    "number_near"
+   ],
+   "2024/03房价": [
+    "number_near"
+   ],
+   "2024/04房价": [
+    "number_near"
+   ],
+   "2024/05房价": [
+    "number_near"
+   ],
+   "2024/06房价": [
+    "number_near"
+   ],
+   "2024/07房价": [
+    "number_near"
+   ],
+   "2024/08房价": [
+    "number_near"
+   ],
+   "2024/09房价": [
+    "number_near"
+   ],
+   "2024/10房价": [
+    "number_near"
+   ],
+   "2024/11房价": [
+    "number_near"
+   ],
+   "2024/12房价": [
+    "number_near"
+   ],
+   "2025/01房价": [
+    "number_near"
+   ],
+   "2025/02房价": [
+    "number_near"
+   ],
+   "2025/03房价": [
+    "number_near"
+   ],
+   "2025/04房价": [
+    "number_near"
+   ],
+   "2025/05房价": [
+    "number_near"
+   ],
+   "区域": [
+    "exact_match"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_068",
+  "rows": 32,
+  "cols": 10,
+  "cells": 320,
+  "unique": [
+   "调整年份",
+   "调整生效日期"
+  ],
+  "metrics": {
+   "调整前的一年期lpr": [
+    "exact_match"
+   ],
+   "调整后的一年期lpr": [
+    "exact_match"
+   ],
+   "调整前的五年期lpr": [
+    "exact_match"
+   ],
+   "调整后的五年期lpr": [
+    "exact_match"
+   ],
+   "调整前的7天逆回购操作利率": [
+    "exact_match"
+   ],
+   "调整后的7天逆回购操作利率": [
+    "exact_match"
+   ],
+   "调整前的金融机构存款准备金率": [
+    "exact_match"
+   ],
+   "调整后的金融机构存款准备金率": [
+    "exact_match"
+   ],
+   "调整年份": [
+    "llm_judge"
+   ],
+   "调整生效日期": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_069",
+  "rows": 129,
+  "cols": 4,
+  "cells": 516,
+  "unique": [
+   "论文名称"
+  ],
+  "metrics": {
+   "发表日期": [
+    "exact_match"
+   ],
+   "公司名称": [
+    "llm_judge"
+   ],
+   "论文作者": [
+    "llm_judge"
+   ],
+   "论文名称": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_070",
+  "rows": 25,
+  "cols": 4,
+  "cells": 100,
+  "unique": [
+   "年份"
+  ],
+  "metrics": {
+   "年份": [
+    "exact_match"
+   ],
+   "电视端收视率": [
+    "number_near"
+   ],
+   "导演": [
+    "llm_judge"
+   ],
+   "冠名商": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_071",
+  "rows": 45,
+  "cols": 7,
+  "cells": 315,
+  "unique": [
+   "电影名"
+  ],
+  "metrics": {
+   "累积票房（十亿韩元）": [
+    "number_near"
+   ],
+   "累积观影人次": [
+    "number_near"
+   ],
+   "电影名": [
+    "llm_judge"
+   ],
+   "题材": [
+    "llm_judge"
+   ],
+   "领衔主演": [
+    "llm_judge"
+   ],
+   "上映年份": [
+    "llm_judge"
+   ],
+   "导演": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_072",
+  "rows": 42,
+  "cols": 4,
+  "cells": 168,
+  "unique": [
+   "恋综名称"
+  ],
+  "metrics": {
+   "恋综名称": [
+    "llm_judge"
+   ],
+   "节目牵手嘉宾": [
+    "llm_judge"
+   ],
+   "仍未分手cp": [
+    "llm_judge"
+   ],
+   "平台名": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_073",
+  "rows": 84,
+  "cols": 3,
+  "cells": 252,
+  "unique": [
+   "博物馆名称"
+  ],
+  "metrics": {
+   "地址": [
+    "llm_judge"
+   ],
+   "开放时间": [
+    "llm_judge"
+   ],
+   "博物馆名称": [
+    "exact_match"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_074",
+  "rows": 205,
+  "cols": 5,
+  "cells": 1025,
+  "unique": [
+   "节目名称"
+  ],
+  "metrics": {
+   "公演次数": [
+    "exact_match"
+   ],
+   "票数": [
+    "exact_match"
+   ],
+   "季数": [
+    "number_near"
+   ],
+   "参演姐姐": [
+    "llm_judge"
+   ],
+   "节目名称": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_075",
+  "rows": 38,
+  "cols": 5,
+  "cells": 190,
+  "unique": [
+   "作品名称",
+   "开播时间"
+  ],
+  "metrics": {
+   "作品名称": [
+    "llm_judge"
+   ],
+   "作品导演": [
+    "llm_judge"
+   ],
+   "作品集数": [
+    "llm_judge"
+   ],
+   "作品相关获奖记录": [
+    "llm_judge"
+   ],
+   "开播时间": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_076",
+  "rows": 12,
+  "cols": 6,
+  "cells": 72,
+  "unique": [
+   "企业名称",
+   "财年"
+  ],
+  "metrics": {
+   "营业收入（元）": [
+    "number_near"
+   ],
+   "归属于上市公司股东的净利润（元）": [
+    "number_near"
+   ],
+   "基本每股收益（元/股）": [
+    "number_near"
+   ],
+   "加权平均净资产收益率（%）": [
+    "number_near"
+   ],
+   "企业名称": [
+    "llm_judge"
+   ],
+   "财年": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_077",
+  "rows": 26,
+  "cols": 7,
+  "cells": 182,
+  "unique": [
+   "论文题目"
+  ],
+  "metrics": {
+   "发表时间": [
+    "exact_match"
+   ],
+   "doi号": [
+    "exact_match"
+   ],
+   "作者": [
+    "llm_judge"
+   ],
+   "发表刊物": [
+    "llm_judge"
+   ],
+   "基金资助": [
+    "llm_judge"
+   ],
+   "关键词": [
+    "llm_judge"
+   ],
+   "论文题目": [
+    "exact_match"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_078",
+  "rows": 33,
+  "cols": 3,
+  "cells": 99,
+  "unique": [
+   "辟谣/谣言内容"
+  ],
+  "metrics": {
+   "时间": [
+    "exact_match"
+   ],
+   "辟谣/谣言内容": [
+    "llm_judge"
+   ],
+   "详情/真相": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_079",
+  "rows": 130,
+  "cols": 4,
+  "cells": 520,
+  "unique": [
+   "行政区划",
+   "姓名"
+  ],
+  "metrics": {
+   "行政区划": [
+    "exact_match"
+   ],
+   "姓名": [
+    "exact_match"
+   ],
+   "上任日期": [
+    "date_near"
+   ],
+   "离任日期": [
+    "date_near"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_080",
+  "rows": 6,
+  "cols": 7,
+  "cells": 42,
+  "unique": [
+   "企业名称"
+  ],
+  "metrics": {
+   "全球门店数量": [
+    "number_near"
+   ],
+   "海外门店数量": [
+    "number_near"
+   ],
+   "北上广深门店数量": [
+    "number_near"
+   ],
+   "新一线门店数量": [
+    "number_near"
+   ],
+   "二线门店数量": [
+    "number_near"
+   ],
+   "三线及以下门店数量": [
+    "number_near"
+   ],
+   "企业名称": [
+    "exact_match"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_081",
+  "rows": 428,
+  "cols": 5,
+  "cells": 2140,
+  "unique": [
+   "期刊名称",
+   "论文标题"
+  ],
+  "metrics": {
+   "发表年份": [
+    "exact_match"
+   ],
+   "摘要": [
+    "llm_judge"
+   ],
+   "关键词": [
+    "llm_judge"
+   ],
+   "期刊名称": [
+    "llm_judge"
+   ],
+   "论文标题": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_082",
+  "rows": 14,
+  "cols": 9,
+  "cells": 126,
+  "unique": [
+   "相机名称"
+  ],
+  "metrics": {
+   "相机名称": [
+    "exact_match"
+   ],
+   "最高对焦点数目": [
+    "exact_match"
+   ],
+   "快门速度范围": [
+    "llm_judge"
+   ],
+   "数码影像处理器": [
+    "llm_judge"
+   ],
+   "iso范围": [
+    "llm_judge"
+   ],
+   "相机内减震技术": [
+    "llm_judge"
+   ],
+   "有效像素": [
+    "llm_judge"
+   ],
+   "重量": [
+    "llm_judge"
+   ],
+   "最高每秒拍摄幅数": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_083",
+  "rows": 50,
+  "cols": 4,
+  "cells": 200,
+  "unique": [
+   "景区名称"
+  ],
+  "metrics": {
+   "旺季景区票价(元/人)": [
+    "number_near"
+   ],
+   "所在城市": [
+    "llm_judge"
+   ],
+   "旺季开放时间": [
+    "llm_judge"
+   ],
+   "景区名称": [
+    "exact_match"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_084",
+  "rows": 40,
+  "cols": 4,
+  "cells": 160,
+  "unique": [
+   "年份",
+   "平台类型"
+  ],
+  "metrics": {
+   "用户规模（亿）": [
+    "number_near"
+   ],
+   "市场收入（亿元）": [
+    "number_near"
+   ],
+   "年份": [
+    "llm_judge"
+   ],
+   "平台类型": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_085",
+  "rows": 75,
+  "cols": 5,
+  "cells": 375,
+  "unique": [
+   "项目名称",
+   "竣工时间"
+  ],
+  "metrics": {
+   "竣工时间": [
+    "exact_match"
+   ],
+   "国家": [
+    "exact_match"
+   ],
+   "启动时间": [
+    "date_near"
+   ],
+   "项目名称": [
+    "llm_judge"
+   ],
+   "承包公司": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_086",
+  "rows": 1037,
+  "cols": 4,
+  "cells": 4148,
+  "unique": [
+   "歌手名字",
+   "演唱歌曲"
+  ],
+  "metrics": {
+   "节目名称": [
+    "exact_match"
+   ],
+   "节目期数": [
+    "exact_match"
+   ],
+   "歌手名字": [
+    "llm_judge"
+   ],
+   "演唱歌曲": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_087",
+  "rows": 50,
+  "cols": 4,
+  "cells": 200,
+  "unique": [
+   "年份",
+   "居民类别"
+  ],
+  "metrics": {
+   "人均可支配收入(元)": [
+    "number_near"
+   ],
+   "人均消费支出(元)": [
+    "number_near"
+   ],
+   "年份": [
+    "exact_match"
+   ],
+   "居民类别": [
+    "exact_match"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_088",
+  "rows": 139,
+  "cols": 5,
+  "cells": 695,
+  "unique": [
+   "车型名称"
+  ],
+  "metrics": {
+   "车型名称": [
+    "llm_judge"
+   ],
+   "车身尺寸": [
+    "llm_judge"
+   ],
+   "最大扭矩": [
+    "llm_judge"
+   ],
+   "前悬架类型": [
+    "llm_judge"
+   ],
+   "后悬架类型": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_089",
+  "rows": 39,
+  "cols": 6,
+  "cells": 234,
+  "unique": [
+   "学校名称"
+  ],
+  "metrics": {
+   "建校年份": [
+    "exact_match"
+   ],
+   "2025中国校友会排行榜名次": [
+    "exact_match"
+   ],
+   "2026qs世界大学排名名次": [
+    "exact_match"
+   ],
+   "学校官网地址": [
+    "llm_judge"
+   ],
+   "主管部门": [
+    "llm_judge"
+   ],
+   "学校名称": [
+    "exact_match"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_090",
+  "rows": 27,
+  "cols": 6,
+  "cells": 162,
+  "unique": [
+   "线路名称"
+  ],
+  "metrics": {
+   "总站数": [
+    "exact_match"
+   ],
+   "起点站和终点站": [
+    "exact_match"
+   ],
+   "总里程数": [
+    "number_near"
+   ],
+   "首次通车时间": [
+    "llm_judge"
+   ],
+   "运营机构": [
+    "llm_judge"
+   ],
+   "线路名称": [
+    "exact_match"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_091",
+  "rows": 64,
+  "cols": 4,
+  "cells": 256,
+  "unique": [
+   "景区名称"
+  ],
+  "metrics": {
+   "景区名称": [
+    "llm_judge"
+   ],
+   "景区等级": [
+    "llm_judge"
+   ],
+   "所在城市": [
+    "llm_judge"
+   ],
+   "具体地址": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_092",
+  "rows": 102,
+  "cols": 4,
+  "cells": 408,
+  "unique": [
+   "电视剧名称"
+  ],
+  "metrics": {
+   "集数": [
+    "exact_match"
+   ],
+   "电视剧名称": [
+    "llm_judge"
+   ],
+   "首播时间": [
+    "llm_judge"
+   ],
+   "导演": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_093",
+  "rows": 58,
+  "cols": 4,
+  "cells": 232,
+  "unique": [
+   "学校名称"
+  ],
+  "metrics": {
+   "学校名称": [
+    "exact_match"
+   ],
+   "创办时间": [
+    "llm_judge"
+   ],
+   "校训": [
+    "llm_judge"
+   ],
+   "详细地址": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_094",
+  "rows": 40,
+  "cols": 4,
+  "cells": 160,
+  "unique": [
+   "年份",
+   "网络基础设施类别"
+  ],
+  "metrics": {
+   "新增数量/长度(万个/万公里)": [
+    "number_near"
+   ],
+   "总计数量/长度(万个/万公里)": [
+    "number_near"
+   ],
+   "年份": [
+    "exact_match"
+   ],
+   "网络基础设施类别": [
+    "exact_match"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_095",
+  "rows": 18,
+  "cols": 4,
+  "cells": 72,
+  "unique": [
+   "年份",
+   "赛事名称"
+  ],
+  "metrics": {
+   "年份": [
+    "llm_judge"
+   ],
+   "赛事名称": [
+    "llm_judge"
+   ],
+   "上场中国女排队员": [
+    "llm_judge"
+   ],
+   "赛事最终结果/名次": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_096",
+  "rows": 29,
+  "cols": 4,
+  "cells": 116,
+  "unique": [
+   "电影名称"
+  ],
+  "metrics": {
+   "电影名称": [
+    "llm_judge"
+   ],
+   "导演": [
+    "llm_judge"
+   ],
+   "梁朝伟通过该电影所获奖项": [
+    "llm_judge"
+   ],
+   "上映年份": [
+    "llm_judge"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_097",
+  "rows": 76,
+  "cols": 5,
+  "cells": 380,
+  "unique": [
+   "年份",
+   "城市"
+  ],
+  "metrics": {
+   "净流入人口数或净流出人口数（万人）": [
+    "number_near"
+   ],
+   "出生人口数（万人）": [
+    "number_near"
+   ],
+   "死亡人口数（万人）": [
+    "number_near"
+   ],
+   "年份": [
+    "exact_match"
+   ],
+   "城市": [
+    "exact_match"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_098",
+  "rows": 208,
+  "cols": 4,
+  "cells": 832,
+  "unique": [
+   "论文名称"
+  ],
+  "metrics": {
+   "期刊名称": [
+    "llm_judge"
+   ],
+   "论文作者": [
+    "llm_judge"
+   ],
+   "论文关键词": [
+    "llm_judge"
+   ],
+   "论文名称": [
+    "exact_match"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_099",
+  "rows": 19,
+  "cols": 4,
+  "cells": 76,
+  "unique": [
+   "景区名称"
+  ],
+  "metrics": {
+   "所在城市": [
+    "llm_judge"
+   ],
+   "旺季成人全价门票价格": [
+    "llm_judge"
+   ],
+   "是否属于世界文化和自然遗产": [
+    "llm_judge"
+   ],
+   "景区名称": [
+    "exact_match"
+   ]
+  }
+ },
+ {
+  "id": "ws_zh_100",
+  "rows": 49,
+  "cols": 7,
+  "cells": 343,
+  "unique": [
+   "手机型号"
+  ],
+  "metrics": {
+   "开售日期": [
+    "exact_match"
+   ],
+   "电池大小": [
+    "llm_judge"
+   ],
+   "内存种类（rom）": [
+    "llm_judge"
+   ],
+   "折叠后最小屏幕尺寸": [
+    "llm_judge"
+   ],
+   "打开后最大屏幕尺寸": [
+    "llm_judge"
+   ],
+   "手机品牌": [
+    "llm_judge"
+   ],
+   "手机型号": [
+    "exact_match"
+   ]
+  }
+ }
+]
